@@ -1,0 +1,80 @@
+{# Set the path for the footer logo icon. #}
+{% set site_logo_icon_url =  base_path ~ directory ~ '/gfx/ter.gif' %}
+{% set acro_media_logo_url =  base_path ~ directory ~ '/gfx/ter.gif' %}
+
+<footer class="site-footer">
+  <div class="container">
+    {# Footer top. #}
+    <div class="site-footer__top">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          {# Logo. #}
+          <div class="site-footer__logo">
+            <a href="{{ front_page }}">
+              <img src="{{ site_logo_icon_url }}" alt="{{ site_name ? site_name }}" />
+            </a>
+          </div>
+
+          {# Contact info. #}
+          {% if page.footer_top %}
+            <div class="site-footer__contact">
+              {{ page.footer_top }}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+          {# Social media navigation. #}
+          {% if page.social_nav %}
+            <div class="social-media-nav">
+              {{ page.social_nav }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {# Footer main. #}
+    <div class="site-footer__main">
+      <div class="row">
+        <div class="col-xs-12 col-md-3 col-lg-4">
+          {# Store address. #}
+          {% if page.footer %}
+            <div class="">
+              {{ page.footer }}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="hidden-xs hidden-sm col-md-9 col-lg-8">
+          {% if page.primary_nav %}
+            {# Primary navigation in footer. #}
+            <div class="footer-main-nav">
+              {{ page.primary_nav }}
+            </div>
+          {% endif %}
+
+          {% if page.special_nav %}
+            {# Special navigation in footer. #}
+            <div class="footer-main-nav">
+              {{ page.special_nav }}
+            </div>
+          {% endif %}
+
+          {% if page.header_nav %}
+            {# Header navigation in footer. #}
+            <div class="footer-main-nav">
+              {{ page.header_nav }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {# Footer bottom. #}
+    <div class="site-footer__bottom">
+      
+  </div>
+</footer>
+
+

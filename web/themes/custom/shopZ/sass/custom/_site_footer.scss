@@ -1,0 +1,279 @@
+/**
+ * Site footer general.
+ */
+.site-footer {
+  padding-top: 18px;
+  padding-bottom: 40px;
+  background: #efefef;
+  border-top: 1px solid $gray;
+
+  @media (max-width: $screen-sm-max) {
+    text-align: center;
+  }
+
+  .site-footer__top {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .site-footer__main {
+    padding: 25px 0 18px;
+  }
+
+  .site-footer__bottom {
+    padding-top: 22px;
+    border-top: 1px solid #ccc;
+
+    .site-footer__buttons {
+      text-align: right;
+      float: right;
+
+      .btn-primary {
+        margin: 0 2px;
+
+        i {
+          margin-right: 3px;
+        }
+      }
+
+      @media (max-width: $screen-sm-max) {
+        margin-bottom: 20px;
+        text-align: center;
+        float: none;
+      }
+      @media (max-width: $screen-xs-max) {
+        .btn-primary {
+          margin: 0 2px 5px;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Logo.
+ */
+.site-footer__logo {
+  display: inline-block;
+  vertical-align: top;
+
+  @media (max-width: 360px) {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/**
+ * Contact info.
+ */
+.site-footer__contact {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#block-headerfootercontactinformation-2 {
+  padding: 0 0 0 10px;
+  margin: 0;
+  border: 0;
+  text-align: left;
+
+  @media (max-width: 360px) {
+    text-align: center;
+  }
+
+  .field--name-field-link .field__item a:before {
+    margin: 0 8px 0 3px;
+  }
+
+  .field--name-field-phone-number {
+    line-height: 40px;
+  }
+}
+
+/**
+ * Company address.
+ */
+#block-companyaddress {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+
+  p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+}
+
+/**
+ * Footer navigation.
+ */
+.footer-main-nav {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+
+  &:first-of-type {
+    width: 48%;
+  }
+
+  a {
+    padding: 0;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333;
+
+    &:hover, &:focus {
+      color: $c-primary-hover;
+    }
+
+    &.is-active {
+      color: $c-primary;
+    }
+  }
+
+  // 50% width category menu
+  .block-views-blockfacet-menus-block-1 {
+    .views-row {
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+    }
+  }
+
+  // Header nav in footer.
+  .menu__item {
+    width: 100%;
+  }
+}
+
+/**
+ * Footer nav.
+ */
+.footer-nav {
+  .menu__item {
+    @media (max-width: 360px) {
+      display: block;
+    }
+
+    &:after {
+      display: inline-block;
+      padding: 0 7px;
+      content: '|';
+      color: $gray;
+
+      @media (max-width: 360px) {
+        display: none;
+      }
+    }
+
+    &:last-of-type:after {
+      display: none;
+    }
+
+    a {
+      display: inline-block;
+      padding: 0;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #333;
+
+      &:hover, &:focus {
+        color: $c-primary-hover;
+      }
+
+      &.is-active {
+        color: $c-primary;
+      }
+    }
+  }
+}
+
+/**
+ * Credits.
+ */
+.site-footer__credits {
+  padding-top: 16px;
+
+  // Acro Media logo.
+  .site-footer__acro-logo {
+    float: left;
+    width: 120px;
+    margin: 2px 20px 10px 0;
+
+    @media (max-width: $screen-sm-max) {
+      float: none;
+      width: 100%;
+      margin: 0 0 10px;
+      text-align: center;
+    }
+
+    a {
+      opacity: .15;
+
+      &:hover, &:focus {
+      opacity: 1;
+    }
+    }
+  }
+
+  // Copyright.
+  .site-footer__copyright {
+    font-size: 13px;
+    color: #666;
+  }
+
+  // Credits.
+  .site-footer__credit-links {
+    padding-top: 8px;
+    font-size: 11px;
+    color: #999;
+
+    a {
+      color: #999;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+/**
+ * GitHub.
+ */
+.github {
+  margin-top: 8px;
+
+  .fa-github {
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    margin-right: 5px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 5px 0 0 2px;
+    font-size: 14px;
+
+    i {
+      margin-left: 3px;
+    }
+  }
+}

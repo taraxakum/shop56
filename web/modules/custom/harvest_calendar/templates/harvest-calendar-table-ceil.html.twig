@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * A theme implementation for a harvest calendat table ceil.
+ *
+ * Available variables:
+ * - background_color: The color to highlite current ceil.
+ * - color: Global color of current calendar.
+ * - title: HTML tooltip to show on a ceil hover.
+ * - content: (optional) HTML content of a cail.
+ *
+ * @ingroup themeable
+ */
+#}
+<td
+  title="{{ title }}"
+  class="item"
+  style="background-color: {{ background_color }};"
+  data-color="{{ color }}"
+>
+  {% if content %}
+    {{ content }}
+  {% endif %}
+</td>

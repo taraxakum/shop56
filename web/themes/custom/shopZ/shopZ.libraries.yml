@@ -1,0 +1,179 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/style.css: { media: all }
+  js:
+    js/contrib/bootstrap-tabcollapse.js: {}
+    js/custom/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - shopZ/fitVid
+    - magnific_popup/magnific_popup
+    - shopZ/slider
+    - shopZ/bootstrap
+
+uh-axe:
+  version: 1.x
+  js:
+    js/custom/plus/uh-axe.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+uh-recurring-digital:
+  version: 1.x
+  js:
+    js/custom/plus/uh-recurring-digital.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+uh-access-gate:
+  version: 1.x
+  js:
+    js/custom/plus/uh-access-gate.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - shopZ/cookie
+
+uh-feature-beacon:
+  version: 1.x
+  js:
+    js/custom/plus/uh-feature-beacon.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - shopZ/cookie
+    - shopZ/lightweight-youtube-player
+
+uh-pado:
+  version: 1.x
+  js:
+    js/custom/plus/uh-pado.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+slider:
+  version: 1.x
+  js:
+    js/custom/slider.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - shopZ/slick-slider
+
+slick-slider:
+  version: 1.x
+  css:
+    theme:
+      js/contrib/slick/slick.css: { media: all }
+  js:
+    js/contrib/slick/slick.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+fitVid:
+  version: 1.x
+  js:
+    js/contrib/jquery.fitvids.js: {}
+  dependencies:
+      - core/jquery
+      - core/drupal
+
+lightweight-youtube-player:
+  version: 1.x
+  css:
+    theme:
+      js/contrib/lightweight-youtube-player/lw-yt-player.css: { media: all }
+  js:
+    js/contrib/lightweight-youtube-player/lw-yt-player.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+aos:
+  version: 1.x
+  css:
+    theme:
+      js/contrib/aos/aos.css: { media: all }
+  js:
+    js/contrib/aos/aos.js: {}
+    js/custom/aos.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+paragraph-carousel:
+  version: 1.x
+  js:
+    js/custom/paragraphs/carousel.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - shopZ/slick-slider
+
+paragraph-content-carousel:
+  version: 1.x
+  js:
+    js/custom/paragraphs/content-carousel.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - shopZ/slick-slider
+
+paragraph-logo-carousel:
+  version: 1.x
+  js:
+    js/custom/paragraphs/logo-carousel.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - shopZ/slick-slider
+
+paragraph-featured-products:
+  version: 1.x
+  js:
+    js/custom/paragraphs/featured-products.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - shopZ/slick-slider
+
+cookie:
+  version: 1.x
+  js:
+    js/contrib/js.cookie.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+bootstrap:
+  version: 1.x
+  js:
+    js/contrib/bootstrap/transition.js: { weight: 0 }
+    js/contrib/bootstrap/alert.js: { weight: 0 }
+    js/contrib/bootstrap/carousel.js: { weight: 0 }
+    js/contrib/bootstrap/collapse.js: { weight: 0 }
+    js/contrib/bootstrap/dropdown.js: { weight: 0 }
+    js/contrib/bootstrap/modal.js: { weight: 0 }
+    js/contrib/bootstrap/tab.js: { weight: 0 }
+    js/contrib/bootstrap/affix.js: { weight: 0 }
+    js/contrib/bootstrap/scrollspy.js: { weight: 0 }
+    js/contrib/bootstrap/tooltip.js: { weight: -1 }
+    js/contrib/bootstrap/popover.js: { weight: 0 }
+  dependencies:
+    - core/jquery
+
+maintenance_page:
+  version: 1.x
+  css:
+    theme:
+      css/maintenance-page.css: { media: all }
+  dependencies:
+    - system/maintenance

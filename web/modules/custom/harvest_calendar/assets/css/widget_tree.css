@@ -1,0 +1,33 @@
+.harvest_calendar_tree--element .item--label {
+  display: block;
+  position: relative;
+}
+
+.harvest_calendar_tree--element.processed .item--label {
+  cursor: pointer;
+  padding-left: 25px;
+}
+
+.harvest_calendar_tree--element.processed .item--label:before {
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sDDg0LJbN61XAAAAGGSURBVDjLlZNNbhRBDIU/V7mnphWyZMtBuMFscgMkECDyJ87QhwiDIoKCQFwAhGDDAgnlIGxZZTZ0p1xVLHqm6UkGMnjlqrJdz35+AmjTNB9U/awUtjIRMEufm6bZU6D23s/2D474H3s5fzEDagWmOWcAXp2do+oB+UtawSzx9MkjljlTXUW3bUsIE1QVkb7A8eEzAE7mp316KXhvtG07dKMrr+siVVXh/QrBn4GM70SErovDm/ZDEbrYIc6RUiKXMs4nRgMBJ4I418cuUQ4IYneFiHC0hD2258f7gz8/PSN2V8PZrRwzo9Lq1ulXWmFm11oAohkhBM7fvqfkTAEeP3wAwOs37xBAnCOEQDQbeOpbEEgpE8Jk4693dnbWzinlgelhBjklJpPNBa7f55TWWwDBcsKrrq3Qx09f+iDV0SqB5TQsm0JPjxNPXddr9G0WAjjxuBGN5XKxuPj+7ev9vKWanAiXi8UFUATYBe4BdwG/pZYS8BP4IUsUNTD9h4puqgpa4NdvXt6KJRvtupUAAAAASUVORK5CYII=');
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.harvest_calendar_tree--element.processed .item--label.opened:before {
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sDDg0LFgyqtGYAAAFVSURBVDjLlZM9TsRADIU/zzg7m4KSloNwg224AxKIv0vkEoAQSCshcQEaKgokxEFoqdiGhHhmKHYT/gIEVx6PbT2/ZwugVVVdq/pZzowyETCLN1VVbSlQeu9n+wdH/MdOT45nQKnANKUEwPnFHFUPyA9lGbPI7s42q5qpdtl1XRPCBFVFZLhBzhnvjbqu+2m085qmpSgKvO8QfCVkGRMRmqbto7okRWjaBnGOGCMp58F6J4I4t8xdoewRtM0rIsLR4d6v5J2cXdA2r/3bdY6ZUWjxJ/uFFpjZlxGA1owQAvPLK3JKgwyIc4QQaM16nbT7jTERwmTUDsSYeqV7DlKMTCbjGqQYP48AgqWIV/1xhd5XCSzFftkUlvI48ZRl+V0+huT0uA8y5ufF4uH+7nYzjbwmJ8LzYvEAZAHWgA1gHfAjbykCT8CjrFCUwPSXKxqiogZe3gB49H2IPffjFwAAAABJRU5ErkJggg==');
+}
+
+.harvest_calendar_tree--element.processed .item--block {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.harvest_calendar_tree--element.processed .item--block--collapsible {
+  margin-left: 26px;
+}
+
+.harvest_calendar_tree--element.processed .item--block li {
+  list-style: none;
+}

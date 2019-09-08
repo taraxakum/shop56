@@ -1,0 +1,56 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a table formatter of Harvest Calendar.
+ *
+ * Available variables:
+ * - months: List of all months.
+ * - decades: List of all decade ceils.
+ * - calendars: Harvest Calendar fields.
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('harvest_calendar/drupal.harvest_calendar.formatter_table') }}
+<div class="harvest-calendar--table--formatter">
+  <table class="harvest-calendar--table">
+    <thead>
+    <tr>
+      {% for month in months %}
+        <th
+          class="head--item"
+          colspan="3"
+        >{{ month }}</th>
+      {% endfor %}
+    </tr>
+    </thead>
+
+    <tbody align="right">
+
+    {% for calendar in calendars %}
+      <tr class="row">
+        {% for decade in calendar.decades %}
+          {{ decade.getCeil }}
+        {% endfor %}
+      </tr>
+    {% endfor %}
+    </tbody>
+
+  </table>
+
+  <div class="caption--wrapper">
+    {% for calendar in calendars %}
+      <span class="caption--item">
+        <span
+          class="caption--color"
+          style="background-color: {{ calendar.color }};"
+          data-color="{{ calendar.color }}"
+        ></span>
+        <span
+          class="caption--value"
+          data-color="{{ calendar.color }}"
+        >{{ calendar.name }}</span>
+      </span>
+    {% endfor %}
+  </div>
+</div>

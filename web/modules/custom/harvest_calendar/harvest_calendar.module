@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Contains harvest_calendar.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function harvest_calendar_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the harvest_calendar module.
+    case 'help.page.harvest_calendar':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides a field-type to manage harvest calendars') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function harvest_calendar_theme() {
+  return [
+    // ToDo: Implement.
+    'harvest_calendar' => [
+      'render element' => 'children',
+    ],
+    'harvest_calendar_table' => [
+      'variables' => [
+        'months' => [],
+        'decades' => [],
+        'calendars' => [],
+      ],
+    ],
+    'harvest_calendar_table_ceil' => [
+      'variables' => [
+        'background_color' => NULL,
+        'color' => NULL,
+        'title' => NULL,
+        'content' => NULL,
+      ],
+    ],
+    'harvest_calendar_element_tree' => [
+      'render element' => 'element',
+      'template' => 'harvest-calendar-element-tree',
+    ],
+  ];
+}

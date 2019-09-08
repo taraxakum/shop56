@@ -1,0 +1,21 @@
+field.field_settings.harvest_calendar:
+    type: mapping
+    label: 'Harvest calendar settings'
+    mapping:
+        color:
+            type: string
+            label: 'Color'
+
+field.field_settings.harvest_calendar_container:
+    type: mapping
+    label: 'Harvest calendar container settings'
+    mapping:
+        fields:
+            type: mapping
+            label: 'Fields'
+            mapping:
+                type: mapping
+                label: 'Field ID'
+        block:
+            type: string
+            label: 'Block'

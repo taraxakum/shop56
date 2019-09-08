@@ -1,0 +1,310 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if view_mode == 'teaser' %}
+
+  {%
+    set classesTeaser = [
+      'product',
+      'product--teaser',
+      'product--teaser--' ~ product_entity.title.value|clean_class
+    ]
+  %}
+
+  {# Product teaser. #}
+  <a href="{{ product_url }}" {{ attributes.addClass(classesTeaser) }} aria-label="product_entity.title.value">
+    {% if product.field_add_on_products['#items'] %}
+      <div class="add-on-item__teaser-flag">
+        {{ 'Bundle<br>Available!'|t }}
+      </div>
+    {% endif %}
+
+    <div class="product__thumbnail">
+      {% if product.field_catalog_image|render|trim is not empty %}
+        {{ product.field_catalog_image }}
+      {% else %}
+        <img src="{{ base_path ~ directory }}/gfx/logo-icon.svg" class="no-product-thumbnail" alt="{{ product_entity.title.value }}" />
+      {% endif %}
+    </div>
+
+    {% if product.variation_field_original_price[0]['#markup'] %}
+      {{ product.variation_field_original_price }}
+    {% endif %}
+    {{ product.variation_list_price }}
+    {{ product.variation_price }}
+    {{ product.title }}
+    {{ product.field_brand }}
+	    {{ product.field_sk_nov }}
+{{ product.field_ves_ob_kol }}
+{{ product.field_ed_izm }}
+  </a>
+{% else %}
+
+  {%
+    set classesFull = [
+      'product',
+      'product--full',
+      'product--full--' ~ product_entity.title.value|clean_class
+    ]
+  %}
+
+  {# Product full page. #}
+  <article{{ attributes.addClass(classesFull) }}>
+    <div class="row">
+      <div class="col-xs-12 back-and-share">
+        {# Back button. #}
+        <a href="/products" class="back-to-products">{{ 'Back to Products'|t }}</a>
+
+        {# Share. #}
+        <div class="sharethis-inline-share-buttons"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      {% if product_variation_images %}
+        {# Product images. #}
+        {{ attach_library('magnific_popup/magnific_popup') }}
+
+        {# Set product slider class. #}
+        {% if product_variation_images|length <= 1 or product_entity.bundle == 'mason_jar' %}
+          {% set product_slider_class = 'product-slider product-slider--no-thumbnails' %}
+        {% else %}
+          {% set product_slider_class = 'product-slider' %}
+        {% endif %}
+
+        <div class="col-sm-12 col-md-6">
+          {# Main product image - with slider. #}
+          <div class="{{ product_slider_class }}">
+            <div class="product-slider__main-slider">
+              {% for product_variation in product_variation_images %}
+                {% for product_variation_image in product_variation.images %}
+                  {# Set product thumbnail. #}
+                  {%
+                    set product_slider_image_thumbnail = {
+                    '#theme':      'image_style',
+                    '#style_name': 'product_large',
+                    '#uri':        product_variation_image.entity.uri.value,
+                    '#alt':        product_variation_image.alt,
+                  }
+                  %}
+                  <div>
+                    <div class="product-slider__main-slider__item">
+                      <a href="{{ file_url(product_variation_image.entity.uri.value) }}" class="magnific-popup-gallery">
+                        <span>{{ product_slider_image_thumbnail }}</span>
+                      </a>
+                    </div>
+                  </div>
+                {% endfor %}
+              {% endfor %}
+            </div>
+
+            {# Image thumbnails. #}
+            <div class="product-slider__nav-slider">
+              {% for product_variation in product_variation_images %}
+                {% if product_variation.variation_id %}
+                  {% set product_variation_id = product_variation.variation_id %}
+                {% else %}
+                  {% set product_variation_id = '' %}
+                {% endif %}
+
+                {% for product_variation_image in product_variation.images %}
+                  {# Set product thumbnail. #}
+                  {%
+                    set product_slider_image_thumbnail = {
+                    '#theme':      'image_style',
+                    '#style_name': 'product_thumb',
+                    '#uri':        product_variation_image.entity.uri.value,
+                    '#alt':        product_variation_image.alt,
+                  }
+                  %}
+                  <div>
+                    <a class="product-slider__nav-slider__item" data-product-variation-id="{{ product_variation_id }}">
+                      <span>{{ product_slider_image_thumbnail }}</span>
+                    </a>
+                  </div>
+                {% endfor %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {# Product intro (w/ product images). #}
+        <div class="col-sm-12 col-md-6">
+          <div class="product__intro">
+      {% else %}
+        {# Product intro (w/o product images). #}
+        <div class="col-sm-12">
+          <div class="product__intro product__intro--full-width">
+      {% endif %}
+
+
+{{ product.variations }}
+            {{ product.field_brand }}
+           
+            <h1 class="page-title">{{ product_entity.title.value }}</h1>
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Test Application{% endblock %}</title>
+    </head>
+    <body>
+        <div id="sidebar5">
+            {% block sidebar %}
+                <ul>
+                    <li><a href="/">Home5</a></li>
+                    <li><a href="/blog">Blog5</a></li>
+                </ul>
+            {% endblock %}
+        </div>
+
+        <div id="content5">
+            
+        </div>
+    </body>
+</html>
+
+            {{ product.field_short_description }}
+
+<div class="oni_xy">	
+<div class="oni_ves">{{ product.field_ves_ob_kol|field_label }}  {{ product.field_ves_ob_kol|field_value }}  {{ product.field_ed_izm|field_value}}</div>		
+            {{ product.variation_list_price }}
+            {{ product.variation_price }}
+		
+
+
+ 
+        
+
+</div>
+
+<div class="oni_xz"><div class="oni_x">{{ product.field_str_s|field_label  }}  {{ product.field_str_s|field_value }} </div>
+<div class="oni_x">{{ product.field_f_pl|field_label }}  {{ product.field_f_pl|field_value }} </div>
+<div class="oni_x">{{ product.field_cv_pl|field_label  }}  {{ product.field_cv_pl|field_value }} </div>
+<div class="oni_x"> {{ product.field_f1|field_value }} </div>
+<div class="oni_x">{{ product.field_seriya|field_label  }}  {{ product.field_seriya|field_value }}</div>
+<div class="oni_x">{{ product.field_sk_nov|field_label  }}  {{ product.field_sk_nov|field_value }} </div> 
+<div class="oni_x">{{ product.field_gar|field_label  }}  {{ product.field_gar|field_value }}</div> </div>
+				 
+ 
+
+
+
+
+          </div>
+      </div>{{ product.field_harvest_calendar_container }}{{ product.field_sk_nov }} 
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-sm-12">
+        {# Additional details. #}
+        <div class="additional-details">
+          {# Tabs. #}
+          <ul id="product-tabs" class="nav nav-tabs" role="tablist">
+            {% if product.body|render|trim is not empty or product.field_album_samples|render|trim is not empty %}
+              <li role="presentation">
+                <a href="#description" aria-controls="description" role="tab" data-toggle="tab">
+                  {{ 'Description'|t }}
+                </a>
+              </li>
+            {% endif %}
+
+            {% if product.field_specifications|render|trim is not empty %}
+              <li role="presentation">
+                <a href="#specifications" aria-controls="specifications" role="tab" data-toggle="tab">
+                  {{ 'Specifications'|t }}
+                </a>
+              </li>
+            {% endif %}
+
+            <li role="presentation">
+              <a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">
+                {{ 'Reviews'|t }} <span class="badge">{{ product_reviews_count }}</span>
+              </a>
+            </li>
+          </ul>
+
+          {# Tab content. #}
+          <div class="tab-content">
+            {% if product.body|render|trim is not empty %}
+              <div role="tabpanel" class="tab-pane fade" id="description">
+                {{ product.body }}
+
+               
+               
+              </div>
+            {% endif %}
+
+            {% if product.field_specifications|render|trim is not empty %}
+              <div role="tabpanel" class="tab-pane fade" id="specifications">
+                {{ product.field_specifications }}
+				
+				<div class="oni_x">{{ product.field_str_s|field_label  }}  {{ product.field_str_s|field_value }} </div>
+<div class="oni_x">{{ product.field_f_pl|field_label }}  {{ product.field_f_pl|field_value }} </div>
+<div class="oni_x">{{ product.field_cv_pl|field_label  }}  {{ product.field_cv_pl|field_value }} </div>
+
+<div class="oni_x"> {{ product.field_f1|field_value }} </div>
+<div class="oni_x">{{ product.field_seriya|field_label  }}  {{ product.field_seriya|field_value }}</div>
+<div class="oni_x">{{ product.field_sk_nov|field_label  }}  {{ product.field_sk_nov|field_value }} </div>
+				
+				
+				
+              </div>
+            {% endif %}
+
+            <div role="tabpanel" class="tab-pane fade" id="reviews">
+              <input type="checkbox" id="submit-review">
+              <label class="btn btn-primary btn-sm" for="submit-review">{{ 'Submit a Review'|t }}</label>
+              <div class="review-rating">
+                <p>{{ 'Overall Rating'|t }}</p>
+                <span class="{{ rating_average >= 1 ? 'filled' : ''}}"></span>
+                <span class="half {{ rating_average >= 1.5 ? 'filled' : ''}}"></span>
+                <span class="{{ rating_average >= 2 ? 'filled' : ''}}"></span>
+                <span class="half {{ rating_average >= 2.5 ? 'filled' : ''}}"></span>
+                <span class="{{ rating_average >= 3 ? 'filled' : ''}}"></span>
+                <span class="half {{ rating_average >= 3.5 ? 'filled' : ''}}"></span>
+                <span class="{{ rating_average >= 4 ? 'filled' : ''}}"></span>
+                <span class="half {{ rating_average >= 4.5 ? 'filled' : ''}}"></span>
+                <span class="{{ rating_average == 5 ? 'filled' : ''}}"></span>
+              </div>
+              {{ product.field_product_reviews }}
+            </div>
+          </div>
+        </div>
+        {# / Additional details. #}
+      </div>
+    </div>
+
+    {# Recommended products. #}
+    {% if product.field_recommended_products|render|trim is not empty %}
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="recommended-products">
+            {{ product.field_recommended_products }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </article>
+
+{% endif %}

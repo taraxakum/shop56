@@ -1,0 +1,24 @@
+{
+  "name": "acromediainc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "gulp sass"
+  },
+  "author": "Acro Media Inc.",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "postcss-easysprites": "^0.1.9"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.15"
+  }
+}

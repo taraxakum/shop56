@@ -1,0 +1,74 @@
+{#
+/**
+* @file
+*
+* Custom UH+ Recurring Digital add to cart form.
+*
+* @see commerce_2_demo_form_alter() and uh_commerce custom module.
+*
+* @ingroup themeable
+*/
+#}
+
+{% set variation = form['#variation'] %}
+
+{% set highlight_class = "" %}
+{% if variation.field_boolean.value %}
+  {% set highlight_class = " uh-plan--highlight" %}
+{% endif %}
+
+{% set strikethrough_class = "" %}
+{% if variation.field_price_strikethrough.value %}
+  {% set strikethrough_class = " uh-plan--price-strikethrough" %}
+{% endif %}
+
+<div class="plan-selection uh-plan{{ highlight_class }}{{ strikethrough_class }}">
+  {% if variation.field_title.value %}
+    <div class="uh-plan__title">
+      {{ variation.field_title.value }}
+    </div>
+  {% endif %}
+
+  <div class="uh-plan__body-wrapper">
+    {% if variation.field_formatted_text.value %}
+      <div class="uh-plan__body">
+        {{ variation.field_formatted_text.value|raw }}
+      </div>
+    {% endif %}
+
+    <div class="uh-plan__price-wrapper">
+      {% if variation.getListPrice %}
+        <div class="uh-plan__list-price">
+          <div class="field__label">{{ 'List price:'|t }}</div>
+          <div class="field__item">{{ variation.getListPrice|commerce_price_format }}</div>
+        </div>
+      {% endif %}
+
+      <div class="uh-plan__price">
+        {{ variation.getPrice|commerce_price_format}}
+      </div>
+
+      {% if variation.field_billing_schedule_abbr.value %}
+        <div class="uh-plan__billing-schedule-abbr">
+          {{ '/ ' ~ variation.field_billing_schedule_abbr.value }}
+        </div>
+      {% endif %}
+
+      {% if variation.field_disclaimer_label.value %}
+        <div class="uh-plan__disclaimer-label">
+          {{ variation.field_disclaimer_label.value }}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="uh-plan__action">
+      {{ form }}
+    </div>
+
+    {% if variation.field_disclaimer.value %}
+      <div class="uh-plan__disclaimer">
+        {{ variation.field_disclaimer.value|raw }}
+      </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,40 @@
+.harvest-calendar--table--formatter {
+  min-width: 100%;
+  margin: 15px 0;
+}
+
+table.harvest-calendar--table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.harvest-calendar--table tr.row {
+  padding: 0 !important;
+}
+
+table.harvest-calendar--table .head--item {
+  text-align: center;
+  text-transform: lowercase;
+}
+
+table.harvest-calendar--table td.item {
+  height: 1.2rem;
+  padding: 0 !important;
+}
+
+.harvest-calendar--table--formatter .caption--wrapper {
+  text-align: center;
+  position: relative;
+}
+
+.harvest-calendar--table--formatter .caption--item {
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.harvest-calendar--table--formatter .caption--wrapper .caption--color {
+  width: 1.1em;
+  height: 1.1em;
+  display: inline-block;
+  vertical-align: middle;
+}

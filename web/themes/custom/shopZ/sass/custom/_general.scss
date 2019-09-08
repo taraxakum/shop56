@@ -1,0 +1,404 @@
+/**
+ * General.
+ */
+html,
+body {
+  color: $c-body;
+  background: $c-site-bg;
+  font-family: $f-body;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  min-width: $screen-min;
+  background: #fff;
+
+  &.cke_editable {
+    padding: 20px;
+    background: #fff;
+  }
+}
+
+// Ancient Chinese secret.
+.row-eq-height {
+  display: flex;
+}
+
+.site-content .row-sidebar.row-eq-height {
+  @media (max-width: $screen-xs-max) {
+    display: block;
+  }
+}
+
+/**
+ * Typography.
+ */
+h1 {
+  position: relative;
+  margin-top: 30px;
+  font-family: $f-primary;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #333;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 40px;
+  }
+}
+h2 {
+  position: relative;
+  margin-top: 30px;
+  font-family: $f-primary;
+  font-size: 28px;
+  font-weight: 700;
+  color: $c-primary;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 24px;
+  }
+}
+h3 {
+  position: relative;
+  margin-top: 30px;
+  font-family: $f-primary;
+  font-size: 26px;
+  font-weight: 300;
+  color: $c-primary;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 24px;
+  }
+}
+h4 {
+  position: relative;
+  margin-top: 25px;
+  font-family: $f-primary;
+  font-size: 16px;
+  font-weight: 600;
+  color: $c-primary;
+  text-transform: uppercase;
+}
+h5 {
+  position: relative;
+  margin-top: 25px;
+  font-family: $f-primary;
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+}
+h6 {
+  position: relative;
+  margin-top: 25px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  color: #999;
+}
+
+/**
+ * Content.
+ */
+p {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+blockquote {
+  padding: 0 20px;
+  border-left: 14px solid $c-accent-1;
+  font-family: $f-primary;
+  font-style: italic;
+}
+
+// Border-radius styles.
+.btn,
+.form-control,
+.pager li > a,
+.pager li > span,
+.card,
+.modal-content {
+  border-radius: $border-radius;
+}
+.card .card__image img,
+.nav-tabs > li > a {
+  @include border-top-radius($border-radius);
+}
+
+/**
+ * Images.
+ */
+img {
+  // CKEditor alignment styles.
+  &.align-left {
+    display: block;
+    float: none;
+    margin: 0 0 20px 0;
+
+    @media (min-width: $screen-xs-min) {
+      float: left;
+      margin: 0 30px 20px 0;
+    }
+  }
+  &.align-right {
+    display: block;
+    float: none;
+    margin: 0 0 20px 0;
+
+    @media (min-width: $screen-xs-min) {
+      float: right;
+      margin: 0 0 20px 30px;
+    }
+  }
+  &.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/**
+ * Links.
+ */
+a {
+  color: $c-link;
+  text-decoration: none;
+  transition: color .1s ease-in-out, background-color .1s ease-in-out, border-color .1s ease-in-out, opacity .1s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $c-link-hover;
+    text-decoration: none;
+  }
+}
+
+/**
+ * Buttons
+ */
+.btn {
+  padding: 6px 20px;
+  font-family: $f-primary;
+  font-size: 16px;
+  transition: color .1s ease-in-out, background-color .1s ease-in-out, border-color .1s ease-in-out, opacity .1s ease-in-out;
+}
+
+// Primary button.
+.btn-primary {
+  background-color: $c-primary;
+  border-color: $c-primary;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.btn-primary:active.focus,
+.btn-primary.active:hover,
+.btn-primary.active:focus,
+.btn-primary.active.focus,
+.open > .btn-primary.dropdown-toggle:hover,
+.open > .btn-primary.dropdown-toggle:focus,
+.open > .btn-primary.dropdown-toggle.focus {
+  background-color: darken($c-primary, 10%);
+  border-color: darken($c-primary, 10%);
+}
+
+// Default button.
+.btn-default {
+  border-color: $gray-light;
+}
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:active:hover,
+.btn-default:active:focus,
+.btn-default:active.focus,
+.btn-default.active:hover,
+.btn-default.active:focus,
+.btn-default.active.focus,
+.open > .btn-default.dropdown-toggle:hover,
+.open > .btn-default.dropdown-toggle:focus,
+.open > .btn-default.dropdown-toggle.focus {
+  background-color: $gray-lighter;
+  border-color: $gray;
+  color: $c-primary;
+}
+
+// Secondary button.
+.btn-secondary {
+  height: 42px;
+  padding: 8px 20px;
+  border:1px solid #fff;
+  border-radius: 0;
+  background: #000;
+  background: rgba(#000, 0.4);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+
+  @media (max-width: $screen-sm-max) {
+    height: 40px;
+    padding: 6px 20px;
+    font-size: 16px;
+  }
+}
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:active:hover,
+.btn-secondary:active:focus,
+.btn-secondary:active.focus,
+.btn-secondary.active:hover,
+.btn-secondary.active:focus,
+.btn-secondary.active.focus,
+.open > .btn-secondary.dropdown-toggle:hover,
+.open > .btn-secondary.dropdown-toggle:focus,
+.open > .btn-secondary.dropdown-toggle.focus {
+  background: rgba(#000, 0.9);
+  color: #fff;
+}
+
+// Link button.
+.btn-link {
+  color: $c-link;
+
+  &:hover,
+  &:focus {
+    color: $c-link-hover;
+  }
+}
+
+// Large button.
+.btn-lg,
+.btn-group-lg > .btn {
+  font-size: 24px;
+}
+
+// Button disabled.
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  background-color: $gray;
+  border-color: $gray;
+  pointer-events: none;
+}
+
+/**
+ * Tabs.
+ */
+.nav-tabs {
+  border-bottom: 1px solid #ccc;
+
+  & > li {
+    margin-bottom: -1px;
+    margin-right: 8px;
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    & > a {
+      padding: 9px 32px 7px;
+      border: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+
+      .field--type-string {
+        display: inline-block;
+      }
+
+      &:hover, &:focus {
+        border: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background-color: $gray-light !important;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+        padding: 9px 20px 7px;
+        background-color: $gray-light;
+      }
+    }
+
+    &.active {
+      > a {
+        position: relative;
+        border: 1px solid #ccc;
+        border-bottom: 1px solid #fff;
+        color: $c-primary;
+
+        &:hover, &:focus {
+          border: 1px solid #ccc;
+          border-bottom: 1px solid #fff;
+          color: $c-primary;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          border-bottom: 1px solid #ccc;
+          background-color: #fff;
+
+          &:before {
+            position: relative;
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 12px;
+            font-family: FontAwesome;
+            content: '\f054';
+            color: #ccc;
+          }
+
+          &:hover, &:focus, &:active {
+            border-bottom: 1px solid #ccc;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-content {
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-top: none;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 20px;
+  }
+
+  // Removes top margin if heading is the first element in content.
+  .field--name-body {
+    &>h1:first-child,
+    &>h2:first-child,
+    &>h3:first-child,
+    &>h4:first-child,
+    &>h5:first-child,
+    &>h6:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+/**
+* Site Structure.
+*/
+.site-wrapper {
+  position: relative;
+  clear: both;
+}
+
+/**
+ * Page header image.
+ */
+.page-header-image {
+  margin: 0 0 20px 0;
+  padding: 0;
+}

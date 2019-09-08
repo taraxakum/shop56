@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Default product add-on add to cart form template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - form: The form render array
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# Include UH PADO library. #}
+{{ attach_library('commerce_2_demo/uh-pado') }}
+
+{{ form|without('add_ons', 'actions') }}
+
+{% if form.add_ons.items %}
+  <div class="add-ons-wrapper">
+    <label class="add-ons__title"><i class="fa fa-star"></i> {{ 'Bundle It!'|t }}</label>
+    <div class="add-ons__header">{{ 'Complete your order by adding any of these related products.'|t }}</div>
+    {{ form.add_ons }}
+  </div>
+{% endif %}
+
+{{ form.actions }}

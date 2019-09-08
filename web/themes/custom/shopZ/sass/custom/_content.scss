@@ -1,0 +1,668 @@
+/**
+ * Content styles.
+ */
+
+// Make all divs relative. This is for Feature Beacon placement.
+// If you see any element in any stylesheet selected like div.element, it was done to override this setting.
+// Example: div.component-cta__link (in cta.scss).
+.site-content,
+.site-header,
+.site-footer {
+  div {
+    position: relative;
+
+    // Except for the following.
+    &.contextual {
+      position: absolute;
+    }
+  }
+}
+
+.site-content {
+  padding: 20px 0;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    padding: 20px 0 50px;
+  }
+  .page-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .region-above-content {
+    margin-bottom: 15px;
+  }
+
+  .region-below-content {
+    margin-top: 15px;
+  }
+
+  #block-commerce-2-demo-mainpagecontent {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+// Pages with sidebar recommended products.
+.site-content .content__main-content--with-sidebar {
+  .region-below-content {
+    padding-top: 20px;
+    border-top: 5px solid $gray;
+  }
+}
+
+// Hide page title block on pages.
+.page-node-type-page .block-page-title-block {
+  display: none;
+}
+
+/**
+ * Sidebar.
+ */
+.site-sidebar {
+  height: 100%;
+  padding: 18px 10px 18px 15px;
+
+  &.site-sidebar--products {
+    background-color: $gray-light;
+  }
+
+  &.site-sidebar--contact {
+    padding-top: 115px;
+
+    @media (max-width: $screen-sm-max) {
+      padding-top: 0;
+    }
+  }
+
+  .block-menu {
+    margin-top: 10px;
+  }
+
+  .menu {
+    margin: 0;
+    border-top: 1px solid $gray;
+  }
+  .menu__item {
+    display: block;
+  }
+  .menu__link {
+    padding: 10px 15px;
+    border-bottom: 1px solid $gray;
+    font-weight: normal;
+    color: $gray-darker;
+
+    &:before {
+      @include fa-icon();
+      content: $fa-var-angle-right;
+      position: absolute;
+      top: 12px;
+      left: 0;
+      color: $c-primary;
+    }
+
+    &.is-active {
+      color: $c-primary;
+    }
+
+    &:hover, &:focus {
+      color: $c-primary-hover;
+    }
+  }
+
+  // Sub items - 2nd level.
+  .menu--level-1 .menu__link {
+    position: relative;
+    padding-left: 30px;
+    font-size: 15px;
+
+    // Sub item icon.
+    &:before {
+      top: 14px;
+      left: 15px;
+    }
+  }
+
+  // Sub items - 3rd level.
+  .menu--level-2 .menu__link {
+    padding-left: 40px;
+
+    // Sub item icon.
+    &:before {
+      left: 25px;
+    }
+  }
+
+  // Right sidebar.
+  &.site-sidebar--blog {
+    padding-top: 60px;
+    border-left: 1px solid $gray;
+    background-color: transparent;
+
+    .block h2 {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+  }
+}
+
+// Product page sidebar.
+.path-products .site-sidebar {
+  padding: 8px 0;
+}
+
+// Mobile sidebar.
+.site-sidebar--mobile {
+  padding: 15px 0 !important;
+  border-bottom: 1px solid #dedede;
+
+  #mobile-sidebar__toggle-open {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+
+    a {
+      width: calc(100% - 30px);
+      border-color: #ccc;
+    }
+  }
+
+  #mobile-sidebar__product-filters {
+    display: none;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: #efefef;
+
+    .block-facets {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+
+  #mobile-sidebar__toggle-close {
+    text-align: center;
+
+    a {
+      width: 100%;
+      border-color: #ccc;
+    }
+  }
+}
+
+/**
+ * Forms.
+ */
+.label {
+  color: $c-body;
+}
+.form-group {
+  margin-bottom: 25px;
+}
+.form-control,
+.form-textarea-wrapper textarea {
+  max-width: 350px;
+  width: 100%;
+}
+.radio,
+.checkbox {
+  margin-top: 0;
+}
+.help-block {
+  font-size: 80%;
+  font-style: italic;
+  color: #9C9C9C;
+}
+// Required fields.
+.form-required {
+  color: $c-primary;
+}
+// Optional fields.
+.form-optional {
+  font-weight: normal;
+  font-size: 90%;
+  color: #B3B3B3;
+}
+textarea,
+textarea.resize-vertical {
+  // Remove browser resizer in bottom right.
+  resize: none;
+}
+.select-wrapper {
+  margin-bottom: -4px;
+}
+// Password strength.
+.password-strength {
+  margin-bottom: 1em;
+}
+
+/**
+ * Search.
+ */
+
+// Hide default Drupal title on searches.
+.path-search .page-title {
+  display: none;
+}
+input.form-search {
+  margin: 0;
+  // Right padding is for search submit icon.
+  padding: 6px 36px 6px 12px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 14px;
+}
+.form-search-submit-trigger {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  // Hide by default. Make visible with more specific styles.
+  display: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  z-index: 1;
+
+  &:hover {
+    text-decoration: none;
+  }
+  &:before {
+    display: block;
+    content: "\e003";
+    font-family: $f-glyphicons;
+    font-size: 19px;
+    color: $gray-base;
+    transition: color .2s ease-in-out;
+  }
+  &:focus:before,
+  &:hover:before {
+    color: $gray;
+  }
+}
+.block-search {
+  position: relative;
+
+  .form-search-submit-trigger {
+    display: block;
+  }
+  .form-submit {
+    display: none;
+  }
+  .form-item,
+  .form-actions {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+}
+.search-page-form {
+
+  .form-wrapper {
+    position: relative;
+    max-width: 300px;
+
+    .form-search-submit-trigger {
+      top: auto;
+      bottom: 3px;
+      display: block;
+    }
+    .form-submit {
+      display: none;
+    }
+    .form-item,
+    .form-actions {
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+/**
+ * Accordion.
+ */
+.base-accordion {
+  .active .base-accordion__header {
+    color: $c-secondary;
+
+    &::before {
+      color: $gray-light;
+    }
+  }
+  .base-accordion__header {
+    position: relative;
+    padding-left: 15px;
+    font-family: $f-primary;
+    transition: all .2s ease-in-out;
+
+    &::before {
+      content: "\f105";
+      font-family: FontAwesome;
+      color: $gray;
+      position: absolute;
+      left: 0;
+      transition: all .2s ease-in-out;
+    }
+    &:hover::before {
+      color: $gray-darker;
+    }
+  }
+  .base-accordion__content {
+    background-color: #f7f5f5;
+  }
+}
+
+/**
+ * Cards.
+ */
+.card {
+  display: block;
+  color: $c-body;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #cccc;
+  background: #f7f5f5;
+  box-shadow: 0 4px 0 0 #ededed;
+  transition: all .1s ease-in-out;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+  }
+  .btn {
+    margin: 0 0 20px 0;
+  }
+}
+.card__image {
+  overflow: hidden;
+}
+.card__text-wrapper {
+  // 1px padding-bottom to fix spacing issues across browsers.
+  padding: 20px 20px 1px 20px;
+
+  p {
+    line-height: 1.5;
+  }
+}
+a.card:hover {
+  text-decoration: none;
+  box-shadow: 0 4px 4px 4px #ededed;
+
+  .card__text-wrapper p {
+    color: $c-body;
+  }
+}
+
+/**
+ * Image Gallery.
+ */
+.image-gallery-nav {
+  ul.flex-direction-nav {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .flex-nav-prev,
+    .flex-nav-next {
+      position: absolute;
+      font-family: FontAwesome;
+      font-size: 24px;
+      transform: translateY(-50%);
+    }
+    .flex-nav-next {
+      right: 0;
+    }
+  }
+  .image-gallery-nav__thumb {
+    height: auto;
+    transition: all .2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      opacity: 0.85;
+    }
+  }
+}
+
+/**
+ * Tables.
+ */
+
+// Default styling.
+table {
+  width: 100%;
+
+  // Table head.
+  thead {
+    background-color: $gray-light;
+    border-bottom: 1px solid $gray;
+    font-size: 14px;
+
+    th {
+      padding: 5px;
+    }
+  }
+
+  // Table body.
+  tbody {
+    tr {
+      border-bottom: 1px solid $gray;
+
+      td {
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.table-responsive {
+  border: 0;
+}
+
+.table-bordered thead {
+  background: $c-secondary;
+  color: #fff;
+}
+
+// General page tables.
+.node__content {
+  table {
+    margin-bottom: 20px;
+    border: 1px solid $c-primary-hover;
+
+    // Table head.
+    thead {
+      background-color: $c-primary;
+      color: #fff;
+
+      th {
+        padding: 10px 15px;
+        border-right: 1px solid $c-primary-hover;
+
+        &:last-of-type {
+          border: none;
+        }
+      }
+    }
+
+    // Table body.
+    tbody {
+      tr {
+        border: 1px solid $gray;
+        border-top: none;
+
+        td {
+          padding: 10px 15px;
+          border-right: 1px solid $gray;
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Pagination.
+ */
+.pager {
+  margin: 30px 0 0;
+
+  ul {
+    margin-bottom: 0;
+
+    li > a:hover,
+    .pager li > a:focus {
+      background-color: $gray-lighter;
+    }
+
+    .pager__item.is-active {
+      a {
+        color: #fff;
+        background: $c-link;
+        border-color: $c-link-hover;
+
+        &:hover,
+        &:focus {
+          background: $c-link-hover;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Modals.
+ */
+.modal.fade .modal-dialog {
+  transform: scale(0.1);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.modal {
+  h1, h2, h3, h4 {
+    margin-top: 0;
+  }
+
+  .modal-title {
+    margin: 0;
+    line-height: 1.42857;
+  }
+}
+
+.modal.fade.in .modal-dialog {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-header {
+  .close {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.modal-credits {
+  float: left;
+  margin: 8px 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+// Video modal.
+#videoModal {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+
+  .modal-dialog {
+    @media(min-width: 768px) {
+      width: 50%;
+    }
+  }
+
+  .modal-content {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .modal-header {
+    min-height: 45px;
+    border: none;
+
+    .close {
+      color: #fff;
+      text-shadow: none;
+      opacity: 1;
+
+      &:hover, &:focus {
+        color: $c-primary;
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+
+    .embed-container {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .modal-footer {
+    border: none;
+
+    .btn-default {
+      background: transparent;
+      color: #fff;
+
+      &:hover, &:focus {
+        color: $c-primary;
+      }
+    }
+  }
+}
+
+// Help modal.
+.help-modal.fixed-button {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 5;
+  width: 45px;
+  padding: 10px 0;
+  border-radius: 5px 0 0 5px;
+  border-right: 5px solid $c-primary-hover;
+  text-align: center;
+
+  @media (max-width: 1065px) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.maintenance-page .help-modal.fixed-button,
+.path-pos-customer-display .help-modal.fixed-button,
+.path-commerce-pos .help-modal.fixed-button {
+  display: none;
+  visibility: hidden;
+}

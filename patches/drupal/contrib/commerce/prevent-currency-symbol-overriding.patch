@@ -1,0 +1,22 @@
+Index: modules/price/src/Repository/CurrencyRepository.php
+<+>UTF-8
+===================================================================
+--- modules/price/src/Repository/CurrencyRepository.php	(date 1542749144000)
++++ modules/price/src/Repository/CurrencyRepository.php	(date 1542895109000)
+@@ -46,6 +46,16 @@
+       throw new UnknownCurrencyException($currency_code);
+     }
+ 
++    // This small hack allows to use currency symbol code without overrides.
++    // The overriding happens cause schema "commerce_price.commerce_currency.*"
++    // uses the "label" type for the "symbol" parameter.
++    if ($currency->getCurrencyCode() == $currency->getSymbol()) {
++      $currencyCode = $currency->getCurrencyCode();
++      $config = \Drupal::config("commerce_price.commerce_currency.{$currencyCode}");
++      $symbol = $config->getOriginal('symbol', FALSE);
++      $currency->setSymbol($symbol);
++    }
++
+     return $this->createValueObjectFromEntity($currency);
+   }
+ 

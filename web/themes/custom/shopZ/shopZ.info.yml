@@ -1,0 +1,40 @@
+name: shopZ
+type: theme
+description: 'shopZ'
+package: Core
+version: '1.0.0'
+core: '8.x'
+base theme: orange_framework
+
+libraries:
+  - shopZ/global-styling
+
+libraries-override:
+  # Use this themes bootstrap instead of the base themes.
+  orange_framework/bootstrap: shopZ/bootstrap
+
+ckeditor_stylesheets:
+  - css/style.css
+
+regions:
+  header_promo: 'Header Top - Promo Message'
+  header_nav: 'Header Top - Navigation'
+  language_select: 'Header Top - Language Select'
+  header: 'Header Main - Left'
+  header_right: 'Header Main - Right'
+  site_search: 'Site Search'
+  primary_nav: 'Primary Navigation'
+  mobile_nav: 'Mobile Navigation'
+  highlighted: 'Highlighted'
+  above_content: 'Above Content'
+  content: 'Content'
+  below_content: 'Below Content'
+  page_sidebar: 'Page - Sidebar'
+  blog_sidebar: 'Blog - Sidebar'
+  special_nav: 'Special Navigation'
+  footer_top: 'Footer Top'
+  social_nav: 'Footer Top - Social Media Navigation'
+  footer: 'Footer Main'
+  footer_nav: 'Footer Bottom - Navigation'
+  feature_beacon: 'Feature Beacon'
+  access_gate: 'Access Gate'

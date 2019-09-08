@@ -1,0 +1,77 @@
+/**
+ * Variables.
+ */
+
+/**
+ * Colors.
+ */
+$c-site-bg: #efefef;
+
+$c-primary: #cc0000;
+$c-primary-hover: darken($c-primary, 10%);
+
+$c-secondary: #993333;
+$c-secondary-hover: darken($c-secondary, 10%);
+
+$c-tertiary: #000;
+$c-tertiary-hover: darken($c-tertiary, 10%);
+
+$c-accent-1: #ccc;
+$c-accent-2: #ccc;
+$c-accent-3: #ccc;
+
+$c-body: #333;
+
+$c-link: #cc0000;
+$c-link-hover: darken($c-link, 10%);
+
+$gray-border:            #ccc;
+$gray-base:              #ccc !default;
+$gray-darker:            #666;
+$gray-dark:              #333;
+$gray:                   #ccc;
+$gray-light:             #efefef;
+$gray-lighter:           #fff;
+
+/**
+ * Fonts.
+ */
+$f-primary: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$f-primary-condensed: 'Open Sans Condensed', 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$f-secondary: 'Roboto Slab', Times, 'Times New Roman', Georgia, serif;
+$f-secondary-alternate: 'Love Ya Like A Sister', cursive;
+$f-tertiary: 'Playfair Display', Times, 'Times New Roman', Georgia, serif;
+$f-body: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$f-fontawesome: FontAwesome;
+$f-glyphicons: 'Glyphicons Halflings';
+
+/**
+ * Site styles.
+ */
+$border-radius: 4px;
+
+/**
+ * Responsive helpers.
+ */
+$screen-min: 320px;
+
+// Extra small screen / phone.
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs !default;
+
+// Small screen / tablet.
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+
+// Medium screen / desktop.
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+
+// Large screen / wide desktop.
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+
+// So media queries don't overlap when required, provide a maximum.
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;

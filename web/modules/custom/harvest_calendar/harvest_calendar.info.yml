@@ -1,0 +1,8 @@
+name: 'Harvest calendar'
+type: module
+description: 'Provides a field-type to manage harvest calendars'
+core: 8.x
+package: 'Custom'
+
+'interface translation project': harvest_calendar
+'interface translation server pattern': 'modules/custom/harvest_calendar/translations/%language.po'

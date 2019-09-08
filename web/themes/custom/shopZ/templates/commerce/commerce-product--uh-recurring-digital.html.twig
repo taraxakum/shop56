@@ -1,0 +1,192 @@
+{#
+/**
+ * @file
+ *
+ * UH Axe product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if view_mode == 'teaser' %}
+
+  {%
+    set classesTeaser = [
+      'product',
+      'product--teaser',
+      'product--teaser--uh-recurring-digital'
+    ]
+  %}
+
+  {# Product teaser. #}
+  <a href="{{ product_url }}" {{ attributes.addClass(classesTeaser) }} aria-label="{{ product_entity.title.value }}">
+    <div class="product__thumbnail">
+      {% if product.field_catalog_image|render|trim is not empty %}
+        {{ product.field_catalog_image }}
+      {% else %}
+        <img src="{{ base_path ~ directory }}/gfx/logo-icon.svg" class="no-product-thumbnail" alt="{{ product_entity.title.value }}" />
+      {% endif %}
+    </div>
+
+    {% if product.variation_field_original_price[0]['#markup'] %}
+      <div class="price__starting-at">{{ 'Starting at'|t }}</div>
+      {{ product.variation_field_original_price }}
+    {% endif %}
+    <div class="price__starting-at">{{ 'Starting at'|t }}</div>
+    {{ product.variation_list_price }}
+    {{ product.variation_price }}
+    {{ product.title }}
+    {{ product.field_brand }}
+  </a>
+
+{% else %}
+
+  {%
+    set classesFull = [
+      'product',
+      'product--full',
+      'product--full--uh-recurring-digital'
+    ]
+  %}
+
+  {# Product full page. #}
+  <article{{ attributes.addClass(classesFull) }}>
+
+    {# Page title rendered here but then moved with jQuery. #}
+    <h1 class="page-title">{{ product_entity.title.value }}</h1>
+
+    {# Top paragraphs. #}
+    {% if product.field_paragraph|render|trim is not empty %}
+      <div class="product__content product__content--top">
+        {{ product.field_paragraph }}
+      </div>
+    {% endif %}
+
+    {# Product. #}
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          {{ product.variations }}
+        </div>
+      </div>
+    </div>
+
+    {# Features & Specs. #}
+    <div class="features-and-specs">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="features-and-specs__title">{{ 'Features & Specifications'|t }}</h2>
+
+            {# Tabs. #}
+            <ul id="product-tabs" class="nav nav-tabs" role="tablist">
+              {% if product.field_interface_preview|render|trim is not empty %}
+                <li role="presentation">
+                  <a href="#interface" aria-controls="interface" role="tab" data-toggle="tab">
+                    {{ 'Interface'|t }}
+                  </a>
+                </li>
+              {% endif %}
+
+              {% if product.field_specifications|render|trim is not empty %}
+                <li role="presentation">
+                  <a href="#specifications" aria-controls="specifications" role="tab" data-toggle="tab">
+                    {{ 'Specifications'|t }}
+                  </a>
+                </li>
+              {% endif %}
+
+              <li role="presentation">
+                <a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">
+                  {{ 'User Reviews'|t }} <span class="badge">{{ product_reviews_count }}</span>
+                </a>
+              </li>
+            </ul>
+
+            {# Tab content. #}
+            <div class="tab-content">
+              {# Interface. #}
+              {% if product.field_interface_preview|render|trim is not empty %}
+                <div role="tabpanel" class="tab-pane fade" id="interface">
+                  {# Introduction. #}
+                  {% if product.field_interface_introduction|render|trim is not empty %}
+                    <div class="interface__introduction">
+                      {{ product.field_interface_introduction }}
+                    </div>
+                  {% endif %}
+
+                  <div class="interface__preview">
+                    {# Link to gallery and load magnific popup if there are gallery images. #}
+                    {% if product.field_interface_images|render|trim is not empty %}
+                      {{ attach_library('magnific_popup/magnific_popup') }}
+                      <a href="#" class="interface__slideshow-link">
+                        <div class="interface__slideshow-prompt">
+                          {{ 'View Gallery'|t }}
+                        </div>
+                        {{ product.field_interface_preview }}
+                      </a>
+                    {% else %}
+                      {{ product.field_interface_preview }}
+                    {% endif %}
+                  </div>
+
+                  {# Slideshow gallery images. #}
+                  {% if product.field_interface_images|render|trim is not empty %}
+                    <div class="interface__slideshow">
+                      {{ product.field_interface_images }}
+                    </div>
+                  {% endif %}
+                </div>
+              {% endif %}
+
+              {# Specifications. #}
+              {% if product.field_specifications|render|trim is not empty %}
+                <div role="tabpanel" class="tab-pane fade" id="specifications">
+                  {{ product.field_specifications }}
+                </div>
+              {% endif %}
+
+              {# Reviews. #}
+              <div role="tabpanel" class="tab-pane fade" id="reviews">
+                <input type="checkbox" id="submit-review">
+                <label class="btn btn-primary btn-sm" for="submit-review">{{ 'Submit a Review'|t }}</label>
+                <div class="review-rating">
+                  <p>{{ 'Overall Rating'|t }}</p>
+                  <span class="{{ rating_average >= 1 ? 'filled' : ''}}"></span>
+                  <span class="half {{ rating_average >= 1.5 ? 'filled' : ''}}"></span>
+                  <span class="{{ rating_average >= 2 ? 'filled' : ''}}"></span>
+                  <span class="half {{ rating_average >= 2.5 ? 'filled' : ''}}"></span>
+                  <span class="{{ rating_average >= 3 ? 'filled' : ''}}"></span>
+                  <span class="half {{ rating_average >= 3.5 ? 'filled' : ''}}"></span>
+                  <span class="{{ rating_average >= 4 ? 'filled' : ''}}"></span>
+                  <span class="half {{ rating_average >= 4.5 ? 'filled' : ''}}"></span>
+                  <span class="{{ rating_average == 5 ? 'filled' : ''}}"></span>
+                </div>
+                {{ product.field_product_reviews }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {# Bottom paragraphs. #}
+    {% if product.field_paragraph_bottom|render|trim is not empty %}
+      <div class="product__content product__content--bottom">
+        {{ product.field_paragraph_bottom }}
+      </div>
+    {% endif %}
+  </article>
+
+{% endif %}

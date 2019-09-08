@@ -1,0 +1,20 @@
+drupal.harvest_calendar.widget_tree:
+    version: VERSION
+    css:
+        component:
+            assets/css/widget_tree.css: {}
+    js:
+        assets/js/widget_tree.js: {}
+    dependencies:
+        - core/jquery
+        - core/jquery.once
+
+drupal.harvest_calendar.formatter_table:
+    version: VERSION
+    css:
+        component:
+            assets/css/formatter_table.css: {}
+    js:
+        assets/js/formatter_table.js: {}
+    dependencies:
+        - core/jquery

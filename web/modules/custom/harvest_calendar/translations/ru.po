@@ -1,0 +1,247 @@
+# Russian translation of the Harvest calendar module
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-03-10 17:04+0200\n"
+"PO-Revision-Date: 2019-03-10 17:04+0200\n"
+"Last-Translator: Anton Karpov <awd.com.ua@gmail.com>\n"
+"Language-Team: LANGUAGE <awd.com.ua@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Harvest calendar"
+msgstr "Календарь урожая"
+
+msgid "Harvest calendar container"
+msgstr "Контейнер календаря урожая"
+
+msgid "Use fields"
+msgstr "Используемые поля"
+
+msgid "Choose which fields will show"
+msgstr "Отметьте поля которые будут использоваться"
+
+msgid "Block replacement"
+msgstr "Блок"
+
+msgid "Choose block to replace empty values"
+msgstr "Выбкрите блок, который будет выводится при пустых значениях полей"
+
+msgid "-- Select --"
+msgstr "-- Выбрать --"
+
+msgid "Display container"
+msgstr "Отображать контейнер календарей урожая"
+
+msgid "Tree of harvest calendar"
+msgstr "Календарь урожая - дерево"
+
+msgid "Harvest Calendar Table"
+msgstr "Таблица календарей урожая"
+
+msgid "Harvest Calendar Tree"
+msgstr "Дерево календаря урожая"
+
+msgid "Not available"
+msgstr "Не доступно"
+
+msgid "Harvest Calendar field"
+msgstr "Поле Календарь урожая"
+
+msgid "Adds item's of Harvest Calendar to index."
+msgstr "Добавляет значения Календаря урожая в индекс."
+
+msgid "Spring"
+msgstr "Весна"
+
+msgid "Summer"
+msgstr "Лето"
+
+msgid "Autumn"
+msgstr "Осень"
+
+msgid "Winter"
+msgstr "Зима"
+
+msgid "January"
+msgstr "Январь"
+
+msgid "February"
+msgstr "Февраль"
+
+msgid "March"
+msgstr "Март"
+
+msgid "April"
+msgstr "Апрель"
+
+msgid "May"
+msgstr "Май"
+
+msgid "June"
+msgstr "Июнь"
+
+msgid "July"
+msgstr "Июль"
+
+msgid "August"
+msgstr "Август"
+
+msgid "September"
+msgstr "Сентябрь"
+
+msgid "October"
+msgstr "Октябрь"
+
+msgid "November"
+msgstr "Ноябрь"
+
+msgid "December"
+msgstr "Декабрь"
+
+msgctxt "HarvestCalendar"
+msgid "Start of January"
+msgstr "Начало Января"
+
+msgctxt "HarvestCalendar"
+msgid "Middle of January"
+msgstr "Середина Января"
+
+msgctxt "HarvestCalendar"
+msgid "End of January"
+msgstr "Конец Января"
+
+msgctxt "HarvestCalendar"
+msgid "Start of February"
+msgstr "Начало Февраля"
+
+msgctxt "HarvestCalendar"
+msgid "Middle of February"
+msgstr "Середина Февраля"
+
+msgctxt "HarvestCalendar"
+msgid "End of February"
+msgstr "Конец Февраля"
+
+msgctxt "HarvestCalendar"
+msgid "Start of March"
+msgstr "Начало Марта"
+
+msgctxt "HarvestCalendar"
+msgid "Middle of March"
+msgstr "Середина Марта"
+
+msgctxt "HarvestCalendar"
+msgid "End of March"
+msgstr "Конец Марта"
+
+msgctxt "HarvestCalendar"
+msgid "Start of April"
+msgstr "Начало Апреля"
+
+msgctxt "HarvestCalendar"
+msgid "Middle of April"
+msgstr "Середина Апреля"
+
+msgctxt "HarvestCalendar"
+msgid "End of April"
+msgstr "Конец Апреля"
+
+msgctxt "HarvestCalendar"
+msgid "Start of May"
+msgstr "Начало Мая"
+
+msgctxt "HarvestCalendar"
+msgid "Middle of May"
+msgstr "Середина Мая"
+
+msgctxt "HarvestCalendar"
+msgid "End of May"
+msgstr "Конец Мая"
+
+msgctxt "HarvestCalendar"
+msgid "Start of June"
+msgstr "Начало Июня"
+
+msgctxt "HarvestCalendar"
+msgid "Middle of June"
+msgstr "Середина Июня"
+
+msgctxt "HarvestCalendar"
+msgid "End of June"
+msgstr "Конец Июня"
+
+msgctxt "HarvestCalendar"
+msgid "Start of July"
+msgstr "Начало Июля"
+
+msgctxt "HarvestCalendar"
+msgid "Middle of July"
+msgstr "Середина Июля"
+
+msgctxt "HarvestCalendar"
+msgid "End of July"
+msgstr "Конец Июля"
+
+msgctxt "HarvestCalendar"
+msgid "Start of August"
+msgstr "Начало Августа"
+
+msgctxt "HarvestCalendar"
+msgid "Middle of August"
+msgstr "Середина Августа"
+
+msgctxt "HarvestCalendar"
+msgid "End of August"
+msgstr "Конец Августа"
+
+msgctxt "HarvestCalendar"
+msgid "Start of September"
+msgstr "Начало Сентября"
+
+msgctxt "HarvestCalendar"
+msgid "Middle of September"
+msgstr "Середина Сентября"
+
+msgctxt "HarvestCalendar"
+msgid "End of September"
+msgstr "Конец Сентября"
+
+msgctxt "HarvestCalendar"
+msgid "Start of October"
+msgstr "Начало Октября"
+
+msgctxt "HarvestCalendar"
+msgid "Middle of October"
+msgstr "Середина Октября"
+
+msgctxt "HarvestCalendar"
+msgid "End of October"
+msgstr "Конец Октября"
+
+msgctxt "HarvestCalendar"
+msgid "Start of November"
+msgstr "Начало Ноября"
+
+msgctxt "HarvestCalendar"
+msgid "Middle of November"
+msgstr "Середина Ноября"
+
+msgctxt "HarvestCalendar"
+msgid "End of November"
+msgstr "Конец Ноября"
+
+msgctxt "HarvestCalendar"
+msgid "Start of December"
+msgstr "Начало Декабря"
+
+msgctxt "HarvestCalendar"
+msgid "Middle of December"
+msgstr "Середина Декабря"
+
+msgctxt "HarvestCalendar"
+msgid "End of December"
+msgstr "Конец Декабря"

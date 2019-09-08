@@ -1,0 +1,700 @@
+/**
+ * UH Recurring Digital product styling.
+ */
+
+/**
+ * Product full.
+ */
+
+// Layout.
+.path-product-sir-mix-a-bit {
+  .primary-nav {
+    border-bottom: none;
+  }
+
+  .site-content {
+    padding: 0;
+    margin-bottom: 0;
+    overflow-x: hidden;
+  }
+
+  .product__content--top {
+    padding-bottom: 30px;
+
+    @media (max-width: $screen-md-max) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.product--full.product--full--uh-recurring-digital {
+
+  // Page title hidden to start, then moved into paragraph with jQuery.
+  .page-title {
+    display: none;
+  }
+  .paragraph .page-title {
+    display: block;
+    margin-bottom: -10px;
+    color: #fff;
+    font-weight: 600;
+    font-family: $f-tertiary;
+  }
+
+  // Paragraph overrides.
+  // Paragraph - 1 column content.
+  .paragraph.paragraph--type--1-column-content {
+    // Free Trial Button class.
+    &.free-trial-button {
+      a.btn {
+        padding: 8px 25px;
+        border-radius: 0;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  // Paragraph - 2 column content.
+  .paragraph.paragraph--type--2-column-image-content {
+    &.wood-grain-bg {
+      background: url(../gfx/product/uh-recurring-digital/uh-woodgrain-bg.jpg) repeat;
+    }
+
+    .paragraph--type--2-column-image-content__content-left:after,
+    .paragraph--type--2-column-image-content__content-right:after {
+      opacity: 0;
+
+      @media (max-width: $screen-xs-max) {
+        opacity: .75;
+      }
+    }
+
+    // Spec list class.
+    &.spec-list {
+      h2 {
+        font-family: $f-tertiary;
+        font-size: 40px;
+        text-transform: none;
+
+        @media (max-width: $screen-md-max) {
+          font-size: 34px;
+        }
+      }
+
+      .paragraph--type--2-column-image-content__content-left .paragraph--type--2-column-image-content__content {
+        padding: 30px 15px 65px 35px;
+
+        @media (max-width: $screen-xs-max) {
+          padding: 30px 15px 40px;
+        }
+      }
+
+      .paragraph--type--2-column-image-content__content-right .paragraph--type--2-column-image-content__content {
+        padding: 30px 35px 65px 15px;
+
+        @media (max-width: $screen-xs-max) {
+          padding: 30px 15px 40px;
+        }
+      }
+
+      .paragraph--type--2-column-image-content__content-left,
+      .paragraph--type--2-column-image-content__content-right {
+        .paragraph--type--2-column-image-content__content {
+          ul {
+            padding-left: 0;
+            margin: 9px 0 12px;
+            list-style: none;
+
+            li {
+              position: relative;
+              padding-left: 60px;
+              margin-bottom: 25px;
+
+              &:last-of-type {
+                margin-bottom: 0;
+              }
+
+              @media (max-width: $screen-xs-max) {
+                padding: 10px 15px;
+                margin-bottom: 10px;
+                background-color: rgba(0,0,0,0.75);
+                border-radius: $border-radius;
+              }
+
+              @media (min-width: $screen-sm-min) {
+                &:before {
+                  position: absolute;
+                  top: 8px;
+                  left: 3px;
+                  font-family: $f-fontawesome;
+                  font-size: 35px;
+                  line-height: 35px;
+                  content: '\f001';
+                  color: $gray-darker;
+                }
+                &:nth-of-type(1):before {
+                  left: 3px;
+                  width: 32px;
+                  height: 40px;
+                  content: '';
+                  background: url(../gfx/product/uh-recurring-digital/icon-anchor.svg) center center no-repeat;
+                  background-size: 32px 40px;
+                }
+                &:nth-of-type(2):before {
+                  left: 1px;
+                  width: 41px;
+                  height: 25px;
+                  content: '';
+                  background: url(../gfx/product/uh-recurring-digital/icon-brass-knuckles.svg) center center no-repeat;
+                  background-size: 41px 25px;
+                }
+                &:nth-of-type(3):before {
+                  left: -1px;
+                  width: 44px;
+                  height: 34px;
+                  content: '';
+                  background: url(../gfx/product/uh-recurring-digital/icon-hammers.svg) center center no-repeat;
+                  background-size: 44px 34px;
+                }
+                &:nth-of-type(4):before {
+                  left: -2px;
+                  width: 46px;
+                  height: 33px;
+                  content: '';
+                  background: url(../gfx/product/uh-recurring-digital/icon-hipster.svg) center center no-repeat;
+                  background-size: 46px 33px;
+                }
+              }
+
+            }
+          }
+        }
+      }
+
+      @media (min-width: $screen-md-min) {
+        .col-sm-6.paragraph--type--2-column-image-content__content-left {
+          width: 30%;
+        }
+        .col-sm-6.paragraph--type--2-column-image-content__content-right {
+          left: 30%;
+          width: 34%;
+        }
+        .col-sm-push-6.paragraph--type--2-column-image-content__image-right {
+          left: 30%;
+        }
+
+        .paragraph--type--2-column-image-content__image-left {
+          left: 30%;
+          width: 105%;
+          margin-left: -65%;
+        }
+        .paragraph--type--2-column-image-content__image-right {
+          width: 105%;
+          margin-right: -55%;
+        }
+      }
+
+      @media (max-width: $screen-md-max) {
+        .paragraph--type--2-column-image-content__image-left {
+          background-position-x: 50%;
+        }
+        .paragraph--type--2-column-image-content__image-right {
+          background-position-x: 50%;
+        }
+      }
+    }
+
+    // Reviews class.
+    &.reviews {
+      background-color: #4e515c;
+
+      h2 {
+
+        &:before {
+          position: relative;
+          display: inline-block;
+          margin: 8px 0 23px;
+          font-family: $f-fontawesome;
+          font-size: 35px;
+          line-height: 35px;
+          letter-spacing: .45em;
+          content: '\f005 \f005 \f005 \f005 \f005';
+        }
+      }
+    }
+  }
+
+  // Variation defaults.
+  .plan-formatter {
+    margin-bottom: 70px;
+
+    .field__item {
+      display: inline-block;
+      vertical-align: top;
+      width: 33%;
+
+      @media (max-width: $screen-sm-max) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .uh-plan {
+    .uh-plan__title {
+      padding: 3px 20px;
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .uh-plan__body-wrapper {
+      padding: 10px 15px 0;
+
+      @media (max-width: $screen-sm-max) {
+        padding: 10px 20px 20px;
+        border-left: 1px solid $gray;
+        border-right: 1px solid $gray;
+        border-bottom: 1px solid $gray;
+      }
+    }
+
+    .uh-plan__body {
+      font-size: 20px;
+
+      @media (max-width: $screen-md-max) {
+        font-size: 18px;
+      }
+      @media (max-width: $screen-xs-max) {
+        font-size: 16px;
+      }
+
+      ul {
+        margin-bottom: 0;
+
+        li {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .uh-plan__price-wrapper {
+      @media (max-width: 430px) {
+        text-align: center;
+      }
+    }
+
+    .uh-plan__list-price {
+      color: $c-primary;
+
+      .field__label {
+        display: inline-block;
+        color: $c-body;
+        font-weight: 600;
+      }
+
+      .field__item {
+        display: inline-block;
+        text-decoration: $c-primary-hover line-through;
+      }
+    }
+
+    .uh-plan__price {
+      display: inline-block;
+      vertical-align: bottom;
+      font-family: $f-tertiary;
+      font-size: 50px;
+      font-weight: 700;
+
+      @media (max-width: $screen-md-max) {
+        font-size: 42px;
+      }
+    }
+
+    .uh-plan__billing-schedule-abbr {
+      display: inline-block;
+      vertical-align: bottom;
+      margin: 0 6px 6px 0;
+      font-size: 20px;
+      text-transform: uppercase;
+
+      @media (max-width: $screen-md-max) {
+        font-size: 18px;
+      }
+      @media (max-width: $screen-xs-max) {
+        font-size: 16px;
+      }
+    }
+
+    .uh-plan__disclaimer-label {
+      display: inline-block;
+      vertical-align: bottom;
+      font-family: $f-tertiary;
+      font-size: 42px;
+      font-weight: 700;
+      color: $c-primary;
+
+      @media (max-width: $screen-md-max) {
+        font-size: 32px;
+      }
+    }
+
+    .uh-plan__action {
+      @media (max-width: 430px) {
+        text-align: center;
+      }
+
+      .btn {
+        min-width: 200px;
+        padding: 8px 27px;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+    }
+
+    .uh-plan__disclaimer {
+      position: relative;
+      padding: 10px 0 0 21px;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: $f-tertiary;
+        font-size: 33px;
+        font-weight: 700;
+        color: $c-primary;
+        content: '*';
+      }
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 14px;
+
+        &:before {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  // Even/odd styles.
+  .field__item:nth-of-type(odd) {
+    .uh-plan__title {
+      background-color: #000;
+    }
+
+    .uh-plan__action {
+      .btn {
+        background-color: #000;
+        border-color: #000;
+
+        &:hover, &:focus {
+          background-color: $gray-darker;
+          border-color: $gray-darker;
+        }
+      }
+    }
+  }
+
+  .field__item:nth-of-type(even) {
+    .uh-plan__title {
+      background-color: $gray-dark;
+    }
+
+    .uh-plan__action {
+      .btn {
+        background-color: $gray-dark;
+        border-color: $gray-dark;
+
+        &:hover, &:focus {
+          background-color: $gray-darker;
+          border-color: $gray-darker;
+        }
+      }
+    }
+  }
+
+  // Highlight styles.
+  .uh-plan.uh-plan--highlight {
+
+    .uh-plan__title {
+      background-color: $c-primary;
+    }
+
+    .uh-plan__action {
+      .btn {
+        background-color: $c-primary;
+        border-color: $c-primary;
+
+        &:hover, &:focus {
+          background-color: $c-primary-hover;
+          border-color: $c-primary-hover;
+        }
+      }
+    }
+  }
+
+  // Price strikethrough styles.
+  .uh-plan.uh-plan--price-strikethrough {
+    .uh-plan__price {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: "";
+        left: -5px;
+        top: 65%;
+        right: -8px;
+        border-top: 4px solid $c-primary;
+        transform:rotate(-15deg);
+      }
+    }
+  }
+
+  // Features & Specifications.
+  .features-and-specs {
+    padding: 30px 0;
+    margin-bottom: 60px;
+    background-color: $gray-light;
+
+    .features-and-specs__title {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      color: $gray-dark;
+      font-family: $f-tertiary;
+      font-size: 50px;
+      line-height: 1.2;
+      text-align: center;
+      text-transform: none;
+      letter-spacing: 0;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 36px;
+      }
+    }
+  }
+
+  // Features & Specifications - Tab override styles.
+  .nav-tabs {
+    border-bottom: none;
+    text-align: center;
+
+    .badge {
+      margin-bottom: 3px;
+    }
+
+    & > li {
+      float: none;
+      display: inline-block;
+      vertical-align: middle;
+      margin: -2px 8px 0;
+
+      & > a {
+        padding: 4px 34px;
+        background-color: #fff;
+        border: 2px solid $gray-dark;
+        border-radius: 0;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $gray-dark;
+        transition: color .2s ease-in-out, background-color .2s ease-in-out, border .2s ease-in-out;
+
+        &:hover, &:focus {
+          border: 2px solid #000;
+          color: #000;
+        }
+      }
+
+      &.active > a {
+        background-color: $gray-dark;
+        color: #fff;
+
+        &:before {
+          top: -2px;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -14px;
+          width: 0;
+          height: 0;
+          border-top: solid 14px $gray-dark;
+          border-left: solid 14px transparent;
+          border-right: solid 14px transparent;
+
+          @media (max-width: $screen-xs-max) {
+            display: none;
+          }
+        }
+
+        &:hover, &:focus {
+          border: 2px solid $gray-dark;
+          background-color: $gray-dark !important;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 30px 0;
+    border: none;
+  }
+
+  // Features & Specifications - Interface.
+  .interface__introduction {
+    margin-bottom: 10px;
+    font-size: 20px;
+
+    @media (max-width: $screen-xs-max) {
+      p {
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .interface__slideshow {
+    display: none;
+  }
+
+  .interface__slideshow-link {
+    position: relative;
+    display: block;
+    outline: none;
+
+    .interface__slideshow-prompt {
+      position: absolute;
+      z-index: 1;
+      top: 35%;
+      left: calc(50% - 140px);
+      width: 280px;
+      padding: 10px 20px 13px;
+      background-color: rgba(0,0,0,0.75);
+      opacity: 0;
+      border: 2px solid #fff;
+      font-size: 28px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+      outline: none;
+      transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+
+      @media (max-width: $screen-md-max) {
+        opacity: 1;
+      }
+    }
+
+    img {
+      opacity: 1;
+      transition: opacity .2s ease-in-out;
+
+      @media (max-width: $screen-md-max) {
+        opacity: 0.7;
+      }
+    }
+
+    &:hover, &:focus {
+      .interface__slideshow-prompt {
+        opacity: 1;
+
+        &:hover, &:focus {
+          background-color: rgba(0,0,0,1);
+        }
+      }
+
+      img {
+        opacity: 0.65;
+      }
+    }
+  }
+
+  // Features & Specifications - Specs.
+  #specifications {
+    font-size: 20px;
+
+    @media (max-width: $screen-xs-max) {
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    ul {
+      padding: 20px 0 0;
+      list-style: none;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        width: 48%;
+        padding: 10px 15px 10px 50px;
+        margin: 0 5px 15px;
+        background-color: #fff;
+        border: 1px solid $gray-light;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+        font-size: 18px;
+        text-align: left;
+        transition: all .2s ease-in-out;
+
+        @media (max-width: $screen-sm-max) {
+          width: 90%;
+        }
+
+        &:before {
+          position: absolute;
+          top: 4px;
+          left: 15px;
+          font-family: $f-fontawesome;
+          font-size: 36px;
+          line-height: 36px;
+          content: '\f101';
+          color: $c-primary;
+          transition: all .1s ease-in-out;
+        }
+
+        &:hover, &:focus {
+          border: 1px solid $gray;
+          box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+
+          &:before {
+            left: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Cart overrides.
+ */
+
+.cart-block--contents form[data-order-type="digital_recurring"] {
+  .views-field-quantity {
+    display: none;
+  }
+}
+
+.view-commerce-cart-form .order-type-digital_recurring {
+  // Hide table data that isn't needed for this order type.
+  .views-field-unit-price__number,
+  .views-field-edit-quantity {
+    display: none;
+  }
+}
