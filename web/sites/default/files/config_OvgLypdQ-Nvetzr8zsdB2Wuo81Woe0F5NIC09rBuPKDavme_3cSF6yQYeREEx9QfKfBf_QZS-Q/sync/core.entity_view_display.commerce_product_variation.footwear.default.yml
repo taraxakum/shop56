@@ -1,0 +1,68 @@
+uuid: 71289e95-810f-446d-bb61-5dcc49116320
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.footwear
+    - field.field.commerce_product_variation.footwear.attribute_size_shoe
+    - field.field.commerce_product_variation.footwear.field_image
+    - field.field.commerce_product_variation.footwear.field_upc
+    - field.field.commerce_product_variation.footwear.weight
+    - image.style.product_large
+  module:
+    - commerce_price
+    - image
+id: commerce_product_variation.footwear.default
+targetEntityType: commerce_product_variation
+bundle: footwear
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: product_large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  list_price:
+    label: inline
+    type: commerce_price_default
+    weight: 3
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  price:
+    label: hidden
+    type: commerce_price_default
+    weight: 4
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  sku:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  title:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  attribute_size_shoe: true
+  field_upc: true
+  langcode: true
+  product_id: true
+  weight: true

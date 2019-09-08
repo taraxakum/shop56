@@ -1,0 +1,16 @@
+uuid: 8178a0e3-b237-4141-b96a-6cc545402c68
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: KngGdFLX8_ynkNS2TfJIzApEVyuyF-J4rBPhwdx_JPw
+id: node_default
+label: 'Node Default'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: -8
+relationships: {  }

@@ -1,0 +1,7 @@
+uuid: 0e6dfe47-b292-489d-b9e6-f62a35206d0f
+langcode: en
+status: true
+dependencies: {  }
+id: size_shoe
+label: 'Size (shoe)'
+elementType: select

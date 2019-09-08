@@ -1,0 +1,13 @@
+uuid: 87d585f2-1948-4f46-bb75-e318baa7b4b0
+langcode: ru
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: 8B-v9QiQlmKGxK2GJ9-aSGqe3Nkh_hwK5o5DzInU6aY
+id: comment_unpublish_action
+label: 'Unpublish comment'
+type: comment
+plugin: 'entity:unpublish_action:comment'
+configuration: {  }

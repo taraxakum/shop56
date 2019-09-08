@@ -1,0 +1,7 @@
+uuid: ac02505f-6517-425c-9c92-cf8c8681a8cd
+langcode: en
+status: true
+dependencies: {  }
+id: digital
+label: Digital
+traits: {  }

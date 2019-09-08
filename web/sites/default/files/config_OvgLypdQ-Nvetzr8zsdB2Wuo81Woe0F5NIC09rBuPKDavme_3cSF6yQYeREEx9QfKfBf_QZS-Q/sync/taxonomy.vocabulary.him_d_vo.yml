@@ -1,0 +1,8 @@
+uuid: 4632c7e8-6ea5-41ec-84c6-165fcfc27dd3
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Химия действующее в-во (для химпрепаратов)'
+vid: him_d_vo
+description: 'Действующее в-во препарата'
+weight: 13

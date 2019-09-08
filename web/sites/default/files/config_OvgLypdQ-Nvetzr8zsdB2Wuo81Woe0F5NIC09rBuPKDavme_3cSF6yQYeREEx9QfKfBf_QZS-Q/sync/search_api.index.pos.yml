@@ -1,0 +1,95 @@
+uuid: 323a2b6c-6b78-4076-8128-463a87bd54b3
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - search_api
+  config:
+    - field.storage.commerce_product.stores
+    - field.storage.commerce_product_variation.field_upc
+    - search_api.server.solr_5_pos
+id: pos
+name: POS
+description: ''
+read_only: false
+field_settings:
+  field_upc:
+    label: UPC
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: field_upc
+    type: text
+    boost: !!float 3
+    dependencies:
+      config:
+        - field.storage.commerce_product_variation.field_upc
+  sku:
+    label: SKU
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: sku
+    type: text
+    boost: !!float 2
+  stores:
+    label: 'Product » Product » Stores'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'product_id:entity:stores'
+    type: integer
+    dependencies:
+      module:
+        - commerce_product
+      config:
+        - field.storage.commerce_product.stores
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: title
+    type: text
+datasource_settings:
+  'entity:commerce_product_variation':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  ignorecase:
+    all_fields: true
+    fields:
+      - field_upc
+      - sku
+      - title
+    weights:
+      preprocess_index: -50
+      preprocess_query: -50
+  rendered_item: {  }
+  stemmer:
+    all_fields: true
+    fields:
+      - field_upc
+      - sku
+      - title
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: -45
+      preprocess_query: -45
+  transliteration:
+    all_fields: true
+    fields:
+      - field_upc
+      - sku
+      - title
+    weights:
+      preprocess_index: -44
+      preprocess_query: -44
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: solr_5_pos

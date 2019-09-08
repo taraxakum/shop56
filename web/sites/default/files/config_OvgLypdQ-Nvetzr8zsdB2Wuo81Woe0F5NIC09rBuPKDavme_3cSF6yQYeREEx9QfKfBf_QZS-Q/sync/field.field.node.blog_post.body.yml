@@ -1,0 +1,24 @@
+uuid: 6fc6a715-76c0-4d1a-b594-cdeb115330ba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.blog_post
+  module:
+    - text
+_core:
+  default_config_hash: oEO-C8AOzP_IZz-carCLc6E2D9TJashIfBTQVySjTgo
+id: node.blog_post.body
+field_name: body
+entity_type: node
+bundle: blog_post
+label: 'Long Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

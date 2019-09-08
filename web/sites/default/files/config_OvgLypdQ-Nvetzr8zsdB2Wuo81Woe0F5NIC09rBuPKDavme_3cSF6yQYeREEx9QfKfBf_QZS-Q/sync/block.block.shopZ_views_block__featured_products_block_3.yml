@@ -1,0 +1,30 @@
+uuid: 6372c71a-71c6-49e8-b004-19b5b7a9e951
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.featured_products
+  module:
+    - system
+    - views
+  theme:
+    - shopZ
+id: shopZ_views_block__featured_products_block_3
+theme: shopZ
+region: below_content
+weight: -25
+provider: null
+plugin: 'views_block:featured_products-block_3'
+settings:
+  id: 'views_block:featured_products-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

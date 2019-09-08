@@ -1,0 +1,28 @@
+uuid: 6c1ab74b-dacf-488c-937c-76005b6589dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.download
+    - field.storage.commerce_product_variation.field_album
+    - media.type.album
+id: commerce_product_variation.download.field_album
+field_name: field_album
+entity_type: commerce_product_variation
+bundle: download
+label: Album
+description: "Select the album to sell. The full collection of files will be displayed when checkout has completed.<br>\r\nAlbum files must first be uploaded by going to Content > Structure > Media."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      album: album
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

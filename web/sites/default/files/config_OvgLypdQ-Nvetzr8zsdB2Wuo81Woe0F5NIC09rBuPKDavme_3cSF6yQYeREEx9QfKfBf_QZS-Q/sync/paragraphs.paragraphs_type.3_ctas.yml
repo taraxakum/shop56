@@ -1,0 +1,9 @@
+uuid: 11d06eb6-0561-4c56-bbc4-d33c73b6bc71
+langcode: en
+status: true
+dependencies: {  }
+id: 3_ctas
+label: 'Homepage 3 CTAs'
+icon_uuid: null
+description: '3 call to actions used on the homepage.'
+behavior_plugins: {  }

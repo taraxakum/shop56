@@ -1,0 +1,27 @@
+uuid: 67a017f9-c458-4551-bbea-548573fd8b80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_audio_file
+    - media.type.album
+  module:
+    - file
+id: media.album.field_media_audio_file
+field_name: field_media_audio_file
+entity_type: media
+bundle: album
+label: 'Sample track'
+description: 'Upload sample album tracks.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: album/sample
+  file_extensions: 'mp3 wav aac'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

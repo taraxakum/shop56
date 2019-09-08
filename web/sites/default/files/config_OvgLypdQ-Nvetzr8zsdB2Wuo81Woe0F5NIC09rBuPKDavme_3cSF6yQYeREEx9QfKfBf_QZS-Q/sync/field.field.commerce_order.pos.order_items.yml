@@ -1,0 +1,23 @@
+uuid: c6df6bec-2534-4451-9ca8-58615e72650a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.pos
+    - field.storage.commerce_order.order_items
+_core:
+  default_config_hash: x7XKIvNxrP6jSNQrRA30Y3VUAhF50QD2cgir7rXDTa0
+id: commerce_order.pos.order_items
+field_name: order_items
+entity_type: commerce_order
+bundle: pos
+label: 'Order items'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_order_item'
+  handler_settings: {  }
+field_type: entity_reference

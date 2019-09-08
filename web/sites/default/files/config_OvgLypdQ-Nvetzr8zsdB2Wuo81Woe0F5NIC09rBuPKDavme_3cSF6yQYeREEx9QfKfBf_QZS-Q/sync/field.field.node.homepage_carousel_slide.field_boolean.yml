@@ -1,0 +1,23 @@
+uuid: fb3129f5-53f8-464b-a42f-819b2681ddcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_boolean
+    - node.type.homepage_carousel_slide
+id: node.homepage_carousel_slide.field_boolean
+field_name: field_boolean
+entity_type: node
+bundle: homepage_carousel_slide
+label: 'Raw link output'
+description: 'Optionally output the raw URL. This is useful when linking to a Solr search result url (i.e. Main menu store category links).'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

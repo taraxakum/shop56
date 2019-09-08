@@ -1,0 +1,22 @@
+uuid: 528da055-d066-4bd9-a31d-3f20273cb79e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.semena
+    - field.storage.commerce_product.field_pos_sem
+  module:
+    - harvest_calendar
+id: commerce_product.semena.field_pos_sem
+field_name: field_pos_sem
+entity_type: commerce_product
+bundle: semena
+label: 'посев семян'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  color: '#800040'
+field_type: harvest_calendar

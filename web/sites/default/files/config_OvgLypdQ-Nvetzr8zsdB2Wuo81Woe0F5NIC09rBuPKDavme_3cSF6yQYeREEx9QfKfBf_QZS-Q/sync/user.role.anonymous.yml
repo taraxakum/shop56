@@ -1,0 +1,24 @@
+uuid: e41b0f7b-9528-4490-a6df-337e0a3e34d7
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: GguTc_PIwIPxODCp6pcRV4-TpJVmz0fjTKonDvPUZT8
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access cart'
+  - 'access checkout'
+  - 'access comments'
+  - 'access commerce_shipping_method overview'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'manage own commerce_payment_method'
+  - 'post comments'
+  - 'view commerce_product'
+  - 'view commerce_promotion'
+  - 'view commerce_shipping_method'
+  - 'view commerce_store'
+  - 'view media'

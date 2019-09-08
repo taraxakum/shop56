@@ -1,0 +1,16 @@
+uuid: 724a4c2a-2205-471f-a4d3-3d5016954b1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_pos
+third_party_settings:
+  commerce_pos:
+    show_in_pos: false
+id: audio_download
+label: 'Audio Download'
+description: 'For downloadable audio files (i.e. albums, songs, audio books, etc.)'
+variationType: download
+injectVariationFields: true
+traits: {  }
+locked: false

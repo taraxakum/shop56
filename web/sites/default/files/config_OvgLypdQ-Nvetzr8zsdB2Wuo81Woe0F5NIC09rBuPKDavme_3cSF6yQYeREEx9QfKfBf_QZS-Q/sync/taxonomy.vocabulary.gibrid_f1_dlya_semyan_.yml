@@ -1,0 +1,8 @@
+uuid: db6d06b1-15d0-45ff-8697-28207f781eee
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Гибрид F1 (для семян овощей и цветов)'
+vid: gibrid_f1_dlya_semyan_
+description: 'гибрид F1/сорт'
+weight: 0

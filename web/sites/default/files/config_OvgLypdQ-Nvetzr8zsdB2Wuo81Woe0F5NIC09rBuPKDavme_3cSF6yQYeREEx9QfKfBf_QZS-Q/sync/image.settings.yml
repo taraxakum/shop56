@@ -1,0 +1,6 @@
+preview_image: core/modules/image/sample.png
+allow_insecure_derivatives: false
+suppress_itok_output: false
+_core:
+  default_config_hash: KDPvI-BDPnGHNt0fpnoOW_5tA5I-Z5Hlh4odn75E-rI
+langcode: ru

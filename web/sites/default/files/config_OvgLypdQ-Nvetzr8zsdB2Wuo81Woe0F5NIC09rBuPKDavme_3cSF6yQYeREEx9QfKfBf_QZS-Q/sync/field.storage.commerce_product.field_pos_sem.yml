@@ -1,0 +1,20 @@
+uuid: 074d4858-d1f2-49d3-bf0f-ef69ae5c773b
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - harvest_calendar
+id: commerce_product.field_pos_sem
+field_name: field_pos_sem
+entity_type: commerce_product
+type: harvest_calendar
+settings:
+  value: ''
+module: harvest_calendar
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

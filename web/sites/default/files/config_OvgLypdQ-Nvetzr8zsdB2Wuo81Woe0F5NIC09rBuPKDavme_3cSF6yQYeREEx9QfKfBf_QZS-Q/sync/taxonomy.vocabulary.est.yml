@@ -1,0 +1,8 @@
+uuid: 92c71b2d-aa0e-4283-9d45-a2b1ce879522
+langcode: ru
+status: true
+dependencies: {  }
+name: Наличие
+vid: est
+description: 'наличие товара на складе'
+weight: 0

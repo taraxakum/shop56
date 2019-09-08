@@ -1,0 +1,28 @@
+uuid: d04a9a46-76eb-49eb-b5cf-8eec349786c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header
+  module:
+    - menu_block
+  theme:
+    - shopZ
+id: shopZ_headernavigation_2
+theme: shopZ
+region: mobile_nav
+weight: -14
+provider: null
+plugin: 'menu_block:header'
+settings:
+  id: 'menu_block:header'
+  label: 'Service & Information'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'header:'
+  suggestion: header
+  label_type: block
+visibility: {  }

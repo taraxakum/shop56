@@ -1,0 +1,12 @@
+uuid: b3c1cf02-119c-40e4-8103-3f74e12175de
+langcode: ru
+status: false
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: nwjka_xUB5WlLJn3Sms4X3UxcR6UoNc2hRJuYScppuk
+id: user.full
+label: 'User account'
+targetEntityType: user
+cache: true

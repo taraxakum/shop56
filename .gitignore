@@ -7,9 +7,6 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 
-# Ignore Drupal's file directory
-/web/sites/*/files/
-private/
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest/

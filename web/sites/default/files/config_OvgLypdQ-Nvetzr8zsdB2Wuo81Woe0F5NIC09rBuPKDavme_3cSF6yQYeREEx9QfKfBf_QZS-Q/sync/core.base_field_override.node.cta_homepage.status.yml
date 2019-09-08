@@ -1,0 +1,24 @@
+uuid: 295844d1-476d-4949-b367-ea8527653cef
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.cta_homepage
+_core:
+  default_config_hash: IhehCjMzm3UUQwAxNaZ-wLWCksyz7J-oEcnvdMIfYZM
+id: node.cta_homepage.status
+field_name: status
+entity_type: node
+bundle: cta_homepage
+label: 'Publishing status'
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

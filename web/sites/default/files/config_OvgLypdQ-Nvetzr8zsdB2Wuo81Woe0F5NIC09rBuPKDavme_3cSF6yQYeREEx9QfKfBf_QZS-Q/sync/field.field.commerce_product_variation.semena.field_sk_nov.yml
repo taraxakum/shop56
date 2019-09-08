@@ -1,0 +1,29 @@
+uuid: 8a8519b6-999a-481f-8817-dfc42191a3f4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.semena
+    - field.storage.commerce_product_variation.field_sk_nov
+    - taxonomy.vocabulary.sk_nov
+id: commerce_product_variation.semena.field_sk_nov
+field_name: field_sk_nov
+entity_type: commerce_product_variation
+bundle: semena
+label: скидка/новинка
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sk_nov: sk_nov
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

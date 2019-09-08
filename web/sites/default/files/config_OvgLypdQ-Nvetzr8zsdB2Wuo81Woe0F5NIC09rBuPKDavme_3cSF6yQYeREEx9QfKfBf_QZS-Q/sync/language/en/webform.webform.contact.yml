@@ -1,0 +1,18 @@
+title: 'Contact Us'
+description: 'Basic email contact webform.'
+elements: "name:\n  '#type': textfield\n  '#title': 'Full Name'\n  '#description': 'Your first and last name'\n  '#placeholder': 'John Anderson'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Email Address'\n  '#placeholder': email@address.com\n  '#required': true\nyour_phone_number:\n  '#type': tel\n  '#title': 'Phone Number'\n  '#placeholder': 250-801-1234\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#required': true\n  '#test': 'Please ignore this email.'\n"
+settings:
+  confirmation_message: 'Your message has been sent.'
+handlers:
+  email_confirmation:
+    label: 'Email confirmation'
+    settings:
+      from_name: default
+      subject: '[webform_submission:values:subject:value]'
+      body: '[webform_submission:values:message:value]'
+  email_notification:
+    label: 'Email notification'
+    settings:
+      from_name: '[webform_submission:values:name:value]'
+      subject: '[webform_submission:values:subject:value]'
+      body: '[webform_submission:values:message:value]'

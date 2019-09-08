@@ -1,0 +1,8 @@
+uuid: a13bac13-93c1-4297-ae6f-bc3218cad7f9
+langcode: ru
+status: true
+dependencies: {  }
+name: 'тип материала (для всех)'
+vid: tip_mat
+description: 'товар, статья или ...... для планирования вывода блоков'
+weight: -7

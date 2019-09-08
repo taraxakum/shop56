@@ -1,0 +1,24 @@
+uuid: cb0a1012-c60b-4d10-ba11-c9a6bfdff611
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.footwear
+    - commerce_product.commerce_product_variation_type.footwear
+    - field.storage.commerce_product.variations
+id: commerce_product.footwear.variations
+field_name: variations
+entity_type: commerce_product
+bundle: footwear
+label: Variations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      - footwear
+field_type: entity_reference

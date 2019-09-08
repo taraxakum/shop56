@@ -1,0 +1,14 @@
+uuid: d99bedd8-f1e0-4dcd-9a1a-962e8f251358
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: LRe0kMArZ4yCBVM9s5LrW4w_rsdP_62_CQPRWJyZnMg
+id: likert_satisfaction
+label: 'Likert: Satisfaction'
+category: Likert
+likert: true
+options: "1: Very Unsatisfied\n2: Unsatisfied\n3: Neutral\n4: Satisfied\n5: Very Satisfied\n"

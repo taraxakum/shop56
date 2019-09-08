@@ -1,0 +1,14 @@
+uuid: 695fb0bb-2f18-4652-8533-fcf5a007135e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.demo_admin
+  module:
+    - user
+id: user_remove_role_action.demo_admin
+label: 'Remove the Demo Admin role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: demo_admin

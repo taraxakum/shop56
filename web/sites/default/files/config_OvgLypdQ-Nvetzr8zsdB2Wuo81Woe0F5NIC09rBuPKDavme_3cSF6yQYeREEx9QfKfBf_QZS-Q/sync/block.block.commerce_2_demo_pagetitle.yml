@@ -1,0 +1,27 @@
+uuid: 45d4f3f3-fd13-46f0-b013-6929f565b12e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - commerce_2_demo
+_core:
+  default_config_hash: 57kSxHwEgK9P6YZ1aqg3lt5yvwr3JY37tEwV2BvPs1c
+id: commerce_2_demo_pagetitle
+theme: commerce_2_demo
+region: content
+weight: -25
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/product/*\r\n/products\r\n/products*\r\n/user/*\r\n!/user/*/*\r\n!/user/login\r\n!/user/register\r\n!/user/password"
+    negate: true
+    context_mapping: {  }

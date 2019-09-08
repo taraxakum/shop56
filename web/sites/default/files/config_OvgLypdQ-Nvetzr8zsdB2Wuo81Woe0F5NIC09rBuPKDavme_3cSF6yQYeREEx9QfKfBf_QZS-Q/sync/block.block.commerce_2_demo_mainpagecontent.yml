@@ -1,0 +1,27 @@
+uuid: 0c5317c9-1ed0-4291-aa3e-83971da3032e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - commerce_2_demo
+_core:
+  default_config_hash: lixY04ZS-kQ1i8EVEERrxh2LleO9Fs3WRMObcfYQP54
+id: commerce_2_demo_mainpagecontent
+theme: commerce_2_demo
+region: content
+weight: -22
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

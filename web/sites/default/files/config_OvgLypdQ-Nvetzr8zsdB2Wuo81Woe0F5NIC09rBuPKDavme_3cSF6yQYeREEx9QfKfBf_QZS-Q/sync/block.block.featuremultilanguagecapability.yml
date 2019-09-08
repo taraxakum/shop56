@@ -1,0 +1,25 @@
+uuid: bf9fb1bb-d5fc-456a-847e-4f9f138a4d50
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:fcb6bd7b-8980-4355-aebf-6ae52ef26715'
+  module:
+    - block_content
+  theme:
+    - commerce_2_demo
+id: featuremultilanguagecapability
+theme: commerce_2_demo
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:fcb6bd7b-8980-4355-aebf-6ae52ef26715'
+settings:
+  id: 'block_content:fcb6bd7b-8980-4355-aebf-6ae52ef26715'
+  label: 'Multi-language Capability'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

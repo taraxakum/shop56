@@ -1,0 +1,25 @@
+uuid: 1db00845-64f8-41ec-9cc6-eba4c044f6f7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_promotion:b33f48fe-b62c-46e4-9b19-775ee633aa26'
+  module:
+    - block_content
+  theme:
+    - commerce_2_demo
+id: flatrateshipping
+theme: commerce_2_demo
+region: header_promo
+weight: 0
+provider: null
+plugin: 'block_content:b33f48fe-b62c-46e4-9b19-775ee633aa26'
+settings:
+  id: 'block_content:b33f48fe-b62c-46e4-9b19-775ee633aa26'
+  label: 'Flat Rate Shipping'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

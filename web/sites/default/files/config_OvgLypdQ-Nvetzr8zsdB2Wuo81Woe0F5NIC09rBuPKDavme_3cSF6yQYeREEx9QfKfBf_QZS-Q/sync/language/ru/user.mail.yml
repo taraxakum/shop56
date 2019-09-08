@@ -1,0 +1,18 @@
+cancel_confirm:
+  subject: 'Запрос на удаление учётной записи [user:display-name] на сайте «[site:name]»'
+password_reset:
+  subject: 'Изменение данных для входа пользователя [user:display-name] на сайте «[site:name]»'
+register_admin_created:
+  subject: 'Администратор сайта «[site:name]» создал для вас учётную запись'
+register_no_approval_required:
+  subject: 'Детали учётной записи пользователя [user:display-name] на сайте [site:name]'
+register_pending_approval:
+  subject: 'Детали учётной записи [user:display-name] на сайте «[site:name]» (ожидает одобрения администратором)'
+register_pending_approval_admin:
+  subject: 'Детали учётной записи [user:display-name] на сайте «[site:name]» (ожидает одобрения администратором)'
+status_activated:
+  subject: 'Детали учётной записи [user:display-name] на сайте «[site:name]» (одобрено)'
+status_blocked:
+  subject: 'Детали учётной записи пользователя [user:display-name] на сайте [site:name] (заблокирован)'
+status_canceled:
+  subject: 'Детали учётной записи [user:display-name] на сайте «[site:name]» (удалено)'

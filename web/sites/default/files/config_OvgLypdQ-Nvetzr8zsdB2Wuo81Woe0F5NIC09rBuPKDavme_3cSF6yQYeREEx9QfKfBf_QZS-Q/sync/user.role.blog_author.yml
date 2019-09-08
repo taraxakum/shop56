@@ -1,0 +1,33 @@
+uuid: a98374b3-ad9e-4a3d-8b8a-469b0591611c
+langcode: en
+status: true
+dependencies: {  }
+id: blog_author
+label: 'Blog author'
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'change own username'
+  - 'create blog_post content'
+  - 'delete all revisions'
+  - 'delete blog_post revisions'
+  - 'delete own blog_post content'
+  - 'edit any blog_post content'
+  - 'edit own blog_post content'
+  - 'revert all revisions'
+  - 'revert blog_post revisions'
+  - 'use blog transition create_new_draft'
+  - 'use blog transition needs_work_'
+  - 'use blog transition ready_for_review'
+  - 'use text format basic_html'
+  - 'use text format html'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view blog_post revisions'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view the administration theme'

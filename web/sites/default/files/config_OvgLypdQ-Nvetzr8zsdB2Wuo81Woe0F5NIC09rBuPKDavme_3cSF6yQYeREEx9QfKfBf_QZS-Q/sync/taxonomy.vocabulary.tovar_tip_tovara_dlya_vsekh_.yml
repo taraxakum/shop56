@@ -1,0 +1,8 @@
+uuid: 05d79125-baa7-45ed-afb1-74ec172fceed
+langcode: ru
+status: true
+dependencies: {  }
+name: 'товар (тип товара для всех)'
+vid: tovar_tip_tovara_dlya_vsekh_
+description: 'тип товара семена, химия или ... Используется для каталогизации товара'
+weight: -4

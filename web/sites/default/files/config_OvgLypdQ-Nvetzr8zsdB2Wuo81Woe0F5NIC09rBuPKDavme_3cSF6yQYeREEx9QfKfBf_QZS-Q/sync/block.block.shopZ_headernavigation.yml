@@ -1,0 +1,34 @@
+uuid: e66c397e-24ec-4d14-be35-5c1eef0cb2a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header
+  module:
+    - menu_block
+    - system
+  theme:
+    - shopZ
+id: shopZ_headernavigation
+theme: shopZ
+region: below_content
+weight: -22
+provider: null
+plugin: 'menu_block:header'
+settings:
+  id: 'menu_block:header'
+  label: 'Customer Service'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 1
+  expand: 0
+  parent: 'header:menu_link_content:f585c24c-5847-4380-9051-50615211b9eb'
+  suggestion: customer_service__content_block
+  label_type: block
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

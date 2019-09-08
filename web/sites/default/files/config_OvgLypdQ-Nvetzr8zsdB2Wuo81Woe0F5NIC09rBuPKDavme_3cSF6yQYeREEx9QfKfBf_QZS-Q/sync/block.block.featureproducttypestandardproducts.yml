@@ -1,0 +1,25 @@
+uuid: ad743501-f142-4d95-a219-3447a5990641
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:285f9662-d6ac-436f-83dd-b174adabb89a'
+  module:
+    - block_content
+  theme:
+    - commerce_2_demo
+id: featureproducttypestandardproducts
+theme: commerce_2_demo
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:285f9662-d6ac-436f-83dd-b174adabb89a'
+settings:
+  id: 'block_content:285f9662-d6ac-436f-83dd-b174adabb89a'
+  label: 'Product Type - Standard Products'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

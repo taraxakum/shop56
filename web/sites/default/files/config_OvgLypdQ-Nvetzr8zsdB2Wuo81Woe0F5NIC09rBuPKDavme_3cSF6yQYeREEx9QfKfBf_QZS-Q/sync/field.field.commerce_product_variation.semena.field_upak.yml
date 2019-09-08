@@ -1,0 +1,29 @@
+uuid: 4283b175-08bf-4ce9-a86b-72a2b6ba84d8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.semena
+    - field.storage.commerce_product_variation.field_upak
+    - taxonomy.vocabulary.pak_sem
+id: commerce_product_variation.semena.field_upak
+field_name: field_upak
+entity_type: commerce_product_variation
+bundle: semena
+label: упаковка
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pak_sem: pak_sem
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,24 @@
+uuid: e1115cd7-b982-4b18-bc68-de4306f97701
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.page
+  module:
+    - text
+_core:
+  default_config_hash: 9DAyqirD0p6NlxFvvgCt39cYsSZIr5uCvt0_z0AtcWM
+id: node.page.body
+field_name: body
+entity_type: node
+bundle: page
+label: 'Long Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

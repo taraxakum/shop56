@@ -1,0 +1,20 @@
+uuid: cb63f754-7768-4ea4-b29c-31ed7ad49b6b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.cta_homepage
+_core:
+  default_config_hash: 4HPC2OlyYbw4KcKLL5BRuq4ka92fUCuFoSiZ3d5Y-P0
+id: node.cta_homepage.changed
+field_name: changed
+entity_type: node
+bundle: cta_homepage
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,8 @@
+uuid: 461cd31b-ce0e-441f-b42c-5df2e1e8db3f
+langcode: en
+status: true
+dependencies: {  }
+id: contact_info
+label: 'Contact Info'
+revision: 0
+description: 'Contact information in the header and footer.'

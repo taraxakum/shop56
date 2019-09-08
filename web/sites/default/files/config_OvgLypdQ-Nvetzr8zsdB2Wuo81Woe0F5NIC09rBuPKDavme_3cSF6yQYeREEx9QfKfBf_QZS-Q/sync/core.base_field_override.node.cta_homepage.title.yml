@@ -1,0 +1,20 @@
+uuid: b0ceae72-3ab7-4e85-96c5-61a25ae27983
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.cta_homepage
+_core:
+  default_config_hash: 4_Gkxy2JCW814BxlKOVh7WTKCnemF6I09csrXnFpg-w
+id: node.cta_homepage.title
+field_name: title
+entity_type: node
+bundle: cta_homepage
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

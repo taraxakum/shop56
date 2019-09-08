@@ -1,0 +1,25 @@
+uuid: 1d6e143a-2e57-4527-90c1-c3d9c03b577a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:8073ecf2-5b6e-49d7-b0af-8744335d6858'
+  module:
+    - block_content
+  theme:
+    - shopZ
+id: shopZ_featureordersummary
+theme: shopZ
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:8073ecf2-5b6e-49d7-b0af-8744335d6858'
+settings:
+  id: 'block_content:8073ecf2-5b6e-49d7-b0af-8744335d6858'
+  label: 'Order Summary'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

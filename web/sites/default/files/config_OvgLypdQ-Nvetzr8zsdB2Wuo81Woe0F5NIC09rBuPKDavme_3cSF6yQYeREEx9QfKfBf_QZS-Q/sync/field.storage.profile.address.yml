@@ -1,0 +1,24 @@
+uuid: 7a1c6e3a-58d2-4f6e-920a-82c1682c36b8
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_order
+  module:
+    - address
+    - profile
+_core:
+  default_config_hash: Epax3eTdFPMQ3dTymm1zHnwqZ9DmyyHA0F18AMuUKtE
+id: profile.address
+field_name: address
+entity_type: profile
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

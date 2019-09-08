@@ -1,0 +1,22 @@
+uuid: 86f55763-5ffc-445e-b365-182a956d3449
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - orange_starter
+_core:
+  default_config_hash: lixY04ZS-kQ1i8EVEERrxh2LleO9Fs3WRMObcfYQP54
+id: mainpagecontent
+theme: orange_starter
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

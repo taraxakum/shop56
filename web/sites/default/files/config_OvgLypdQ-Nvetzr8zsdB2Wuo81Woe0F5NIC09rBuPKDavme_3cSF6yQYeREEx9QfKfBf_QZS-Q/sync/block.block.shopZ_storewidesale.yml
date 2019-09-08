@@ -1,0 +1,31 @@
+uuid: 879b09d8-0275-477a-aa31-b792585185f9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_promotion:d83cf043-82ba-4716-9df1-a26cb214d6fc'
+  module:
+    - block_content
+    - system
+  theme:
+    - shopZ
+id: shopZ_storewidesale
+theme: shopZ
+region: above_content
+weight: -18
+provider: null
+plugin: 'block_content:d83cf043-82ba-4716-9df1-a26cb214d6fc'
+settings:
+  id: 'block_content:d83cf043-82ba-4716-9df1-a26cb214d6fc'
+  label: 'Storewide Sale'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

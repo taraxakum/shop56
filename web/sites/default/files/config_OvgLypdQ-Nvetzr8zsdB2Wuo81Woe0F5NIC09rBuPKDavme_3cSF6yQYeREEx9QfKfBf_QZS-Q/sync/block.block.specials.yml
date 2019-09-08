@@ -1,0 +1,29 @@
+uuid: 17372034-c1a6-41c6-a190-d268178b995b
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.specials
+  module:
+    - facets
+    - system
+  theme:
+    - commerce_2_demo
+id: specials
+theme: commerce_2_demo
+region: page_sidebar
+weight: -15
+provider: null
+plugin: 'facet_block:specials'
+settings:
+  id: 'facet_block:specials'
+  label: Specials
+  provider: facets
+  label_display: visible
+  block_id: specials
+visibility:
+  request_path:
+    id: request_path
+    pages: "/products*\r\n/products/*"
+    negate: false
+    context_mapping: {  }

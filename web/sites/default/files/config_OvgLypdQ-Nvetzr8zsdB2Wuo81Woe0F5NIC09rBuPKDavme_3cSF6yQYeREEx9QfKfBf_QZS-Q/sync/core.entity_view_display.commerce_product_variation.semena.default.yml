@@ -1,0 +1,102 @@
+uuid: b2b1be5f-f9ff-4f07-a64a-fd48c82b601b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.semena
+    - field.field.commerce_product_variation.semena.field_est
+    - field.field.commerce_product_variation.semena.field_gar
+    - field.field.commerce_product_variation.semena.field_image
+    - field.field.commerce_product_variation.semena.field_sk_nov
+    - field.field.commerce_product_variation.semena.field_upak
+    - field.field.commerce_product_variation.semena.field_upc
+    - field.field.commerce_product_variation.semena.weight
+    - image.style.product_large
+  module:
+    - commerce_price
+    - image
+id: commerce_product_variation.semena.default
+targetEntityType: commerce_product_variation
+bundle: semena
+mode: default
+content:
+  field_est:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_gar:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: product_large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_sk_nov:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_upak:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  list_price:
+    label: inline
+    type: commerce_price_default
+    weight: 3
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  price:
+    label: hidden
+    type: commerce_price_default
+    weight: 4
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  sku:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  title:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_upc: true
+  langcode: true
+  product_id: true
+  weight: true

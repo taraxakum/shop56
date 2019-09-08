@@ -1,0 +1,30 @@
+uuid: 3d132fd4-52db-437f-951b-182c6d8bdc98
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.featured_products
+  module:
+    - system
+    - views
+  theme:
+    - shopZ
+id: shopZ_views_block__featured_products_block_1
+theme: shopZ
+region: below_content
+weight: -27
+provider: null
+plugin: 'views_block:featured_products-block_1'
+settings:
+  id: 'views_block:featured_products-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/products\r\n/products/*\r\n/product/*\r\n/user\r\n/user/*\r\n/blog\r\n/blog/*\r\n/cart\r\n/checkout/*\r\n/contact-us\r\n/contact-form-thank-you"
+    negate: true
+    context_mapping: {  }

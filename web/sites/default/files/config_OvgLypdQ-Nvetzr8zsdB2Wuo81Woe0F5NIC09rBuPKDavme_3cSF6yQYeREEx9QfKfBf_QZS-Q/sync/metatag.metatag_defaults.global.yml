@@ -1,0 +1,11 @@
+uuid: ec71f38f-fba9-4c38-b622-e7cef3fc5d40
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: k9GMyYnZemfTSDHhlmlE-cDvFlIjdfqExQd1RRAL3-I
+id: global
+label: Global
+tags:
+  robots: 'noindex, nofollow, noarchive, nosnippet, noodp, noydir, noimageindex, notranslate'
+  title: '[current-page:title] | [site:name]'

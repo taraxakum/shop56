@@ -1,0 +1,14 @@
+uuid: ebf1756d-8f9f-4298-ac63-fd54382e556a
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: O5gz9Vn7HB3Rdo8p3U3JpRmmT17mThv-vx6eX__fsY8
+id: titles
+label: Titles
+category: Demographic
+likert: false
+options: "Miss: Miss\nMs: Ms\nMr: Mr\nMrs: Mrs\nDr: Dr\n"

@@ -1,0 +1,29 @@
+uuid: df11b891-409d-455b-98ab-82ae2c0dde55
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.semena
+    - field.storage.commerce_product_variation.field_gar
+    - taxonomy.vocabulary.gar
+id: commerce_product_variation.semena.field_gar
+field_name: field_gar
+entity_type: commerce_product_variation
+bundle: semena
+label: Гарантия
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gar: gar
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

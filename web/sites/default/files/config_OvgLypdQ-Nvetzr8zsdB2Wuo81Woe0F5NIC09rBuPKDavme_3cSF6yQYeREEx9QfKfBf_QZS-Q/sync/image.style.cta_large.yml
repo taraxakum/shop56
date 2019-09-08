@@ -1,0 +1,15 @@
+uuid: cffacc21-10c2-4690-bec5-e84f7702c6fe
+langcode: en
+status: true
+dependencies: {  }
+name: cta_large
+label: 'CTA large'
+effects:
+  6eaaf3d2-f6c9-4114-9833-ff0868d187f4:
+    uuid: 6eaaf3d2-f6c9-4114-9833-ff0868d187f4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 770
+      height: 460
+      anchor: center-center

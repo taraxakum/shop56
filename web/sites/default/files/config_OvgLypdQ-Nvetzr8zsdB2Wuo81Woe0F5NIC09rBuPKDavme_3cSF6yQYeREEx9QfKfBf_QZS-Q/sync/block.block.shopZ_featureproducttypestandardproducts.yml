@@ -1,0 +1,25 @@
+uuid: badd05f1-8af4-4d5a-890b-d9dfb67c3862
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:285f9662-d6ac-436f-83dd-b174adabb89a'
+  module:
+    - block_content
+  theme:
+    - shopZ
+id: shopZ_featureproducttypestandardproducts
+theme: shopZ
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:285f9662-d6ac-436f-83dd-b174adabb89a'
+settings:
+  id: 'block_content:285f9662-d6ac-436f-83dd-b174adabb89a'
+  label: 'Product Type - Standard Products'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

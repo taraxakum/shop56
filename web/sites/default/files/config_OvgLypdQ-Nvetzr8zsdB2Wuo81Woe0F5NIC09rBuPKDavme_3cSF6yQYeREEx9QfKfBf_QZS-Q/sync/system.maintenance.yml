@@ -1,0 +1,4 @@
+message: "The Urban Hipster Drupal Commerce 2 demo site is getting some updates! We should be back shortly. Thank you for your patience.<br><br>\r\n\r\nIn the meantime, check out the PLUS demo site instead by visiting <a href=\"https://commerceplus.acromedia.com\">https://commerceplus.acromedia.com</a>. It's the same as this site but with some added features that are NOT out-of-the-box commerce."
+langcode: ru
+_core:
+  default_config_hash: qKscFr2L7WIas8JjNZ9g1pPvB82W44SPTyOUN198DBk

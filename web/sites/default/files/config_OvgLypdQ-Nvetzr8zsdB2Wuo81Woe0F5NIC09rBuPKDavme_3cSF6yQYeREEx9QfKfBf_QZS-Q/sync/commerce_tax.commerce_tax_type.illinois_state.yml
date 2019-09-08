@@ -1,0 +1,22 @@
+uuid: c36aa544-d42f-4e2c-bcf9-63afaeb04cd0
+langcode: en
+status: true
+dependencies: {  }
+id: illinois_state
+label: 'Illinois State'
+plugin: custom
+configuration:
+  display_label: tax
+  round: false
+  rates:
+    -
+      id: 195b1c91-0e38-47e4-b262-ac97ba65b4e5
+      label: 'Illinois State'
+      amount: '0.06'
+  territories:
+    -
+      country_code: US
+      administrative_area: IL
+      locality: null
+      dependent_locality: null
+  display_inclusive: false

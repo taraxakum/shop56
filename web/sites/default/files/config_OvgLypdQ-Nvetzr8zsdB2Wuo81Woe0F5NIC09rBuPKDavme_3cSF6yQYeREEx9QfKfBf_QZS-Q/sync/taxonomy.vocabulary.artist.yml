@@ -1,0 +1,8 @@
+uuid: ab0c3cc0-b2ec-4849-9d01-03d0b239c6b8
+langcode: en
+status: true
+dependencies: {  }
+name: Artist
+vid: artist
+description: 'Artist or band name.'
+weight: 0

@@ -1,0 +1,29 @@
+uuid: 603e1104-cd25-4b56-a256-e734e3d04ff8
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.brands
+  module:
+    - facets
+    - system
+  theme:
+    - shopZ
+id: shopZ_brands
+theme: shopZ
+region: page_sidebar
+weight: -18
+provider: null
+plugin: 'facet_block:brands'
+settings:
+  id: 'facet_block:brands'
+  label: Brands
+  provider: facets
+  label_display: visible
+  block_id: brands
+visibility:
+  request_path:
+    id: request_path
+    pages: "/products*\r\n/products/*"
+    negate: false
+    context_mapping: {  }

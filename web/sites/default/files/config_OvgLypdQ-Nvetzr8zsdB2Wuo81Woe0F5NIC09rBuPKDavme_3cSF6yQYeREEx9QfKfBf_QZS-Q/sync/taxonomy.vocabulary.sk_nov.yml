@@ -1,0 +1,8 @@
+uuid: 8c6c70ac-adac-48d5-a541-23688b3ab834
+langcode: ru
+status: true
+dependencies: {  }
+name: 'скидка/новинка/акция (для всех)'
+vid: sk_nov
+description: 'товар с примечанием Скидка Новинка Акция'
+weight: -6

@@ -1,0 +1,28 @@
+uuid: cb6268ca-fe72-4c9b-b594-4a61393f3c92
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header
+  module:
+    - menu_block
+  theme:
+    - commerce_2_demo
+id: headernavigation_2
+theme: commerce_2_demo
+region: mobile_nav
+weight: -14
+provider: null
+plugin: 'menu_block:header'
+settings:
+  id: 'menu_block:header'
+  label: 'Service & Information'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'header:'
+  suggestion: header
+  label_type: block
+visibility: {  }

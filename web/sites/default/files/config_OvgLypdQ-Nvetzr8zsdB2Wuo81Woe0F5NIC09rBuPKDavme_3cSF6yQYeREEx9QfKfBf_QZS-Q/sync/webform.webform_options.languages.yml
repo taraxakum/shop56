@@ -1,0 +1,14 @@
+uuid: d987b1b1-c766-4a79-aa73-b0a964e46dcf
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: iz9Esp5NsPo67xAfySM1aQKl75o625zLCkblu0vL-hE
+id: languages
+label: Languages
+category: Language
+likert: false
+options: ''

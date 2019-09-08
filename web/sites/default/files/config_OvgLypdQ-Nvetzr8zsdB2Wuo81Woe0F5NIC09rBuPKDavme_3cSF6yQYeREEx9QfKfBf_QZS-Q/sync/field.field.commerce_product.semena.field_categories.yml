@@ -1,0 +1,29 @@
+uuid: ddd48419-0c34-4ed7-b243-2c901d71117d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.semena
+    - field.storage.commerce_product.field_categories
+    - taxonomy.vocabulary.tovar_tip_tovara_dlya_vsekh_
+id: commerce_product.semena.field_categories
+field_name: field_categories
+entity_type: commerce_product
+bundle: semena
+label: 'Тип товара(для всех)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tovar_tip_tovara_dlya_vsekh_: tovar_tip_tovara_dlya_vsekh_
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

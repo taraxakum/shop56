@@ -1,0 +1,25 @@
+uuid: df666e58-eac7-419d-a49b-d138c3a507ba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cta_link
+    - node.type.cta_homepage
+  module:
+    - link
+_core:
+  default_config_hash: d7hxYBVxobSLNkjS_gqpP76p-gdiktvSQ7ssGkCesxw
+id: node.cta_homepage.field_cta_link
+field_name: field_cta_link
+entity_type: node
+bundle: cta_homepage
+label: 'CTA Link'
+description: 'The link you want to use for this CTA.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

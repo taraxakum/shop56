@@ -1,0 +1,14 @@
+uuid: 0973bf49-5759-497d-ab58-f7bedd5688a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.blog_author
+  module:
+    - user
+id: user_add_role_action.blog_author
+label: 'Add the Blog author role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: blog_author

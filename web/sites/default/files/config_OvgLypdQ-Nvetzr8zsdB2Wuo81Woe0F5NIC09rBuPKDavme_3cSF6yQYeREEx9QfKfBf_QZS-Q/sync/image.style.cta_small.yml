@@ -1,0 +1,15 @@
+uuid: a2f78a14-272c-4e02-adeb-7e5ab552015b
+langcode: en
+status: true
+dependencies: {  }
+name: cta_small
+label: 'CTA small'
+effects:
+  506f809b-27f9-48f4-a5c5-852608f0dc40:
+    uuid: 506f809b-27f9-48f4-a5c5-852608f0dc40
+    id: image_scale
+    weight: 2
+    data:
+      width: 370
+      height: null
+      upscale: false

@@ -1,0 +1,28 @@
+uuid: 702d706a-f434-479a-8032-201f4428e554
+langcode: en
+status: true
+dependencies: {  }
+id: pay_in_store
+label: 'Pay In Store'
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: "<p><strong>Thank you for your order! </strong></p>\r\n\r\n<p>Your order will be held in store for&nbsp;<strong>7 days</strong>.</p>\r\n\r\n<p>Urban Hipster<br />\r\n2301 S King Drive<br />\r\nChicago, Illinois<br />\r\n60616</p>\r\n\r\n<p>If you have any questions or would like to change your order, please <a href=\"/contact-us\">contact us</a> and have your order number handy.</p>\r\n"
+    format: html
+  display_label: 'Pay In Store'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+conditions:
+  -
+    plugin: order_store
+    configuration:
+      stores:
+        - c57f3066-437c-4ffa-ae35-76c52b4ad181
+  -
+    plugin: order_type
+    configuration:
+      bundles:
+        - default
+conditionOperator: AND

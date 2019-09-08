@@ -1,0 +1,12 @@
+uuid: db300567-d3db-469c-85ec-69ae0eaeb697
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: QPuFH9E4612ox18hXdUXL8FhU021rCvOtYISSmvMQzc
+id: default
+label: Default
+orderItemType: default
+generateTitle: true
+traits:
+  - purchasable_entity_shippable

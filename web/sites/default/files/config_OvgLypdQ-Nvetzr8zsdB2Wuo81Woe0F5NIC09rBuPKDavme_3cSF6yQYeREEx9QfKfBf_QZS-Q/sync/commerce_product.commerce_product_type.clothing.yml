@@ -1,0 +1,10 @@
+uuid: b7ef4349-3839-43c2-908e-ebb78fc34af2
+langcode: en
+status: true
+dependencies: {  }
+id: clothing
+label: Clothing
+description: 'For clothing that has size and/or color options.'
+variationType: clothing
+injectVariationFields: true
+traits: {  }

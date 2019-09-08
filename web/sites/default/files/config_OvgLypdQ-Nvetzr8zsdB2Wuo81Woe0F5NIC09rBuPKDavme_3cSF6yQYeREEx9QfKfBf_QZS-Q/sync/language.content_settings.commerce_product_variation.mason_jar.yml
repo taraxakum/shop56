@@ -1,0 +1,11 @@
+uuid: ce3f2a9e-7a55-46c4-97a1-f0825ae3a43d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.mason_jar
+id: commerce_product_variation.mason_jar
+target_entity_type_id: commerce_product_variation
+target_bundle: mason_jar
+default_langcode: site_default
+language_alterable: false

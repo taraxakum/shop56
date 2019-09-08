@@ -1,0 +1,48 @@
+uuid: fdfee08d-adb1-4425-aec6-c802bca60a8f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_carousel_slide.field_boolean
+    - field.field.node.homepage_carousel_slide.field_carousel_slide_body
+    - field.field.node.homepage_carousel_slide.field_carousel_slide_image
+    - field.field.node.homepage_carousel_slide.field_carousel_slide_image_sml
+    - field.field.node.homepage_carousel_slide.field_carousel_slide_link
+    - field.field.node.homepage_carousel_slide.field_carousel_slide_title
+    - field.field.node.homepage_carousel_slide.field_weight
+    - node.type.homepage_carousel_slide
+  module:
+    - link
+    - user
+_core:
+  default_config_hash: pS6yGu79wf05y5ceRJ9Ro9IyU-y2h6-erxajLwAirBE
+id: node.homepage_carousel_slide.default
+targetEntityType: node
+bundle: homepage_carousel_slide
+mode: default
+content:
+  field_carousel_slide_link:
+    type: link
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_boolean: true
+  field_carousel_slide_body: true
+  field_carousel_slide_image: true
+  field_carousel_slide_image_sml: true
+  field_carousel_slide_title: true
+  field_weight: true
+  langcode: true

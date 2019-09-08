@@ -1,0 +1,8 @@
+uuid: b87cb6de-c486-49c6-a80b-2a057bf6a6ca
+langcode: en
+status: true
+dependencies: {  }
+name: 'Product Category'
+vid: product_categories
+description: 'Primary categories for products.'
+weight: 0

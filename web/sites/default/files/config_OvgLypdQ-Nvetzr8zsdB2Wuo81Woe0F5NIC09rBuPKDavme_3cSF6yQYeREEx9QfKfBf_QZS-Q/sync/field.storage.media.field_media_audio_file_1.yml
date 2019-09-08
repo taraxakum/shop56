@@ -1,0 +1,23 @@
+uuid: 108ba763-6f46-4771-b057-f853102753dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - media
+id: media.field_media_audio_file_1
+field_name: field_media_audio_file_1
+entity_type: media
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

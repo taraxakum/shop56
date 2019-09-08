@@ -1,0 +1,21 @@
+uuid: 0f22276c-608c-464e-b684-6db8d02f003c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_carousel_slide_body
+    - node.type.homepage_carousel_slide
+_core:
+  default_config_hash: EY1JH215FhW0qfM_JLbDS78KIubkBsBd4T-4M39X0mA
+id: node.homepage_carousel_slide.field_carousel_slide_body
+field_name: field_carousel_slide_body
+entity_type: node
+bundle: homepage_carousel_slide
+label: 'Carousel Slide Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

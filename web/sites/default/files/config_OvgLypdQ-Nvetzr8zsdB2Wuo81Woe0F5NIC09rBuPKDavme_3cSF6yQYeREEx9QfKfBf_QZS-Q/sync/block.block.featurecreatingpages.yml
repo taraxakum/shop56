@@ -1,0 +1,25 @@
+uuid: b121050d-703e-4bb7-8a45-1f3f611121c7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:704a404a-ab3b-4fec-ad2e-ab44eee6b5ba'
+  module:
+    - block_content
+  theme:
+    - commerce_2_demo
+id: featurecreatingpages
+theme: commerce_2_demo
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:704a404a-ab3b-4fec-ad2e-ab44eee6b5ba'
+settings:
+  id: 'block_content:704a404a-ab3b-4fec-ad2e-ab44eee6b5ba'
+  label: 'Creating Pages'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

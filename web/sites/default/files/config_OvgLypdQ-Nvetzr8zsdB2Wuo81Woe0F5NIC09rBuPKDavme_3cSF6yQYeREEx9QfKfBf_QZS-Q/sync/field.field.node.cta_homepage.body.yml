@@ -1,0 +1,24 @@
+uuid: 62c7304f-a9cb-41ef-8398-5eb3705be250
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.cta_homepage
+  module:
+    - text
+_core:
+  default_config_hash: 05CaUJ43v1c1a_jhVf0RATKI7jA5HqwQByaAXNRbqnU
+id: node.cta_homepage.body
+field_name: body
+entity_type: node
+bundle: cta_homepage
+label: 'Long Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

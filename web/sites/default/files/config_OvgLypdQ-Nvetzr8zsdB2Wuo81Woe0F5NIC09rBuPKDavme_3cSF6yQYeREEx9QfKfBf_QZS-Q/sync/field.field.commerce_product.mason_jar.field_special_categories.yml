@@ -1,0 +1,28 @@
+uuid: f9a0aa99-4c35-4137-af7b-222f700ed073
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.mason_jar
+    - field.storage.commerce_product.field_special_categories
+    - taxonomy.vocabulary.special
+id: commerce_product.mason_jar.field_special_categories
+field_name: field_special_categories
+entity_type: commerce_product
+bundle: mason_jar
+label: 'Special Categories'
+description: 'Optionally add this product to special categories.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      special: special
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

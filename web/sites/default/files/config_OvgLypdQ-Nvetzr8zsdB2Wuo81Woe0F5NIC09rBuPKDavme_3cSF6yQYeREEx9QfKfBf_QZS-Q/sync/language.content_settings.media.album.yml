@@ -1,0 +1,11 @@
+uuid: 4373fcef-73af-44cf-bde4-5e92256b3423
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.album
+id: media.album
+target_entity_type_id: media
+target_bundle: album
+default_langcode: site_default
+language_alterable: false

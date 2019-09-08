@@ -1,0 +1,8 @@
+uuid: 568492db-125c-4379-abc1-db056fb209e4
+langcode: ru
+status: true
+dependencies: {  }
+name: 'внешний вид (универс)'
+vid: vid_uni
+description: 'характеристики внешнего вида (универс)'
+weight: 17

@@ -1,0 +1,24 @@
+uuid: 1d1a4645-9c4c-430e-9e2f-5630d2a7b3df
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.cta_homepage
+_core:
+  default_config_hash: YdNbQ8pmatOFaoQ8vrHcVYe6rdUUwS33OEHMPewFyDQ
+id: node.cta_homepage.sticky
+field_name: sticky
+entity_type: node
+bundle: cta_homepage
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

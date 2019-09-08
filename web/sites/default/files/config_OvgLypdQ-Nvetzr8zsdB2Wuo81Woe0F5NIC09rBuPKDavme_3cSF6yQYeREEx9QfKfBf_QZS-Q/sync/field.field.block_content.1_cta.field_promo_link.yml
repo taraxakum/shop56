@@ -1,0 +1,23 @@
+uuid: b0fcc138-66c8-42b6-ab03-51c89bbd7b68
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.1_cta
+    - field.storage.block_content.field_promo_link
+  module:
+    - link
+id: block_content.1_cta.field_promo_link
+field_name: field_promo_link
+entity_type: block_content
+bundle: 1_cta
+label: 'Promo Link'
+description: 'Link the CTA to a page.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

@@ -1,0 +1,48 @@
+uuid: 53b5a919-032e-4d76-a721-eab26eeebda0
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment
+    - commerce_promotion
+    - commerce_shipping
+id: download
+label: Download
+plugin: multistep_default
+configuration:
+  display_checkout_progress: true
+  panes:
+    login:
+      allow_guest_checkout: false
+      allow_registration: true
+      step: login
+      weight: 10
+    review:
+      step: review
+      weight: 10
+    contact_information:
+      double_entry: false
+      step: order_information
+      weight: 10
+    order_summary:
+      view: commerce_checkout_order_summary
+      step: _sidebar
+      weight: 10
+    completion_message:
+      step: complete
+      weight: 10
+    payment_process:
+      capture: true
+      step: payment
+      weight: 10
+    payment_information:
+      step: order_information
+      weight: 10
+    coupon_redemption:
+      allow_multiple: true
+      step: _sidebar
+      weight: 10
+    shipping_information:
+      require_shipping_profile: true
+      step: _disabled
+      weight: 10

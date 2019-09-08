@@ -1,0 +1,21 @@
+uuid: e34bf0a6-4777-46a3-81d7-8a46dde0dc88
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.semena
+    - field.storage.commerce_product.field_specifications
+  module:
+    - text
+id: commerce_product.semena.field_specifications
+field_name: field_specifications
+entity_type: commerce_product
+bundle: semena
+label: Спецификации
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

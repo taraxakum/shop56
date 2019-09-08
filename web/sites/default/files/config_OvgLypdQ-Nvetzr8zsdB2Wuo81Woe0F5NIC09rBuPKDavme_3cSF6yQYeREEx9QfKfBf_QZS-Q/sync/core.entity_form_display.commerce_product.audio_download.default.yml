@@ -1,0 +1,159 @@
+uuid: 8dd7321d-f80b-4222-a661-ca245916bd35
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.audio_download
+    - field.field.commerce_product.audio_download.body
+    - field.field.commerce_product.audio_download.field_album_samples
+    - field.field.commerce_product.audio_download.field_artist
+    - field.field.commerce_product.audio_download.field_catalog_image
+    - field.field.commerce_product.audio_download.field_categories
+    - field.field.commerce_product.audio_download.field_genre
+    - field.field.commerce_product.audio_download.field_image
+    - field.field.commerce_product.audio_download.field_meta_tags
+    - field.field.commerce_product.audio_download.field_product_reviews
+    - field.field.commerce_product.audio_download.field_recommended_products
+    - field.field.commerce_product.audio_download.field_short_description
+    - field.field.commerce_product.audio_download.field_special_categories
+    - field.field.commerce_product.audio_download.stores
+    - field.field.commerce_product.audio_download.variations
+    - image.style.thumbnail
+  module:
+    - comment
+    - commerce
+    - image
+    - metatag
+    - path
+    - text
+id: commerce_product.audio_download.default
+targetEntityType: commerce_product
+bundle: audio_download
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+      summary_rows: 3
+    third_party_settings: {  }
+    region: content
+  field_album_samples:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_artist:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_catalog_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_categories:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_genre:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_image:
+    weight: 12
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_meta_tags:
+    weight: 17
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_product_reviews:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_recommended_products:
+    weight: 13
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_short_description:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_special_categories:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+    region: content
+  stores:
+    type: commerce_entity_select
+    weight: 0
+    settings:
+      hide_single_entity: true
+      autocomplete_threshold: 7
+      autocomplete_size: 60
+      autocomplete_placeholder: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true
+  variations: true

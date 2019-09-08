@@ -1,0 +1,32 @@
+uuid: ab592495-e2d2-4f0d-bdfe-3b4b29ce7eb6
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+id: solr_5
+name: 'Solr 5'
+description: ''
+backend: search_api_solr
+backend_config:
+  connector: standard
+  connector_config:
+    scheme: http
+    host: localhost
+    port: '8983'
+    path: /solr
+    core: drupalcommerce_demo
+    timeout: 5
+    index_timeout: 5
+    optimize_timeout: 10
+    commit_within: 1000
+    solr_version: ''
+    http_method: AUTO
+  retrieve_data: false
+  highlight_data: false
+  excerpt: false
+  skip_schema_check: false
+  site_hash: true
+  suggest_suffix: true
+  suggest_corrections: true
+  suggest_words: false

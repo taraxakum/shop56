@@ -1,0 +1,49 @@
+
+
+/* THEME DEBUG */
+/* THEME HOOK: 'simple_menu_icons_css_item' */
+/* BEGIN OUTPUT from 'modules/contrib/simple_menu_icons/templates/simple-menu-icons-css-item.html.twig' */
+
+    a.menu-icon-31,
+    ul.links li.menu-icon-31 a,
+    ul.menu li.menu-icon-31 a {
+        background-image: url(/sites/default/files/menu_icons/icon-headset.svg);
+        padding-left:px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    a.menu-icon-32,
+    ul.links li.menu-icon-32 a,
+    ul.menu li.menu-icon-32 a {
+        background-image: url(/sites/default/files/menu_icons/icon-shipping-box.svg);
+        padding-left:px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    a.menu-icon-33,
+    ul.links li.menu-icon-33 a,
+    ul.menu li.menu-icon-33 a {
+        background-image: url(/sites/default/files/menu_icons/icon-question.svg);
+        padding-left:px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    a.menu-icon-35,
+    ul.links li.menu-icon-35 a,
+    ul.menu li.menu-icon-35 a {
+        background-image: url(/sites/default/files/menu_icons/icon-chat-2.svg);
+        padding-left:px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    a.menu-icon-36,
+    ul.links li.menu-icon-36 a,
+    ul.menu li.menu-icon-36 a {
+        background-image: url(/sites/default/files/menu_icons/icon-circle-arrows.svg);
+        padding-left:px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+/* END OUTPUT from 'modules/contrib/simple_menu_icons/templates/simple-menu-icons-css-item.html.twig' */
+

@@ -1,0 +1,10 @@
+uuid: c9435d90-f105-45e1-a00c-efcb4c5554ec
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: r-Cj-V2Rcs5jKxKH7htPgvY_MnFmjRDiVzBoHpl0LLA
+id: tools
+label: Tools
+description: 'User tool links, often added by modules'
+locked: true

@@ -1,0 +1,25 @@
+uuid: 89ed83a6-31bb-44bc-8910-2d04861ab479
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:ca1f912d-c41b-485f-8e39-a0505b046bde'
+  module:
+    - block_content
+  theme:
+    - shopZ
+id: shopZ_featureenterprisesearch
+theme: shopZ
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:ca1f912d-c41b-485f-8e39-a0505b046bde'
+settings:
+  id: 'block_content:ca1f912d-c41b-485f-8e39-a0505b046bde'
+  label: 'Enterprise Search'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 10ae105d-737f-4b7d-ad95-07afea8466cc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:651cf83a-820c-480b-a092-803119f157ba'
+  module:
+    - block_content
+  theme:
+    - shopZ
+id: shopZ_featurefacetbasedcatalog
+theme: shopZ
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:651cf83a-820c-480b-a092-803119f157ba'
+settings:
+  id: 'block_content:651cf83a-820c-480b-a092-803119f157ba'
+  label: 'Facet Based Catalog'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

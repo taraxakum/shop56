@@ -1,0 +1,29 @@
+uuid: f6c01f61-fad1-4e67-95b1-360ffcb684fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.products
+  module:
+    - system
+    - views
+  theme:
+    - shopZ
+id: shopZ_items_per_page
+theme: shopZ
+region: content
+weight: -26
+provider: null
+plugin: 'views_exposed_filter_block:products-page_1'
+settings:
+  id: 'views_exposed_filter_block:products-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/products*\r\n/products/*"
+    negate: false
+    context_mapping: {  }

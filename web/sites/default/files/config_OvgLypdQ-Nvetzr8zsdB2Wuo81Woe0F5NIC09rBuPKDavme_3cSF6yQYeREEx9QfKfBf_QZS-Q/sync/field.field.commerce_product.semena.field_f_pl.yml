@@ -1,0 +1,29 @@
+uuid: 83b311ae-b730-4141-8074-eabcc46aac99
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.semena
+    - field.storage.commerce_product.field_f_pl
+    - taxonomy.vocabulary.forma_ploda
+id: commerce_product.semena.field_f_pl
+field_name: field_f_pl
+entity_type: commerce_product
+bundle: semena
+label: 'Форма плода'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      forma_ploda: forma_ploda
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

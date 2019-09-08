@@ -1,0 +1,18 @@
+uuid: 53823b9a-8a38-4914-a313-a626785c2291
+langcode: ru
+status: true
+dependencies:
+  config:
+    - comment.type.node_comment
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+_core:
+  default_config_hash: OjeSzaFC6LFTR30bqLZch_4Ni352sDg6oZLLR5M2uWA
+id: comment.node_comment
+target_entity_type_id: comment
+target_bundle: node_comment
+default_langcode: site_default
+language_alterable: false

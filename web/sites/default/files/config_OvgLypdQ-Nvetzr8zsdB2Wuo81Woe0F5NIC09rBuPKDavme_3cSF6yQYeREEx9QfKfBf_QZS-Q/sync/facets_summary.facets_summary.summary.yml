@@ -1,0 +1,49 @@
+uuid: 51eccd18-6ba5-4f6e-908d-d8b4a5635de1
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.products
+    - views.view.products
+  module:
+    - search_api
+id: summary
+name: Summary
+facets:
+  artists:
+    checked: true
+    label: Artists
+    separator: ', '
+    weight: 0
+    show_count: false
+  brands:
+    checked: true
+    label: Brands
+    separator: ', '
+    weight: 0
+    show_count: false
+  categories:
+    checked: true
+    label: Categories
+    separator: ', '
+    weight: 0
+    show_count: false
+  genres:
+    checked: true
+    label: Genres
+    separator: ', '
+    weight: 0
+    show_count: false
+  specials:
+    checked: true
+    label: Specials
+    separator: ', '
+    weight: 0
+    show_count: false
+facet_source_id: 'search_api:views_page__products__page_1'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }

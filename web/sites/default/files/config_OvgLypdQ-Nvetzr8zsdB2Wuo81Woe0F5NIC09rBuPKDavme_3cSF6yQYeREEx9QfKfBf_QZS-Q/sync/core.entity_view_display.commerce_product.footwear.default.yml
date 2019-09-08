@@ -1,0 +1,116 @@
+uuid: b7ff1bdc-6414-420b-ba0c-ac0ee764f1ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.footwear
+    - core.entity_view_display.comment.product_reviews.default
+    - field.field.commerce_product.footwear.body
+    - field.field.commerce_product.footwear.field_brand
+    - field.field.commerce_product.footwear.field_catalog_image
+    - field.field.commerce_product.footwear.field_categories
+    - field.field.commerce_product.footwear.field_image
+    - field.field.commerce_product.footwear.field_meta_tags
+    - field.field.commerce_product.footwear.field_product_reviews
+    - field.field.commerce_product.footwear.field_recommended_products
+    - field.field.commerce_product.footwear.field_short_description
+    - field.field.commerce_product.footwear.field_special_categories
+    - field.field.commerce_product.footwear.field_specifications
+    - field.field.commerce_product.footwear.stores
+    - field.field.commerce_product.footwear.variations
+  module:
+    - comment
+    - commerce_product
+    - text
+id: commerce_product.footwear.default
+targetEntityType: commerce_product
+bundle: footwear
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 4
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_brand:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_categories:
+    type: entity_reference_label
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_product_reviews:
+    type: comment_default
+    weight: 8
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+  field_recommended_products:
+    type: entity_reference_entity_view
+    weight: 9
+    region: content
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+  field_short_description:
+    type: basic_string
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_special_categories:
+    type: entity_reference_label
+    weight: 7
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_specifications:
+    type: text_default
+    weight: 5
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_catalog_image: true
+  field_image: true
+  field_meta_tags: true
+  langcode: true
+  stores: true
+  uid: true

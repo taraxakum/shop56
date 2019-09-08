@@ -1,0 +1,14 @@
+uuid: a86aeaf4-f03b-4762-87f0-af91adfddf30
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_tax
+third_party_settings:
+  commerce_tax:
+    taxable_type: digital_goods
+label: Digital
+id: digital
+purchasableEntityType: commerce_product_variation
+orderType: digital
+traits: {  }

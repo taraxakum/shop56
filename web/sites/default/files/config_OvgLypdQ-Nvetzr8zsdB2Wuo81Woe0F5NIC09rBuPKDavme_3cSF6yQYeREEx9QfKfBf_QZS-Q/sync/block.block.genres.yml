@@ -1,0 +1,29 @@
+uuid: 5f50136c-4d7f-4d38-a1f9-7cbc5f97c685
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.genres
+  module:
+    - facets
+    - system
+  theme:
+    - commerce_2_demo
+id: genres
+theme: commerce_2_demo
+region: page_sidebar
+weight: -17
+provider: null
+plugin: 'facet_block:genres'
+settings:
+  id: 'facet_block:genres'
+  label: Genres
+  provider: facets
+  label_display: visible
+  block_id: genres
+visibility:
+  request_path:
+    id: request_path
+    pages: "/products*\r\n/products/*"
+    negate: false
+    context_mapping: {  }

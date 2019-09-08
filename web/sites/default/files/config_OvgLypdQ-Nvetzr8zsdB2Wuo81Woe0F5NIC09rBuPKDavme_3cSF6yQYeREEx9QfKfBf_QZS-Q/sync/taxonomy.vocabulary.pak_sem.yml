@@ -1,0 +1,8 @@
+uuid: a787b74c-72dd-4ed4-86c2-5233882ac6f6
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Упаковка Семян'
+vid: pak_sem
+description: ''
+weight: 0

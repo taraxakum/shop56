@@ -1,0 +1,27 @@
+uuid: b43cca58-cf48-4eee-a081-4e8bae0b1cf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_audio_file_1
+    - media.type.album
+  module:
+    - file
+id: media.album.field_media_audio_file_1
+field_name: field_media_audio_file_1
+entity_type: media
+bundle: album
+label: 'Full track'
+description: 'Upload full-length album tracks.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: album/full
+  file_extensions: 'mp3 wav aac'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

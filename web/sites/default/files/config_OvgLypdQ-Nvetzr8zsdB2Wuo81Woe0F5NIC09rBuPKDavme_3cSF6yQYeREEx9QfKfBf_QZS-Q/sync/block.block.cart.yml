@@ -1,0 +1,21 @@
+uuid: 908999a6-3c01-4823-8a7d-72a0ef341349
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - commerce_2_demo
+id: cart
+theme: commerce_2_demo
+region: header_right
+weight: -7
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+visibility: {  }

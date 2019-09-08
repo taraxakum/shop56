@@ -1,0 +1,54 @@
+uuid: 3b214d4e-988a-4af7-a338-e23a07c199c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.3_ctas.field_boolean
+    - field.field.paragraph.3_ctas.field_cta_image_small
+    - field.field.paragraph.3_ctas.field_link_cta_link
+    - field.field.paragraph.3_ctas.field_unique_class
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.3_ctas
+  module:
+    - image
+    - link
+id: paragraph.3_ctas.default
+targetEntityType: paragraph
+bundle: 3_ctas
+mode: default
+content:
+  field_boolean:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_cta_image_small:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link_cta_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_unique_class:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

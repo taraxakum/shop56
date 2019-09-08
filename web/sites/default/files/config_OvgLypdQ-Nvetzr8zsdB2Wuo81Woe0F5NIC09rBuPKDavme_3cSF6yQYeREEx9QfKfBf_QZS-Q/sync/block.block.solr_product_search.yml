@@ -1,0 +1,23 @@
+uuid: 056dc58d-0a3d-46b6-b2dd-94147fee07fc
+langcode: null
+status: true
+dependencies:
+  config:
+    - views.view.products
+  module:
+    - views
+  theme:
+    - shopZ
+id: solr_product_search
+theme: shopZ
+region: site_search
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:products-page_1'
+settings:
+  id: 'views_exposed_filter_block:products-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: cb5b9c79-fa73-4c54-bff3-d17de042544b
+langcode: en
+status: true
+dependencies: {  }
+id: clothing
+label: Clothing
+orderItemType: default
+generateTitle: true
+traits:
+  - purchasable_entity_shippable

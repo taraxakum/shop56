@@ -1,0 +1,8 @@
+uuid: 25688597-daab-4579-9b2c-d4f98a1f4996
+langcode: ru
+status: true
+dependencies: {  }
+name: 'производитель товара (для всех)'
+vid: pro_tov
+description: 'производитель товара '
+weight: -5

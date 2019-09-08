@@ -1,0 +1,8 @@
+uuid: 633420e0-3769-473a-ad5a-27de1f45f6c0
+langcode: ru
+status: true
+dependencies: {  }
+name: 'для культур (удобрения)'
+vid: dl_k_ud
+description: 'назначение удобрений'
+weight: 16

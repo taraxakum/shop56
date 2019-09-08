@@ -1,0 +1,29 @@
+uuid: cadbe911-cdae-4522-8545-0b3ac6d67d7c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.semena
+    - field.storage.commerce_product.field_f1
+    - taxonomy.vocabulary.gibrid_f1_dlya_semyan_
+id: commerce_product.semena.field_f1
+field_name: field_f1
+entity_type: commerce_product
+bundle: semena
+label: 'гибрид F1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gibrid_f1_dlya_semyan_: gibrid_f1_dlya_semyan_
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

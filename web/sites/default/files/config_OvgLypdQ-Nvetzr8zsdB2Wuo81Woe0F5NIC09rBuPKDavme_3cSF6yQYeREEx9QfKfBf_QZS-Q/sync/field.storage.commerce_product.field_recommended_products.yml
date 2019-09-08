@@ -1,0 +1,19 @@
+uuid: b3e44efd-82b2-4ea8-b4fa-d790c17373cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_recommended_products
+field_name: field_recommended_products
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: commerce_product
+module: core
+locked: false
+cardinality: 6
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

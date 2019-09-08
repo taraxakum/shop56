@@ -1,0 +1,8 @@
+uuid: 4a08793c-3541-46e2-abd2-209e38bf97f4
+langcode: ru
+status: true
+dependencies: {  }
+name: 'вес/объем/к-во (для всех)'
+vid: ves_ob
+description: 'вес или объем или количество, что покупает клиент (цифры)'
+weight: -11

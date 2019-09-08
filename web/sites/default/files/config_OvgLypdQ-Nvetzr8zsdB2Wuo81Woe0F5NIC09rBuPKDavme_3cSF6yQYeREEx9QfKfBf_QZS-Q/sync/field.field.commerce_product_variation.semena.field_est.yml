@@ -1,0 +1,29 @@
+uuid: 561954b2-b361-4fb2-a7d6-78e2ec6b03a5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.semena
+    - field.storage.commerce_product_variation.field_est
+    - taxonomy.vocabulary.est
+id: commerce_product_variation.semena.field_est
+field_name: field_est
+entity_type: commerce_product_variation
+bundle: semena
+label: наличие
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      est: est
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

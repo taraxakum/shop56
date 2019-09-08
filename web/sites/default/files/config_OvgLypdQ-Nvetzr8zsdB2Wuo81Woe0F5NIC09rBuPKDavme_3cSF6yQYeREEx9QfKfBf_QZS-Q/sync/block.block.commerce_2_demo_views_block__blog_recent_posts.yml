@@ -1,0 +1,32 @@
+uuid: d6bc6742-d817-4eea-8d59-7972e4a86bfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - system
+    - views
+  theme:
+    - commerce_2_demo
+_core:
+  default_config_hash: 4HvwZbNgyrIcvK7kwBSLbDaZFGl8qHWE8uJx_m4XawM
+id: commerce_2_demo_views_block__blog_recent_posts
+theme: commerce_2_demo
+region: blog_sidebar
+weight: 0
+provider: null
+plugin: 'views_block:blog-recent_posts'
+settings:
+  id: 'views_block:blog-recent_posts'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/blog/*"
+    negate: false
+    context_mapping: {  }

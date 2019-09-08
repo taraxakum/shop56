@@ -1,0 +1,22 @@
+uuid: 0b9d47d7-daf1-4e13-b1d7-717a4c9fb694
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.semena
+    - field.storage.commerce_product.field_vy_ras
+  module:
+    - harvest_calendar
+id: commerce_product.semena.field_vy_ras
+field_name: field_vy_ras
+entity_type: commerce_product
+bundle: semena
+label: 'высадка рассады'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  color: '#80ff80'
+field_type: harvest_calendar

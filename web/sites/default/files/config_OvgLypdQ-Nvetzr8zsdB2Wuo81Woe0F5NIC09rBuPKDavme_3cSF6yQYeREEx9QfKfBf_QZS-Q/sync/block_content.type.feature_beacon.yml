@@ -1,0 +1,8 @@
+uuid: 15540a9d-a71e-47b7-ba70-ce19d2791715
+langcode: en
+status: true
+dependencies: {  }
+id: feature_beacon
+label: 'Feature Beacon'
+revision: 1
+description: 'Add a beacon to highlight a feature on the website frontend.'

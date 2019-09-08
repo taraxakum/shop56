@@ -1,0 +1,20 @@
+uuid: b6bf689d-de35-4bf1-9a4d-a0d0c98fe67e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - taxonomy
+id: commerce_product.field_sv_ter
+field_name: field_sv_ter
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 5
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

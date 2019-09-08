@@ -1,0 +1,38 @@
+uuid: b95c4aa8-7108-4a59-96e8-d1b1cc7b25fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.audio_download
+    - commerce_product.commerce_product_type.basic
+    - commerce_product.commerce_product_type.clothing
+    - commerce_product.commerce_product_type.default
+    - commerce_product.commerce_product_type.footwear
+    - commerce_product.commerce_product_type.mason_jar
+    - field.storage.node.field_related_products
+    - node.type.blog_post
+id: node.blog_post.field_related_products
+field_name: field_related_products
+entity_type: node
+bundle: blog_post
+label: 'Related Products'
+description: 'Optionally add up to 6 products to display as related products associated with this blog post.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      audio_download: audio_download
+      basic: basic
+      clothing: clothing
+      default: default
+      footwear: footwear
+      mason_jar: mason_jar
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: audio_download
+field_type: entity_reference

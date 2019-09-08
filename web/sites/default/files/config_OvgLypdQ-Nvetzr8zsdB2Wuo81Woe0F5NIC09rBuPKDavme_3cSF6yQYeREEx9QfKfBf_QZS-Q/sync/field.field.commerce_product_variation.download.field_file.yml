@@ -1,0 +1,27 @@
+uuid: 9660f5c7-8580-47ef-ac2c-ff03f6b03283
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.download
+    - field.storage.commerce_product_variation.field_file
+  module:
+    - file
+id: commerce_product_variation.download.field_file
+field_name: field_file
+entity_type: commerce_product_variation
+bundle: download
+label: 'Upload file'
+description: 'Upload a file that the customer will have access to download.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: digital-downloads
+  file_extensions: 'pdf mp3 mp4 wav mov avi epub mobi'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

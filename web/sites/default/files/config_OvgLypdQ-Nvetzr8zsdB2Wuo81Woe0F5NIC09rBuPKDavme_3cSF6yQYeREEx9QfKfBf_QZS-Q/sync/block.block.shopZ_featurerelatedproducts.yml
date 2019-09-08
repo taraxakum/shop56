@@ -1,0 +1,25 @@
+uuid: daa49eaa-02b8-439c-8e9c-4973d5b31c82
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:497dfac6-02ed-40cf-b993-382e398ffeea'
+  module:
+    - block_content
+  theme:
+    - shopZ
+id: shopZ_featurerelatedproducts
+theme: shopZ
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:497dfac6-02ed-40cf-b993-382e398ffeea'
+settings:
+  id: 'block_content:497dfac6-02ed-40cf-b993-382e398ffeea'
+  label: 'Related Products'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

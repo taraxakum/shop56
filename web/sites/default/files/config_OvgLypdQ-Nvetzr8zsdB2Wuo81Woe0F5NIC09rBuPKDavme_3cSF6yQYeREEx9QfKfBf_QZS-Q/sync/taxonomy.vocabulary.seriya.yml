@@ -1,0 +1,8 @@
+uuid: 3680aaa3-f353-40cc-82d5-780aab1e9c4e
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Серия (для семян овощей и цветов)'
+vid: seriya
+description: 'Серии гибридов семян овощей и цветов'
+weight: 2

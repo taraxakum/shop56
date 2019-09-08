@@ -1,0 +1,23 @@
+uuid: 4859e6b9-9e26-4ee2-9faa-8b2fd1ed222d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.feature_beacon
+    - field.storage.block_content.field_position_on_element
+  module:
+    - options
+id: block_content.feature_beacon.field_position_on_element
+field_name: field_position_on_element
+entity_type: block_content
+bundle: feature_beacon
+label: 'Position on element'
+description: 'Choose where to place the beacon marker relative to the page element(s).'
+required: true
+translatable: false
+default_value:
+  -
+    value: center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

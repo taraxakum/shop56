@@ -1,0 +1,20 @@
+uuid: fbfd8d75-809d-4ee5-a1f0-35f4acc6f62c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.image_gallery
+_core:
+  default_config_hash: FZEor5mm2IMQKkVDv3ObTz3DpyFXfdNmC_KSkY4qF-4
+id: node.image_gallery.title
+field_name: title
+entity_type: node
+bundle: image_gallery
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

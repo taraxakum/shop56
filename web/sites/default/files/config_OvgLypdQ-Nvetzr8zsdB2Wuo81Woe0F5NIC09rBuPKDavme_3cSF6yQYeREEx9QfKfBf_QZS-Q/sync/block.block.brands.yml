@@ -1,0 +1,29 @@
+uuid: 6e9558a3-fa46-42ca-89d4-30a6c102d2e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.brands
+  module:
+    - facets
+    - system
+  theme:
+    - commerce_2_demo
+id: brands
+theme: commerce_2_demo
+region: page_sidebar
+weight: -18
+provider: null
+plugin: 'facet_block:brands'
+settings:
+  id: 'facet_block:brands'
+  label: Brands
+  provider: facets
+  label_display: visible
+  block_id: brands
+visibility:
+  request_path:
+    id: request_path
+    pages: "/products*\r\n/products/*"
+    negate: false
+    context_mapping: {  }

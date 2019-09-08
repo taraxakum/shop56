@@ -1,0 +1,11 @@
+uuid: effab531-be8d-451f-b798-c7ed0345004c
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VUgp70YXI1wDlBaI5BgtZf9MUYQ1cwvRd7zpEmMIVpo
+id: user
+label: User
+tags:
+  title: '[user:name] | [site:name]'
+  description: '[site:name]'

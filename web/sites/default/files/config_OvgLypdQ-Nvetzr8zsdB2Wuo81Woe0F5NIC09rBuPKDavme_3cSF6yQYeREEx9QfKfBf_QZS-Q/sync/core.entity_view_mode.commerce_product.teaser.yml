@@ -1,0 +1,10 @@
+uuid: cccba4a2-d200-45fc-9d2f-0450060c67e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.teaser
+label: Teaser
+targetEntityType: commerce_product
+cache: true

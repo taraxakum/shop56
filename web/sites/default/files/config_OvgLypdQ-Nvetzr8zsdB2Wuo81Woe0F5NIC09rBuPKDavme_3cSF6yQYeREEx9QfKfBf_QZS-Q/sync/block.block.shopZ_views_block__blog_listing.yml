@@ -1,0 +1,32 @@
+uuid: 6a2edfb5-54b9-4f9b-b716-d38b32f7b987
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - system
+    - views
+  theme:
+    - shopZ
+_core:
+  default_config_hash: wD0Uulqq85_kzy3xScP2ZgqR7qk1H7wxxgeEVu7Sv_M
+id: shopZ_views_block__blog_listing
+theme: shopZ
+region: content
+weight: -21
+provider: null
+plugin: 'views_block:blog-listing'
+settings:
+  id: 'views_block:blog-listing'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /blog
+    negate: false
+    context_mapping: {  }

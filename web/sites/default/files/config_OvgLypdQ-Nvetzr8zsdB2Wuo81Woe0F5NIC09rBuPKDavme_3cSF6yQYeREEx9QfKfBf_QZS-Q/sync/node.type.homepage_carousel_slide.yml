@@ -1,0 +1,19 @@
+uuid: b5e06e6d-38e1-43b9-aa62-bcc4657cf322
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: eCHslgXTLOqRT7V3qjMD6sTFsFOBV2x37E726rYoV9Q
+name: 'Homepage Carousel Slide'
+type: homepage_carousel_slide
+description: 'A slide that will appear in the homepage carousel.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

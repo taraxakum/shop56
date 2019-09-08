@@ -1,0 +1,30 @@
+uuid: 9700aa48-e2ed-4be6-8ea1-0fb74eff27f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.3_ctas
+    - field.storage.block_content.field_3_ctas
+    - paragraphs.paragraphs_type.3_ctas
+  module:
+    - entity_reference_revisions
+id: block_content.3_ctas.field_3_ctas
+field_name: field_3_ctas
+entity_type: block_content
+bundle: 3_ctas
+label: '3 CTAs'
+description: 'Add up to 3 CTAs.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      3_ctas: 3_ctas
+    target_bundles_drag_drop:
+      3_ctas:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

@@ -1,0 +1,22 @@
+uuid: 0caceda8-496d-4efb-9ac3-f64b1327cb56
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - header
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: KeJm4hH-GWuLQM0pJRTKiUyRRycfo3QUMzxERxtHoYo
+name: Page
+type: page
+description: 'A basic content page.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

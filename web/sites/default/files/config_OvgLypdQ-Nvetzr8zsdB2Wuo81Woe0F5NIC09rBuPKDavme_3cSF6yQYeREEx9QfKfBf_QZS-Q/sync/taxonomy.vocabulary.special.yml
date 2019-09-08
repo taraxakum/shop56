@@ -1,0 +1,8 @@
+uuid: 7b622389-3ca9-4726-9226-d3d13d00860f
+langcode: en
+status: true
+dependencies: {  }
+name: Special
+vid: special
+description: 'Miscellaneous categories for products.'
+weight: 0

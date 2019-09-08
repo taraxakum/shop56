@@ -1,0 +1,14 @@
+session:
+  parameter: language
+url:
+  source: path_prefix
+  prefixes:
+    en: en
+    ru: ru
+  domains:
+    en: ''
+    ru: ''
+selected_langcode: site_default
+_core:
+  default_config_hash: c-fIWy80QjTC79-rf9Rm_3TrF1wGNzC9DV2gLLyyUiw
+langcode: ru

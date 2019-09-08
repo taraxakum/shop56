@@ -1,0 +1,8 @@
+uuid: 6a7b2445-ccf9-4767-ab99-6e73d401b3fb
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Высота растения (для семян цветов)'
+vid: vys_cvet
+description: 'высота декоративных растений'
+weight: 5

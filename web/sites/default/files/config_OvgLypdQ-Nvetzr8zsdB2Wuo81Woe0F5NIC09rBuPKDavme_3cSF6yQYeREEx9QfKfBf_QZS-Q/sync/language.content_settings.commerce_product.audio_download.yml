@@ -1,0 +1,11 @@
+uuid: fd1f57c2-813d-43f4-a59b-aef3c2728544
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.audio_download
+id: commerce_product.audio_download
+target_entity_type_id: commerce_product
+target_bundle: audio_download
+default_langcode: site_default
+language_alterable: false

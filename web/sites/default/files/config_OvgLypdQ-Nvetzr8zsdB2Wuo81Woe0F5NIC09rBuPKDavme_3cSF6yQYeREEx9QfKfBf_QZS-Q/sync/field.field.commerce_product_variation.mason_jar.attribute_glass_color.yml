@@ -1,0 +1,24 @@
+uuid: 421ad9b6-1434-413b-b52d-c35428b0c38a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.glass_color
+    - commerce_product.commerce_product_variation_type.mason_jar
+    - field.storage.commerce_product_variation.attribute_glass_color
+id: commerce_product_variation.mason_jar.attribute_glass_color
+field_name: attribute_glass_color
+entity_type: commerce_product_variation
+bundle: mason_jar
+label: 'Glass Color'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      - glass_color
+field_type: entity_reference

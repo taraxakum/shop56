@@ -1,0 +1,15 @@
+uuid: 3350578e-7519-4580-88bc-5133a0c3bb36
+langcode: en
+status: true
+dependencies: {  }
+name: product_large
+label: 'Product Large'
+effects:
+  89b50290-5497-4084-8222-893830717586:
+    uuid: 89b50290-5497-4084-8222-893830717586
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 670
+      height: 630
+      anchor: center-center

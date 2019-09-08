@@ -1,0 +1,10 @@
+abs_urls: false
+roles_profiles:
+  administrator:
+    public: admin
+  authenticated:
+    public: admin
+abs_url: null
+_core:
+  default_config_hash: 1OPS1aTX2L2eoUaTwNatjbUZBbrHhuf5SQqV_BeWP3A
+langcode: ru

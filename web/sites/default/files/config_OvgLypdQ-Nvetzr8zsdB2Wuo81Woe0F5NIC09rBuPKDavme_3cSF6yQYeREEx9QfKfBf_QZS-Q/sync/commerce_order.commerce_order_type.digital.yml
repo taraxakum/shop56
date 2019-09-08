@@ -1,0 +1,24 @@
+uuid: 654bdcbf-f2aa-4d1b-9a47-727b04f4287d
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+    - commerce_checkout
+    - commerce_shipping
+third_party_settings:
+  commerce_cart:
+    cart_form_view: commerce_cart_form
+    cart_block_view: commerce_cart_block
+  commerce_checkout:
+    checkout_flow: download
+  commerce_shipping:
+    shipment_type: ''
+label: 'Digital Downloads'
+id: digital
+workflow: order_default
+traits: {  }
+refresh_mode: customer
+refresh_frequency: 300
+sendReceipt: true
+receiptBcc: mhubbard@acromediainc.com

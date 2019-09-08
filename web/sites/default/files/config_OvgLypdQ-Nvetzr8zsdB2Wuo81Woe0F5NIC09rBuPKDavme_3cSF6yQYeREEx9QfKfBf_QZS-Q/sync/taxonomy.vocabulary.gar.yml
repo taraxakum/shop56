@@ -1,0 +1,8 @@
+uuid: d3f3cd6d-9fa8-4549-bf84-2fa7c5cc8515
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Гарантия (для всех)'
+vid: gar
+description: 'гарантия на товар'
+weight: -12

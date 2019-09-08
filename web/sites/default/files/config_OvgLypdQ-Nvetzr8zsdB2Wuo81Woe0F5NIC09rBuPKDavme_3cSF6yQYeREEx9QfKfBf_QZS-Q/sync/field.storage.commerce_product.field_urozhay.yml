@@ -1,0 +1,20 @@
+uuid: 88a822de-7b73-4d89-a2fc-a1f2aeb5a950
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - harvest_calendar
+id: commerce_product.field_urozhay
+field_name: field_urozhay
+entity_type: commerce_product
+type: harvest_calendar
+settings:
+  value: ''
+module: harvest_calendar
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

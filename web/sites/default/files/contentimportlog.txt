@@ -1,0 +1,40 @@
+***************************** Content Import Begins ************************************ 
+ 
+ Data Type : moderation_state  Matches 
+Data Type : body  Matches 
+Data Type : field_image1  Matches 
+Data Type : field_p_zag  Matches 
+Data Type : title  Matches 
+Data Type : langcode  Matches 
+********************************* Importing node ****************************  
+ 
+Importing Content (body) ::  Success 
+Importing Image () ::  Success 
+Importing Content (field_p_zag) ::  Success 
+Importing Content (title) ::  Success 
+********************* Node Imported successfully ********************* 
+
+***************************** Content Import Begins ************************************ 
+ 
+ Data Type : moderation_state  Matches 
+Data Type : body  Matches 
+Data Type : field_image1  Matches 
+Data Type : field_p_zag  Matches 
+Data Type : title  Matches 
+Data Type : langcode  Matches 
+********************************* Importing node ****************************  
+ 
+Importing Content (body) ::  Success 
+Importing Image () ::  Success 
+Importing Content (field_p_zag) ::  Success 
+Importing Content (title) ::  Success 
+********************* Node Imported successfully ********************* 
+
+********************************* Importing node ****************************  
+ 
+Importing Content (body) ::  Success 
+Importing Image () ::  Success 
+Importing Content (field_p_zag) ::  Success 
+Importing Content (title) ::  Success 
+********************* Node Imported successfully ********************* 
+

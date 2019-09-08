@@ -1,0 +1,28 @@
+uuid: d3c933b1-8fac-4e0f-bc48-6f8e92f7d726
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.online
+  module:
+    - address
+_core:
+  default_config_hash: fUxrlZt5z8U8dKAADqGtH0YQWZSVXIkH9Ga5abq8HwU
+id: commerce_store.online.default
+targetEntityType: commerce_store
+bundle: online
+mode: default
+content:
+  address:
+    type: address_default
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  billing_countries: true
+  default_currency: true
+  langcode: true
+  mail: true
+  name: true

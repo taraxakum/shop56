@@ -1,0 +1,7 @@
+uuid: fe40be4d-4993-4969-91e0-3c6a4f0bbf4d
+langcode: en
+status: true
+dependencies: {  }
+id: size
+label: 'Size (small, medium, large, etc.)'
+elementType: select

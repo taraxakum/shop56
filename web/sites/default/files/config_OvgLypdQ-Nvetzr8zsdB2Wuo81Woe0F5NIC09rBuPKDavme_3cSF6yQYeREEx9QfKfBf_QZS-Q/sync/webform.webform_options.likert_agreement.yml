@@ -1,0 +1,14 @@
+uuid: a8a61e2e-92ff-456d-81b9-8db78688b1ec
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: 6ghq9LCYHTfkW8262g70MMtdS5o-CPnV5KG95vlp2qo
+id: likert_agreement
+label: 'Likert: Agreement'
+category: Likert
+likert: true
+options: "1: Much Worse\n2: Somewhat Worse\n3: About the Same\n4: Somewhat Better\n5: Much Better\n"

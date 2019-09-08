@@ -1,0 +1,8 @@
+uuid: a78293a4-7ac4-4b67-9e4e-e4e70285bd77
+langcode: ru
+status: true
+dependencies: {  }
+name: универс1
+vid: univers1
+description: 'дополнительный словарь для универсального типа товаров'
+weight: 0

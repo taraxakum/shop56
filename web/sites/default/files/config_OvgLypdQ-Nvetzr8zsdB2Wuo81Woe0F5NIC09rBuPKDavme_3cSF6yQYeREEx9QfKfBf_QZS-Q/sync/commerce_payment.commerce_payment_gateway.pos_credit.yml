@@ -1,0 +1,28 @@
+uuid: 8ad33f95-b2e6-4e7e-a836-bc05be329782
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_pos
+_core:
+  default_config_hash: p91z0H6lrCQJ2-mMv7GU1kkRDR8TS2x38YOq3XWy_84
+id: pos_credit
+label: Credit
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: ''
+    format: plain_text
+  display_label: Credit
+  mode: n/a
+  payment_method_types:
+    - credit_card
+conditions:
+  -
+    plugin: order_type
+    configuration:
+      bundles:
+        - pos
+conditionOperator: AND

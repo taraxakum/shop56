@@ -1,0 +1,32 @@
+uuid: 3d0ea71b-270c-44d1-b75b-667d235f00bd
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VioBJYSA5CJZFdy4JjhJnhYzaHFWaJ2SkhfAlUG_3GY
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access cart'
+  - 'access checkout'
+  - 'access comments'
+  - 'access commerce_shipping_method overview'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'cancel account'
+  - 'manage own commerce_payment_method'
+  - 'opt-in or out of google analytics tracking'
+  - 'post comments'
+  - 'skip comment approval'
+  - userprotect.account.edit
+  - userprotect.mail.edit
+  - userprotect.pass.edit
+  - 'view commerce_product'
+  - 'view commerce_promotion'
+  - 'view commerce_shipping_method'
+  - 'view commerce_store'
+  - 'view media'
+  - 'view own commerce_order'

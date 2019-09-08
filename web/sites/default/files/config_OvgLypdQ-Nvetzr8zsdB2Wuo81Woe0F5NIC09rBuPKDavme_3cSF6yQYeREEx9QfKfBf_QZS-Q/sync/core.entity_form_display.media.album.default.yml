@@ -1,0 +1,44 @@
+uuid: 90ebd600-510b-4ade-9be6-23e8ccfb3080
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.album.field_media_audio_file
+    - field.field.media.album.field_media_audio_file_1
+    - media.type.album
+  module:
+    - file
+id: media.album.default
+targetEntityType: media
+bundle: album
+mode: default
+content:
+  field_media_audio_file:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_media_audio_file_1:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  moderation_state: true
+  path: true
+  status: true
+  uid: true

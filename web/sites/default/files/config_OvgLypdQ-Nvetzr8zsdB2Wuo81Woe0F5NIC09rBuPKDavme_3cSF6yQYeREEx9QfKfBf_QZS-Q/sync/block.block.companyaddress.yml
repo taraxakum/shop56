@@ -1,0 +1,25 @@
+uuid: 318b4dd9-9c7e-4826-853a-ffab5ec38eb9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:custom_text:bfd22fde-4960-4fe8-8719-328c8137e723'
+  module:
+    - block_content
+  theme:
+    - commerce_2_demo
+id: companyaddress
+theme: commerce_2_demo
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:bfd22fde-4960-4fe8-8719-328c8137e723'
+settings:
+  id: 'block_content:bfd22fde-4960-4fe8-8719-328c8137e723'
+  label: 'Company Address'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

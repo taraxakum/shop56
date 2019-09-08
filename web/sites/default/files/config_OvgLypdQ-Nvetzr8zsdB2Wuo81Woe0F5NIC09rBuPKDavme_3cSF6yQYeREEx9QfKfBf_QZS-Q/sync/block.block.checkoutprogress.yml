@@ -1,0 +1,26 @@
+uuid: fa728d66-c381-4d0c-a41f-11643a6c8bd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+    - system
+  theme:
+    - commerce_2_demo
+id: checkoutprogress
+theme: commerce_2_demo
+region: content
+weight: -23
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: 'Checkout progress'
+  provider: commerce_checkout
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/checkout/*'
+    negate: false
+    context_mapping: {  }

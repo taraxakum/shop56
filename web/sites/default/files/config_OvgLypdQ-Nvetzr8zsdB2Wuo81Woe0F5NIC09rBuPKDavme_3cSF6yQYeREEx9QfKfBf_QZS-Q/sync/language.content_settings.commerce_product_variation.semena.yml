@@ -1,0 +1,11 @@
+uuid: 8b877070-6bd3-471e-96dc-8dade15afcca
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.semena
+id: commerce_product_variation.semena
+target_entity_type_id: commerce_product_variation
+target_bundle: semena
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,10 @@
+uuid: 11c743fe-dc10-4b84-af07-9643242f425b
+langcode: en
+status: true
+dependencies: {  }
+id: footwear
+label: Footwear
+orderItemType: default
+generateTitle: true
+traits:
+  - purchasable_entity_shippable

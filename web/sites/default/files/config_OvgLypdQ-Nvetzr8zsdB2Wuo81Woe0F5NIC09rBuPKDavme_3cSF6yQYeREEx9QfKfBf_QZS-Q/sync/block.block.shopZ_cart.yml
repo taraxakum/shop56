@@ -1,0 +1,21 @@
+uuid: 7666e7ff-3ea8-4067-b0a7-8c31f440d667
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - shopZ
+id: shopZ_cart
+theme: shopZ
+region: header_right
+weight: -7
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 6e8a86c7-90d0-4caa-9902-fa9dd891dfb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.facet_menus
+  module:
+    - views
+  theme:
+    - shopZ
+id: shopZ_views_block__facet_menus_block_2
+theme: shopZ
+region: special_nav
+weight: 0
+provider: null
+plugin: 'views_block:facet_menus-block_2'
+settings:
+  id: 'views_block:facet_menus-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

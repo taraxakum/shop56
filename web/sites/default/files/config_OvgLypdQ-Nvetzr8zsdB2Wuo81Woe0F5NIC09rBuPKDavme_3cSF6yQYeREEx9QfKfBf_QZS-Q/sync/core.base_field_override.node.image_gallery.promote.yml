@@ -1,0 +1,24 @@
+uuid: 6d7751d7-caac-458c-9572-f9dd940c2840
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.image_gallery
+_core:
+  default_config_hash: VJJ3y-PhHrp94rug7LIjv7-M_uQ7LadI9pUb2nH6N4M
+id: node.image_gallery.promote
+field_name: promote
+entity_type: node
+bundle: image_gallery
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

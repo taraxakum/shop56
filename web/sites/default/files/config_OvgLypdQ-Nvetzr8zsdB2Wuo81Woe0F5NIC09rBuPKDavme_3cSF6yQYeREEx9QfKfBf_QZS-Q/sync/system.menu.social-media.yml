@@ -1,0 +1,10 @@
+uuid: 2b895df8-6a82-4dd8-860f-2dbd7f116bcd
+langcode: zxx
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3Ls_m2295FfC-H9iXo6FW0LX1_nxhc2hQoAbzPeJYis
+id: social-media
+label: 'Social Media'
+description: 'Social Media Links'
+locked: false

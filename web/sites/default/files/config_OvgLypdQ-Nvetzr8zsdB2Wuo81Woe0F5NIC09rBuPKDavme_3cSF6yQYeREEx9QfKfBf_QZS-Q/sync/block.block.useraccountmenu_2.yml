@@ -1,0 +1,28 @@
+uuid: 624e1b15-b292-43b1-8a77-0212ba0a8b71
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - menu_block
+  theme:
+    - commerce_2_demo
+id: useraccountmenu_2
+theme: commerce_2_demo
+region: mobile_nav
+weight: -17
+provider: null
+plugin: 'menu_block:account'
+settings:
+  id: 'menu_block:account'
+  label: 'My Account'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'account:'
+  suggestion: account
+  label_type: block
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 1b1602e3-096e-4589-9b2c-bebe99aa6ad7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:704a404a-ab3b-4fec-ad2e-ab44eee6b5ba'
+  module:
+    - block_content
+  theme:
+    - shopZ
+id: shopZ_featurecreatingpages
+theme: shopZ
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:704a404a-ab3b-4fec-ad2e-ab44eee6b5ba'
+settings:
+  id: 'block_content:704a404a-ab3b-4fec-ad2e-ab44eee6b5ba'
+  label: 'Creating Pages'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

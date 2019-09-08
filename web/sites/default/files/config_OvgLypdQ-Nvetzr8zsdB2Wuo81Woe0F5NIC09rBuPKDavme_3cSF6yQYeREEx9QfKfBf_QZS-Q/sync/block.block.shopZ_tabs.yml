@@ -1,0 +1,29 @@
+uuid: 85328549-a49b-4398-9d10-3901d3c83c53
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - shopZ
+_core:
+  default_config_hash: CTIY2QKNY6K5GzJq219LaeMmcGnxKumV-rciI6RlqO0
+id: shopZ_tabs
+theme: shopZ
+region: content
+weight: -24
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

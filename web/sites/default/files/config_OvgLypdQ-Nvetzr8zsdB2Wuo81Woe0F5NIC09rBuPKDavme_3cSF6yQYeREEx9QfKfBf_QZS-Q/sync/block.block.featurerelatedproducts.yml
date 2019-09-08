@@ -1,0 +1,25 @@
+uuid: 9fb11bda-146e-42cd-948a-247873fcd410
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:497dfac6-02ed-40cf-b993-382e398ffeea'
+  module:
+    - block_content
+  theme:
+    - commerce_2_demo
+id: featurerelatedproducts
+theme: commerce_2_demo
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:497dfac6-02ed-40cf-b993-382e398ffeea'
+settings:
+  id: 'block_content:497dfac6-02ed-40cf-b993-382e398ffeea'
+  label: 'Related Products'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

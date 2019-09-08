@@ -1,0 +1,25 @@
+uuid: 0793a84c-062f-46b5-afd4-f69d551e5d94
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_info:64cda636-f064-4c1a-9fb9-d6bc0c8bad87'
+  module:
+    - block_content
+  theme:
+    - shopZ
+id: headerfootercontactinformation_3
+theme: shopZ
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:64cda636-f064-4c1a-9fb9-d6bc0c8bad87'
+settings:
+  id: 'block_content:64cda636-f064-4c1a-9fb9-d6bc0c8bad87'
+  label: 'Header & footer contact information'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

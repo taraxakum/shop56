@@ -1,0 +1,38 @@
+uuid: f2180de9-926a-4b36-a3c4-82ca5a43f28f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.clothing
+    - core.entity_view_mode.commerce_product_variation.cart
+    - field.field.commerce_product_variation.clothing.attribute_size
+    - field.field.commerce_product_variation.clothing.field_image
+    - field.field.commerce_product_variation.clothing.field_upc
+    - field.field.commerce_product_variation.clothing.weight
+    - image.style.thumbnail
+  module:
+    - image
+id: commerce_product_variation.clothing.cart
+targetEntityType: commerce_product_variation
+bundle: clothing
+mode: cart
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  attribute_size: true
+  field_upc: true
+  langcode: true
+  list_price: true
+  price: true
+  product_id: true
+  sku: true
+  title: true
+  weight: true

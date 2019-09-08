@@ -1,0 +1,22 @@
+uuid: 47f1b181-ee53-44e9-8099-880155a02347
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets_summary.facets_summary.summary
+  module:
+    - facets_summary
+  theme:
+    - commerce_2_demo
+id: summary
+theme: commerce_2_demo
+region: content
+weight: -27
+provider: null
+plugin: 'facets_summary_block:summary'
+settings:
+  id: 'facets_summary_block:summary'
+  label: Summary
+  provider: facets_summary
+  label_display: '0'
+visibility: {  }

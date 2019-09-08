@@ -1,0 +1,32 @@
+uuid: caabfe23-9517-4333-b0f6-bd914a09b0c1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - system
+    - views
+  theme:
+    - orange_starter
+_core:
+  default_config_hash: wD0Uulqq85_kzy3xScP2ZgqR7qk1H7wxxgeEVu7Sv_M
+id: views_block__blog_listing
+theme: orange_starter
+region: below_content
+weight: 0
+provider: null
+plugin: 'views_block:blog-listing'
+settings:
+  id: 'views_block:blog-listing'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /blog
+    negate: false
+    context_mapping: {  }

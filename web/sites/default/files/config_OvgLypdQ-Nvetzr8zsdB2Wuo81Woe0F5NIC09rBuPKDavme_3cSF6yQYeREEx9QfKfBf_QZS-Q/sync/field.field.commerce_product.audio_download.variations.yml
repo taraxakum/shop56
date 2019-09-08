@@ -1,0 +1,24 @@
+uuid: 63dc4b9a-d27e-40af-9d74-f3c868da7f2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.audio_download
+    - commerce_product.commerce_product_variation_type.download
+    - field.storage.commerce_product.variations
+id: commerce_product.audio_download.variations
+field_name: variations
+entity_type: commerce_product
+bundle: audio_download
+label: Variations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      - download
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: ec621c9e-1f0d-4fa0-aee6-04bd27dc2a5a
+langcode: en
+status: true
+dependencies: {  }
+id: mason_jar
+label: 'Mason Jar'
+orderItemType: default
+generateTitle: true
+traits:
+  - purchasable_entity_shippable

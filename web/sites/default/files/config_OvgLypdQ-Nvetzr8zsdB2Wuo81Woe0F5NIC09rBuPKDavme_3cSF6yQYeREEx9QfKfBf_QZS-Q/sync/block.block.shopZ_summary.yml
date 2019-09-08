@@ -1,0 +1,22 @@
+uuid: dffd8b37-ec37-4bb0-ad27-0ecb2d61e915
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets_summary.facets_summary.summary
+  module:
+    - facets_summary
+  theme:
+    - shopZ
+id: shopZ_summary
+theme: shopZ
+region: content
+weight: -27
+provider: null
+plugin: 'facets_summary_block:summary'
+settings:
+  id: 'facets_summary_block:summary'
+  label: Summary
+  provider: facets_summary
+  label_display: '0'
+visibility: {  }

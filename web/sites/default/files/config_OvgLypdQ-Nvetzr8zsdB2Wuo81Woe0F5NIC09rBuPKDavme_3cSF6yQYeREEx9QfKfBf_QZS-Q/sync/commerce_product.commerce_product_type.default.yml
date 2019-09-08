@@ -1,0 +1,18 @@
+uuid: 895511e8-3502-4a0f-910b-a99d68acbe96
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_pos
+third_party_settings:
+  commerce_pos:
+    show_in_pos: false
+_core:
+  default_config_hash: 96ryTApvzUl00vKGZusJUDgPHQALAKN8Mb13Jxm02KU
+id: default
+label: Default
+description: "Default product type installed with Commerce.<br>\r\n<b>DO NOT USE:</b> This is not being used in this demo. Please use other product types instead."
+variationType: default
+injectVariationFields: true
+traits: {  }
+locked: false

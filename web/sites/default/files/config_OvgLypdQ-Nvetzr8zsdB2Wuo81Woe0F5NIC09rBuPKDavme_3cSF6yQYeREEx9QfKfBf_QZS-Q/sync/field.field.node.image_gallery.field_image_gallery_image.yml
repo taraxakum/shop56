@@ -1,0 +1,40 @@
+uuid: a41df744-b94b-456e-b9f4-0e88fafbd824
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_gallery_image
+    - node.type.image_gallery
+  module:
+    - image
+_core:
+  default_config_hash: AyidQweUS1KpFTXw9ZR6Qdgls23XRoYqbMN8P3zyId8
+id: node.image_gallery.field_image_gallery_image
+field_name: field_image_gallery_image
+entity_type: node
+bundle: image_gallery
+label: Image
+description: 'Image(s) you want displayed in the Image Gallery.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]-image_gallery'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

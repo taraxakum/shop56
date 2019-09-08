@@ -1,0 +1,22 @@
+uuid: af635a0b-e4f0-4a7a-98a9-504af736d82d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - seven
+_core:
+  default_config_hash: '-PivpVuSC51eVKSrwVpx10u1pBf4R9J_OYyYi8daL4k'
+id: seven_login
+theme: seven
+region: content
+weight: 10
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

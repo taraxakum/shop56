@@ -1,0 +1,37 @@
+uuid: f44e8b6f-c990-46be-982b-15f6dd177628
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.audio_download
+    - commerce_product.commerce_product_type.basic
+    - commerce_product.commerce_product_type.clothing
+    - commerce_product.commerce_product_type.default
+    - commerce_product.commerce_product_type.footwear
+    - commerce_product.commerce_product_type.mason_jar
+    - field.storage.commerce_product.field_recommended_products
+id: commerce_product.default.field_recommended_products
+field_name: field_recommended_products
+entity_type: commerce_product
+bundle: default
+label: 'Recommended Products'
+description: 'Optionally add up to 6 products to display as recommended products associated with this product.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      audio_download: audio_download
+      basic: basic
+      clothing: clothing
+      default: default
+      footwear: footwear
+      mason_jar: mason_jar
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: default
+field_type: entity_reference

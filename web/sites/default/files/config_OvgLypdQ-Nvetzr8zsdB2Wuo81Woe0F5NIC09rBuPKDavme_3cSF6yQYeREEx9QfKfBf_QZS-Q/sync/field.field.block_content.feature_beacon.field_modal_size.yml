@@ -1,0 +1,23 @@
+uuid: ebafabbf-ea08-4a36-8167-d4468aa99e6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.feature_beacon
+    - field.storage.block_content.field_modal_size
+  module:
+    - options
+id: block_content.feature_beacon.field_modal_size
+field_name: field_modal_size
+entity_type: block_content
+bundle: feature_beacon
+label: 'Modal size'
+description: 'Size of the popup modal.'
+required: true
+translatable: false
+default_value:
+  -
+    value: modal-md
+default_value_callback: ''
+settings: {  }
+field_type: list_string

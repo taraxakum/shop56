@@ -1,0 +1,15 @@
+name: 'Commerce 2 Demo'
+mail: solutions@acromedia.com
+slogan: ''
+page:
+  403: /node/3
+  404: /node/2
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: ru
+default_langcode: ru
+_core:
+  default_config_hash: WNfZVr3xDnlO6G1bmXLYsMURbWgFKDDLgyDnAd7faug
+mail_notification: ''
+uuid: 30dcf046-2c1f-4e5d-ad81-8bbca168e7c4

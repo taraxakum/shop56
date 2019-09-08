@@ -1,0 +1,20 @@
+uuid: 7fd78ba4-3fe2-44a2-9068-a9bfec31ec60
+langcode: en
+status: false
+dependencies:
+  module:
+    - language
+  theme:
+    - commerce_2_demo
+id: languageswitcher
+theme: commerce_2_demo
+region: language_select
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility: {  }

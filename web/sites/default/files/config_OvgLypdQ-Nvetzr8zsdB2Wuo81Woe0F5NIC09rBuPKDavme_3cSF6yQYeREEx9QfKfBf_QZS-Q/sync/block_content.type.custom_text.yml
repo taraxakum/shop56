@@ -1,0 +1,8 @@
+uuid: fa6437db-5bd6-4d77-aa86-050d518f6636
+langcode: en
+status: true
+dependencies: {  }
+id: custom_text
+label: 'Custom Text'
+revision: 0
+description: 'A block to enter custom text using a WYSIWYG editor.'

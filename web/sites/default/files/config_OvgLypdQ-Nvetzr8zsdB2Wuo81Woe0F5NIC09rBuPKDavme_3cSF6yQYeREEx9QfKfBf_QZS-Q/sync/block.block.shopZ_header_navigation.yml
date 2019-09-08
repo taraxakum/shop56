@@ -1,0 +1,30 @@
+uuid: c712f1ed-9e71-427c-ab80-4a6e69b0850a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header
+  module:
+    - menu_block
+  theme:
+    - shopZ
+_core:
+  default_config_hash: r7EglUot84Z_a1nBgGzzqD4vnhiRHhs6ek8ksalG5EI
+id: shopZ_header_navigation
+theme: shopZ
+region: header_nav
+weight: 0
+provider: null
+plugin: 'menu_block:header'
+settings:
+  id: 'menu_block:header'
+  label: 'Header Navigation'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand: 0
+  parent: 'header:'
+  suggestion: header
+  label_type: block
+visibility: {  }

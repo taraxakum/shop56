@@ -1,0 +1,14 @@
+uuid: cc771ad6-e69c-481a-93b0-dbe49b46d592
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.pos_cashier
+  module:
+    - user
+id: user_remove_role_action.pos_cashier
+label: 'Remove the Cashier role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: pos_cashier

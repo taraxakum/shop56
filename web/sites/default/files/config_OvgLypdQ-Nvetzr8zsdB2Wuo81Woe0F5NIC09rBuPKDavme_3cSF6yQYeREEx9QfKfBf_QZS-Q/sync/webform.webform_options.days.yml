@@ -1,0 +1,14 @@
+uuid: a9cd10d4-7ec7-4bd9-ba81-6e5b43f14337
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: lt1yxZsX22-4PFJieEMiPNOBrIdJ7URyrZ3sYRzo0Oc
+id: days
+label: Days
+category: 'Date and time'
+likert: false
+options: "Sunday: Sunday\nMonday: Monday\nTuesday: Tuesday\nWednesday: Wednesday\nThursday: Thursday\nFriday: Friday\nSaturday: Saturday\n"

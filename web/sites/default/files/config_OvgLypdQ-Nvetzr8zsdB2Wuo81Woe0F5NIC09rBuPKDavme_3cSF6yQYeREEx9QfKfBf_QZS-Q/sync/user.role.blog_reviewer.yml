@@ -1,0 +1,34 @@
+uuid: 7b00ee1d-25a3-41b3-97c7-80529dc2e0ed
+langcode: en
+status: true
+dependencies: {  }
+id: blog_reviewer
+label: 'Blog reviewer'
+weight: 6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'change own username'
+  - 'create blog_post content'
+  - 'delete all revisions'
+  - 'delete blog_post revisions'
+  - 'delete own blog_post content'
+  - 'edit any blog_post content'
+  - 'edit own blog_post content'
+  - 'revert all revisions'
+  - 'revert blog_post revisions'
+  - 'use blog transition approve'
+  - 'use blog transition create_new_draft'
+  - 'use blog transition needs_work_'
+  - 'use blog transition ready_for_review'
+  - 'use text format basic_html'
+  - 'use text format html'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view blog_post revisions'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view the administration theme'

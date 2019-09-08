@@ -1,0 +1,10 @@
+uuid: a5dfb6f7-5c2b-48d8-9931-288c19d59d48
+langcode: en
+status: true
+dependencies: {  }
+id: basic
+label: Basic
+orderItemType: default
+generateTitle: true
+traits:
+  - purchasable_entity_shippable

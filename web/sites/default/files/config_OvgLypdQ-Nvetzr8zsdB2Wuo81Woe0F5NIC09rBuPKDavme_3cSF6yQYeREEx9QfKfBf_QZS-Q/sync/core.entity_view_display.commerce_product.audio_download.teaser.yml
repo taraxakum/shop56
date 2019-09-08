@@ -1,0 +1,66 @@
+uuid: 234091a3-24f0-45c5-8ccb-e0d6d7a3603c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.audio_download
+    - core.entity_view_mode.commerce_product.teaser
+    - field.field.commerce_product.audio_download.body
+    - field.field.commerce_product.audio_download.field_artist
+    - field.field.commerce_product.audio_download.field_catalog_image
+    - field.field.commerce_product.audio_download.field_categories
+    - field.field.commerce_product.audio_download.field_genre
+    - field.field.commerce_product.audio_download.field_image
+    - field.field.commerce_product.audio_download.field_product_reviews
+    - field.field.commerce_product.audio_download.field_recommended_products
+    - field.field.commerce_product.audio_download.field_short_description
+    - field.field.commerce_product.audio_download.field_special_categories
+    - field.field.commerce_product.audio_download.stores
+    - field.field.commerce_product.audio_download.variations
+    - image.style.product_thumb
+  module:
+    - commerce_product
+    - image
+id: commerce_product.audio_download.teaser
+targetEntityType: commerce_product
+bundle: audio_download
+mode: teaser
+content:
+  field_artist:
+    weight: 2
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_catalog_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: product_thumb
+      image_link: ''
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 1
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  created: true
+  field_categories: true
+  field_genre: true
+  field_image: true
+  field_product_reviews: true
+  field_recommended_products: true
+  field_short_description: true
+  field_special_categories: true
+  langcode: true
+  stores: true
+  uid: true

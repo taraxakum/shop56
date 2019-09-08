@@ -1,0 +1,7 @@
+uuid: 79044d28-d154-4135-89f1-c3960811bb5b
+langcode: en
+status: true
+dependencies: {  }
+id: lid_color
+label: 'Lid Color'
+elementType: commerce_product_rendered_attribute

@@ -1,0 +1,10 @@
+uuid: 5eba7159-d990-4ec9-896c-c19cd7bf9c79
+langcode: en
+status: true
+dependencies: {  }
+id: footwear
+label: Footwear
+description: 'For footwear that has size and/or color options.'
+variationType: footwear
+injectVariationFields: true
+traits: {  }

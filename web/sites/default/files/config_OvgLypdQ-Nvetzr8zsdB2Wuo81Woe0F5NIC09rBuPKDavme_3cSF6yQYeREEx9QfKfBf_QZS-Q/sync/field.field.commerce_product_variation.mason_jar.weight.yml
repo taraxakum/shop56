@@ -1,0 +1,21 @@
+uuid: c0232fde-484f-4278-94e0-fcc5a6a96f53
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.mason_jar
+    - field.storage.commerce_product_variation.weight
+  module:
+    - physical
+id: commerce_product_variation.mason_jar.weight
+field_name: weight
+entity_type: commerce_product_variation
+bundle: mason_jar
+label: Weight
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings: {  }
+field_type: physical_measurement

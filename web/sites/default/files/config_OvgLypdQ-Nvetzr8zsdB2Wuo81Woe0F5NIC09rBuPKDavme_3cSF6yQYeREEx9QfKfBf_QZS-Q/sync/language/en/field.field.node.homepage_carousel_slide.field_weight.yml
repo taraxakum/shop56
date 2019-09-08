@@ -1,0 +1,2 @@
+label: Weight
+description: 'The weight/order for this item. Items that weigh less (lower number) appear first, while items that weigh more (higher number) appear last.'

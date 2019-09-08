@@ -1,0 +1,25 @@
+uuid: e777a250-f089-4d86-938e-e91e60a30bcf
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:custom_text:ebc37f86-6543-4cdd-9d9b-eab2cbd22f2b'
+  module:
+    - block_content
+  theme:
+    - shopZ
+id: logo_plat_2
+theme: shopZ
+region: social_nav
+weight: -27
+provider: null
+plugin: 'block_content:ebc37f86-6543-4cdd-9d9b-eab2cbd22f2b'
+settings:
+  id: 'block_content:ebc37f86-6543-4cdd-9d9b-eab2cbd22f2b'
+  label: logo_plat
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

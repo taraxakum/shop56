@@ -1,0 +1,11 @@
+uuid: 340a1ef9-1ed5-4add-8c75-593ea48ddaef
+langcode: en
+status: true
+dependencies: {  }
+id: semena
+label: Семена
+orderItemType: default
+generateTitle: true
+traits:
+  - purchasable_entity_shippable
+locked: false

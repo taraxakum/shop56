@@ -1,0 +1,27 @@
+uuid: 6254e1bb-7a3a-4aa7-b5f8-ce5bf160bec7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.cta_homepage
+_core:
+  default_config_hash: CmWGpcLQXTVYWgUXi4c0M8yY2wtgemvJz5Ddp2Km9hk
+id: node.cta_homepage.field_weight
+field_name: field_weight
+entity_type: node
+bundle: cta_homepage
+label: Weight
+description: 'Items with lower weights are displayed before items with higher weights.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

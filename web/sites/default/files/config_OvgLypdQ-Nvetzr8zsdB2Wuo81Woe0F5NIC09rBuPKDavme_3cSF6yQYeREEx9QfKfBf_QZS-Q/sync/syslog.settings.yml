@@ -1,0 +1,6 @@
+identity: drupal
+facility: 128
+format: '!base_url|!timestamp|!type|!ip|!request_uri|!referer|!uid|!link|!message'
+_core:
+  default_config_hash: pPgixe3em4Thpr-7A-a9VHMDqHaMNBIWp0vo54Bvf5I
+langcode: ru

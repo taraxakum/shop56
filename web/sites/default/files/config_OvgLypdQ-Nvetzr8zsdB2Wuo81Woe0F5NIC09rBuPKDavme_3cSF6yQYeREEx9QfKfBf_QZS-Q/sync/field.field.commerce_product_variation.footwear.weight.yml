@@ -1,0 +1,21 @@
+uuid: c1934e50-df90-41ee-ae5b-83c53ee6fed0
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.footwear
+    - field.storage.commerce_product_variation.weight
+  module:
+    - physical
+id: commerce_product_variation.footwear.weight
+field_name: weight
+entity_type: commerce_product_variation
+bundle: footwear
+label: Weight
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings: {  }
+field_type: physical_measurement

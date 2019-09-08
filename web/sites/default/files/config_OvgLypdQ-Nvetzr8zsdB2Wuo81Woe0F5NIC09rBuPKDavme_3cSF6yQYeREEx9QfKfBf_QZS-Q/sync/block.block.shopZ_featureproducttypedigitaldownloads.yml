@@ -1,0 +1,25 @@
+uuid: d10d5cc2-3fe5-4e95-9806-ad7b2e97465f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:c05c8a65-3134-49ab-b015-f22b6f996b89'
+  module:
+    - block_content
+  theme:
+    - shopZ
+id: shopZ_featureproducttypedigitaldownloads
+theme: shopZ
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:c05c8a65-3134-49ab-b015-f22b6f996b89'
+settings:
+  id: 'block_content:c05c8a65-3134-49ab-b015-f22b6f996b89'
+  label: 'Product Type - Digital Downloads'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

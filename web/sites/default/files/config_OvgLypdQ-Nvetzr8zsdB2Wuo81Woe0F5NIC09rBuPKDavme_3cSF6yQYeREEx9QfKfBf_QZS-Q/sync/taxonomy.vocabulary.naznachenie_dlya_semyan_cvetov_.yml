@@ -1,0 +1,8 @@
+uuid: 9469eae3-d7fe-4d3a-b6c7-89ceb71e4c88
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Назначение (для семян цветов)'
+vid: naznachenie_dlya_semyan_cvetov_
+description: 'для подбора цветов на бордюр, горку, домой и т.д.'
+weight: 7

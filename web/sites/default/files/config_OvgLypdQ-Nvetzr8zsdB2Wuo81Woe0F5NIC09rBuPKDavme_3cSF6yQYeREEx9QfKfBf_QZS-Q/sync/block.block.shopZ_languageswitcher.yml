@@ -1,0 +1,20 @@
+uuid: b90822e1-a8cb-4c5a-8e13-fb59378e2f1d
+langcode: en
+status: false
+dependencies:
+  module:
+    - language
+  theme:
+    - shopZ
+id: shopZ_languageswitcher
+theme: shopZ
+region: language_select
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility: {  }

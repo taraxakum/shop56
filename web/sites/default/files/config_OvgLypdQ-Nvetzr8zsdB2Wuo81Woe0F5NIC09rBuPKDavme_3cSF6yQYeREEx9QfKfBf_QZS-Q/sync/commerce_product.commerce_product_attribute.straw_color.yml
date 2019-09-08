@@ -1,0 +1,7 @@
+uuid: b183f836-8d73-4968-9ff2-cd18001b7e0c
+langcode: en
+status: true
+dependencies: {  }
+id: straw_color
+label: 'Straw Color'
+elementType: select

@@ -1,0 +1,8 @@
+uuid: a413e2b5-2a8c-4601-bab5-30f239bc0ee0
+langcode: en
+status: true
+dependencies: {  }
+id: 1_cta
+label: '1 CTA'
+revision: 0
+description: 'One large cta used near the homepage footer.'

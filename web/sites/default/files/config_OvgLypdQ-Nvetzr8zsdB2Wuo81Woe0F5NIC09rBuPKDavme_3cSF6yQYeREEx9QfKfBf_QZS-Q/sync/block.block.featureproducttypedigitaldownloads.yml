@@ -1,0 +1,25 @@
+uuid: 6ab57cb3-405b-4c38-ab97-a6513540c726
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:c05c8a65-3134-49ab-b015-f22b6f996b89'
+  module:
+    - block_content
+  theme:
+    - commerce_2_demo
+id: featureproducttypedigitaldownloads
+theme: commerce_2_demo
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:c05c8a65-3134-49ab-b015-f22b6f996b89'
+settings:
+  id: 'block_content:c05c8a65-3134-49ab-b015-f22b6f996b89'
+  label: 'Product Type - Digital Downloads'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,256 @@
+uuid: 4a399f3e-b4cc-47b8-a945-b61786d8b70f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.semena
+    - field.field.commerce_product.semena.body
+    - field.field.commerce_product.semena.field_brand
+    - field.field.commerce_product.semena.field_catalog_image
+    - field.field.commerce_product.semena.field_categories
+    - field.field.commerce_product.semena.field_cv_pl
+    - field.field.commerce_product.semena.field_f1
+    - field.field.commerce_product.semena.field_f_pl
+    - field.field.commerce_product.semena.field_image
+    - field.field.commerce_product.semena.field_kod_v
+    - field.field.commerce_product.semena.field_meta_tags
+    - field.field.commerce_product.semena.field_pos_sem
+    - field.field.commerce_product.semena.field_pro_l
+    - field.field.commerce_product.semena.field_recommended_products
+    - field.field.commerce_product.semena.field_seriya
+    - field.field.commerce_product.semena.field_short_description
+    - field.field.commerce_product.semena.field_specifications
+    - field.field.commerce_product.semena.field_sroki
+    - field.field.commerce_product.semena.field_sv_ter
+    - field.field.commerce_product.semena.field_urozhay
+    - field.field.commerce_product.semena.field_vy_ras
+    - field.field.commerce_product.semena.stores
+    - field.field.commerce_product.semena.variations
+    - image.style.thumbnail
+  module:
+    - commerce
+    - harvest_calendar
+    - image
+    - metatag
+    - path
+    - text
+id: commerce_product.semena.default
+targetEntityType: commerce_product
+bundle: semena
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_brand:
+    weight: 91
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_catalog_image:
+    weight: 92
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_categories:
+    weight: 93
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_cv_pl:
+    weight: 94
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_f1:
+    weight: 95
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_f_pl:
+    weight: 96
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_image:
+    weight: 97
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_kod_v:
+    weight: 98
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_meta_tags:
+    weight: 99
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_pos_sem:
+    weight: 108
+    settings: {  }
+    third_party_settings: {  }
+    type: harvest_calendar_widget_tree
+    region: content
+  field_pro_l:
+    weight: 100
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_recommended_products:
+    weight: 101
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_seriya:
+    weight: 102
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_short_description:
+    weight: 103
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_specifications:
+    weight: 104
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_sroki:
+    weight: 106
+    settings: {  }
+    third_party_settings: {  }
+    type: harvest_calendar_container_widget
+    region: content
+  field_sv_ter:
+    weight: 105
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_urozhay:
+    weight: 109
+    settings: {  }
+    third_party_settings: {  }
+    type: harvest_calendar_widget_tree
+    region: content
+  field_vy_ras:
+    weight: 107
+    settings: {  }
+    third_party_settings: {  }
+    type: harvest_calendar_widget_tree
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 90
+    region: content
+    third_party_settings: {  }
+  stores:
+    type: commerce_entity_select
+    weight: -10
+    settings:
+      hide_single_entity: true
+      autocomplete_threshold: 7
+      autocomplete_size: 60
+      autocomplete_placeholder: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  variations: true

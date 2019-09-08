@@ -1,0 +1,29 @@
+uuid: b7c835a2-4a63-4a21-9a9f-e9a5d1df2f3d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.semena
+    - field.storage.commerce_product.field_cv_pl
+    - taxonomy.vocabulary.cvet_ploda
+id: commerce_product.semena.field_cv_pl
+field_name: field_cv_pl
+entity_type: commerce_product
+bundle: semena
+label: 'Цвет плода (для семян овощей и севка)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cvet_ploda: cvet_ploda
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

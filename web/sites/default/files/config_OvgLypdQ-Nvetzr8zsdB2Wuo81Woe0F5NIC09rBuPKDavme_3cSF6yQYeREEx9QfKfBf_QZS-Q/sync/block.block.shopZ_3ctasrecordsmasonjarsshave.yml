@@ -1,0 +1,31 @@
+uuid: c15cc729-1e55-467a-a5cd-2adb3d9fb41c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:3_ctas:2b2d1b61-933c-4014-a6a6-b1e4ae8edfcb'
+  module:
+    - block_content
+    - system
+  theme:
+    - shopZ
+id: shopZ_3ctasrecordsmasonjarsshave
+theme: shopZ
+region: above_content
+weight: -17
+provider: null
+plugin: 'block_content:2b2d1b61-933c-4014-a6a6-b1e4ae8edfcb'
+settings:
+  id: 'block_content:2b2d1b61-933c-4014-a6a6-b1e4ae8edfcb'
+  label: '3 CTAs - Records, Mason Jars, Shave'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

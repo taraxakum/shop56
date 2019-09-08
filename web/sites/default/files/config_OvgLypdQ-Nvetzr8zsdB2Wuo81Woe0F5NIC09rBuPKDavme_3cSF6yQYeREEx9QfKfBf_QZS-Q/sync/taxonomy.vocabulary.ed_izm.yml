@@ -1,0 +1,8 @@
+uuid: 91936e45-bbdd-4026-87b1-9ec841e845fc
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Ед. изм (для всех)'
+vid: ed_izm
+description: 'Единицы измерения для словоря "вес/объем/к-во"'
+weight: -10

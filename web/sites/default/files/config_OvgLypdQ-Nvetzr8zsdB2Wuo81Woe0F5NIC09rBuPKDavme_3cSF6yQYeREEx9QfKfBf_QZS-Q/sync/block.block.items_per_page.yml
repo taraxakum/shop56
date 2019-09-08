@@ -1,0 +1,29 @@
+uuid: 75cca914-719f-4874-b097-346d5ebe6852
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.products
+  module:
+    - system
+    - views
+  theme:
+    - commerce_2_demo
+id: items_per_page
+theme: commerce_2_demo
+region: content
+weight: -26
+provider: null
+plugin: 'views_exposed_filter_block:products-page_1'
+settings:
+  id: 'views_exposed_filter_block:products-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/products*\r\n/products/*"
+    negate: false
+    context_mapping: {  }

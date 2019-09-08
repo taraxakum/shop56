@@ -1,0 +1,8 @@
+uuid: 4a496408-d453-4617-a694-3317f03d0f17
+langcode: en
+status: true
+dependencies: {  }
+id: special
+label: Special
+description: 'Menu to display specials.'
+locked: false

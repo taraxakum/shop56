@@ -1,0 +1,52 @@
+uuid: 4ddcc774-5a6d-438b-844d-e14af5d5dd3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.mason_jar
+    - core.entity_view_mode.commerce_product.image_for_pos
+    - field.field.commerce_product.mason_jar.body
+    - field.field.commerce_product.mason_jar.field_brand
+    - field.field.commerce_product.mason_jar.field_catalog_image
+    - field.field.commerce_product.mason_jar.field_categories
+    - field.field.commerce_product.mason_jar.field_meta_tags
+    - field.field.commerce_product.mason_jar.field_product_reviews
+    - field.field.commerce_product.mason_jar.field_recommended_products
+    - field.field.commerce_product.mason_jar.field_short_description
+    - field.field.commerce_product.mason_jar.field_special_categories
+    - field.field.commerce_product.mason_jar.field_specifications
+    - field.field.commerce_product.mason_jar.stores
+    - field.field.commerce_product.mason_jar.variations
+    - image.style.thumbnail
+  module:
+    - image
+id: commerce_product.mason_jar.image_for_pos
+targetEntityType: commerce_product
+bundle: mason_jar
+mode: image_for_pos
+content:
+  field_catalog_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  field_brand: true
+  field_categories: true
+  field_meta_tags: true
+  field_product_reviews: true
+  field_recommended_products: true
+  field_short_description: true
+  field_special_categories: true
+  field_specifications: true
+  langcode: true
+  stores: true
+  title: true
+  uid: true
+  variations: true

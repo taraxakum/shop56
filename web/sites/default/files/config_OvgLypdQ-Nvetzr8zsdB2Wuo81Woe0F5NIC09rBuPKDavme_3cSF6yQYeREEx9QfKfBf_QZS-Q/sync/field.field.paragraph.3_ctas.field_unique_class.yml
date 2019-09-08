@@ -1,0 +1,19 @@
+uuid: ca408087-b4e8-4369-8ec5-a0e2d831af66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_unique_class
+    - paragraphs.paragraphs_type.3_ctas
+id: paragraph.3_ctas.field_unique_class
+field_name: field_unique_class
+entity_type: paragraph
+bundle: 3_ctas
+label: 'Unique class'
+description: 'Add a unique class for custom styling (i.e. link-bottom).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

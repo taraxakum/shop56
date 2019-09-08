@@ -1,0 +1,8 @@
+uuid: 03df730d-cd32-4606-acd3-1268f157d6bf
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Назначение (универс)'
+vid: n_uni
+description: 'характеристики назначения товара (универс)'
+weight: 18

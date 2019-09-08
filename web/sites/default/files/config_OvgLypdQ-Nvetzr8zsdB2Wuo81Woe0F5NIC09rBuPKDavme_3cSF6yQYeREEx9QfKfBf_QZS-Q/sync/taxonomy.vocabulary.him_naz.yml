@@ -1,0 +1,8 @@
+uuid: 065b829d-2ca7-42a8-84ea-c7eceff82a52
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Химия по назначению (для химпрепаратов)'
+vid: him_naz
+description: 'Назначение хим. препаратов'
+weight: 14

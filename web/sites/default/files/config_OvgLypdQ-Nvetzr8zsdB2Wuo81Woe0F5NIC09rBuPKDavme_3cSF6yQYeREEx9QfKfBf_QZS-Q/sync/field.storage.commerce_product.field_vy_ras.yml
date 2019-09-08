@@ -1,0 +1,20 @@
+uuid: 310fee8c-67cc-4e05-b437-83b4c89ead15
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - harvest_calendar
+id: commerce_product.field_vy_ras
+field_name: field_vy_ras
+entity_type: commerce_product
+type: harvest_calendar
+settings:
+  value: ''
+module: harvest_calendar
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

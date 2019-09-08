@@ -1,0 +1,64 @@
+uuid: e1594deb-625d-4953-a7ac-0ca5a1c06014
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.mason_jar
+    - core.entity_view_mode.commerce_product.teaser
+    - field.field.commerce_product.mason_jar.body
+    - field.field.commerce_product.mason_jar.field_brand
+    - field.field.commerce_product.mason_jar.field_catalog_image
+    - field.field.commerce_product.mason_jar.field_categories
+    - field.field.commerce_product.mason_jar.field_product_reviews
+    - field.field.commerce_product.mason_jar.field_recommended_products
+    - field.field.commerce_product.mason_jar.field_short_description
+    - field.field.commerce_product.mason_jar.field_special_categories
+    - field.field.commerce_product.mason_jar.field_specifications
+    - field.field.commerce_product.mason_jar.stores
+    - field.field.commerce_product.mason_jar.variations
+    - image.style.product_thumb
+  module:
+    - commerce_product
+    - image
+id: commerce_product.mason_jar.teaser
+targetEntityType: commerce_product
+bundle: mason_jar
+mode: teaser
+content:
+  field_brand:
+    weight: 2
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_catalog_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: product_thumb
+      image_link: ''
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 1
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  created: true
+  field_categories: true
+  field_product_reviews: true
+  field_recommended_products: true
+  field_short_description: true
+  field_special_categories: true
+  field_specifications: true
+  langcode: true
+  stores: true
+  uid: true

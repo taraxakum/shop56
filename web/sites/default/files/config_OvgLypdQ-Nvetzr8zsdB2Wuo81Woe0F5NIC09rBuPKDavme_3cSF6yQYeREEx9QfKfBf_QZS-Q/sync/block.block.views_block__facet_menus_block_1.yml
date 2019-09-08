@@ -1,0 +1,24 @@
+uuid: 40782fd5-c37b-40d6-82f9-45a8b33638e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.facet_menus
+  module:
+    - views
+  theme:
+    - commerce_2_demo
+id: views_block__facet_menus_block_1
+theme: commerce_2_demo
+region: primary_nav
+weight: 0
+provider: null
+plugin: 'views_block:facet_menus-block_1'
+settings:
+  id: 'views_block:facet_menus-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

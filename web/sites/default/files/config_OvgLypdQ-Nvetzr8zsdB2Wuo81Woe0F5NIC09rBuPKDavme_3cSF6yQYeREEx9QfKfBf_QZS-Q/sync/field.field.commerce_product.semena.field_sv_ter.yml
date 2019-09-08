@@ -1,0 +1,29 @@
+uuid: 9c8e274d-7423-40ac-8ebd-3ec802c971e3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.semena
+    - field.storage.commerce_product.field_sv_ter
+    - taxonomy.vocabulary.naimenovanie_tovara_dlya_vsekh_
+id: commerce_product.semena.field_sv_ter
+field_name: field_sv_ter
+entity_type: commerce_product
+bundle: semena
+label: 'Связанные термины'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      naimenovanie_tovara_dlya_vsekh_: naimenovanie_tovara_dlya_vsekh_
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

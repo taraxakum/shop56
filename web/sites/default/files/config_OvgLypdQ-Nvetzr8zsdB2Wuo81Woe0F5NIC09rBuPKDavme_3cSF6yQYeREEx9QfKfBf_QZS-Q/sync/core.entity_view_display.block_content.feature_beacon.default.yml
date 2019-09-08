@@ -1,0 +1,31 @@
+uuid: 430e35f9-b4fe-4552-9b26-d63235b8683d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.feature_beacon
+    - field.field.block_content.feature_beacon.body
+    - field.field.block_content.feature_beacon.field_display_label
+    - field.field.block_content.feature_beacon.field_modal_size
+    - field.field.block_content.feature_beacon.field_page_element
+    - field.field.block_content.feature_beacon.field_position_on_element
+  module:
+    - text
+id: block_content.feature_beacon.default
+targetEntityType: block_content
+bundle: feature_beacon
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_display_label: true
+  field_modal_size: true
+  field_page_element: true
+  field_position_on_element: true
+  langcode: true

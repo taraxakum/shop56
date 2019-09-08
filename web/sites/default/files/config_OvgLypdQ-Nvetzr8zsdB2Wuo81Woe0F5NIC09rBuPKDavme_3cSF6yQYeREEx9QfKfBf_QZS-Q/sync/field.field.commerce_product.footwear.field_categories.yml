@@ -1,0 +1,29 @@
+uuid: 5a399b22-4d63-4a7d-83d1-bba29fb415e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.footwear
+    - field.storage.commerce_product.field_categories
+    - taxonomy.vocabulary.product_categories
+id: commerce_product.footwear.field_categories
+field_name: field_categories
+entity_type: commerce_product
+bundle: footwear
+label: Categories
+description: 'Categorize this product.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      product_categories: product_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

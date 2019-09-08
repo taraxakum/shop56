@@ -1,0 +1,31 @@
+uuid: c13028af-00cc-48b1-942b-9edd69b57ecd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:1_cta:9afed779-cb3e-46b0-971a-7a609341a210'
+  module:
+    - block_content
+    - system
+  theme:
+    - commerce_2_demo
+id: lookbookcta
+theme: commerce_2_demo
+region: below_content
+weight: -23
+provider: null
+plugin: 'block_content:9afed779-cb3e-46b0-971a-7a609341a210'
+settings:
+  id: 'block_content:9afed779-cb3e-46b0-971a-7a609341a210'
+  label: 'Look Book CTA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

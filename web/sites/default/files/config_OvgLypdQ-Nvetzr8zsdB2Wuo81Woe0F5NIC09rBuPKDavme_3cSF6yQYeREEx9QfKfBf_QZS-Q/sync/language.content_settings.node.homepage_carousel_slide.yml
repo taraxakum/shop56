@@ -1,0 +1,13 @@
+uuid: 50210533-22a0-4a61-9434-4372f225ac26
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.homepage_carousel_slide
+_core:
+  default_config_hash: P9HZFbqKrbldDOO2mcOWUpg-3ZQfuq1rPB6hcmBwbYs
+id: node.homepage_carousel_slide
+target_entity_type_id: node
+target_bundle: homepage_carousel_slide
+default_langcode: site_default
+language_alterable: false

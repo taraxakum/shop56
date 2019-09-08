@@ -1,0 +1,28 @@
+uuid: ce3f1910-885a-458f-9ed8-8376f613f36f
+langcode: en
+status: true
+dependencies: {  }
+id: cheque
+label: Cheque
+weight: -7
+plugin: manual
+configuration:
+  instructions:
+    value: "<p><strong>Thank you for your order! </strong></p>\r\n\r\n<p>Please make your check payable to <strong>Urban Hipster</strong>.</p>\r\n\r\n<p><strong>Send payment to:</strong><br />\r\nUrban Hipster<br />\r\n2301 S King Drive<br />\r\nChicago, Illinois<br />\r\n60616</p>\r\n\r\n<p>Your order will be shipped once payment has arrived and cleared. We will keep you updated at each step!</p>\r\n\r\n<p>If you have any questions or would like to change your order, please <a href=\"/contact-us\">contact us</a> and have your order number handy.</p>\r\n"
+    format: html
+  display_label: 'Cheque (further instruction after order has completed)'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+conditions:
+  -
+    plugin: order_store
+    configuration:
+      stores:
+        - c57f3066-437c-4ffa-ae35-76c52b4ad181
+  -
+    plugin: order_type
+    configuration:
+      bundles:
+        - default
+conditionOperator: AND

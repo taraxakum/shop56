@@ -1,0 +1,28 @@
+uuid: 7f5dd43b-5eca-4775-a0a8-45e0789c2180
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_pos
+_core:
+  default_config_hash: ZAWXddOfZ6-yqyONJ3GDrSSngPZQwRKx4cakxBFXPak
+id: pos_debit
+label: Debit
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: ''
+    format: plain_text
+  display_label: Debit
+  mode: n/a
+  payment_method_types:
+    - credit_card
+conditions:
+  -
+    plugin: order_type
+    configuration:
+      bundles:
+        - pos
+conditionOperator: AND

@@ -1,0 +1,11 @@
+uuid: b9869410-7af9-4f93-b968-319798c0a19f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genre_audio
+id: taxonomy_term.genre_audio
+target_entity_type_id: taxonomy_term
+target_bundle: genre_audio
+default_langcode: site_default
+language_alterable: false

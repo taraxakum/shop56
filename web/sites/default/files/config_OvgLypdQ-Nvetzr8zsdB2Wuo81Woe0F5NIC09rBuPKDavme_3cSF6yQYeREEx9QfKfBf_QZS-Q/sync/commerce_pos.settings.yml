@@ -1,0 +1,11 @@
+order_lookup_limit: 10
+order_lookup_like_search: true
+_core:
+  default_config_hash: kCW6mlUwLAT4HP5szGLYobiv_A62Roey-Bk2N7lI-E0
+default_payment_gateway: pos_cash
+product_search_server: solr_5_pos
+product_search_index: pos
+look_and_feel_login_bg: {  }
+look_and_feel_store_logo: '361'
+look_and_feel_accent_colour: '#cc0000'
+langcode: ru

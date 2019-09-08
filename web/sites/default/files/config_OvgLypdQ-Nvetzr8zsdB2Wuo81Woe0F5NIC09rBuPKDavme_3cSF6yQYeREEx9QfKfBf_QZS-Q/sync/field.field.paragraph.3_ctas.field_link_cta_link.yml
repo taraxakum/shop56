@@ -1,0 +1,23 @@
+uuid: 89f126f8-18d2-4eb7-89e8-984d88616b58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_cta_link
+    - paragraphs.paragraphs_type.3_ctas
+  module:
+    - link
+id: paragraph.3_ctas.field_link_cta_link
+field_name: field_link_cta_link
+entity_type: paragraph
+bundle: 3_ctas
+label: Link
+description: 'Enter a link and button text.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

@@ -1,0 +1,36 @@
+uuid: df4cee48-8d81-4e19-a774-d9044a8b567c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.semena
+    - core.entity_view_mode.commerce_product_variation.cart
+    - field.field.commerce_product_variation.semena.field_image
+    - field.field.commerce_product_variation.semena.field_upc
+    - field.field.commerce_product_variation.semena.weight
+    - image.style.thumbnail
+  module:
+    - image
+id: commerce_product_variation.semena.cart
+targetEntityType: commerce_product_variation
+bundle: semena
+mode: cart
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_upc: true
+  langcode: true
+  list_price: true
+  price: true
+  product_id: true
+  sku: true
+  title: true
+  weight: true

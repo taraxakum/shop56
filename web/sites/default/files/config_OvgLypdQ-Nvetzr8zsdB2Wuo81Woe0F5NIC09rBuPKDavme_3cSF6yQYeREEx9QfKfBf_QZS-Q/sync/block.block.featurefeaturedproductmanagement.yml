@@ -1,0 +1,25 @@
+uuid: e57ca0ca-be72-47f0-85c8-0dcd75e2570d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:e11da5c2-6426-4b20-b588-b96e714676ce'
+  module:
+    - block_content
+  theme:
+    - commerce_2_demo
+id: featurefeaturedproductmanagement
+theme: commerce_2_demo
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:e11da5c2-6426-4b20-b588-b96e714676ce'
+settings:
+  id: 'block_content:e11da5c2-6426-4b20-b588-b96e714676ce'
+  label: 'Featured Product Management'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

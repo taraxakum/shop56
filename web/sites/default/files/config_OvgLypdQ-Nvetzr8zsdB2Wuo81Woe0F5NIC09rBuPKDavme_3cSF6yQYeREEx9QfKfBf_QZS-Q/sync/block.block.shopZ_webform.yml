@@ -1,0 +1,31 @@
+uuid: c948f4d7-e71a-4918-b9d4-bc8e2af67b58
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.newsletter_sing_up
+  module:
+    - system
+    - webform
+  theme:
+    - shopZ
+id: shopZ_webform
+theme: shopZ
+region: below_content
+weight: -26
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Newsletter Sign-up'
+  provider: webform
+  label_display: '0'
+  webform_id: newsletter_sing_up
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/livecss\r\n/products*\r\n/product/*\r\n/cart\r\n/checkout/*\r\n/user/*\r\n/blog\r\n/site-guide\r\n/contact-us\r\n/contact-form-thank-you"
+    negate: true
+    context_mapping: {  }

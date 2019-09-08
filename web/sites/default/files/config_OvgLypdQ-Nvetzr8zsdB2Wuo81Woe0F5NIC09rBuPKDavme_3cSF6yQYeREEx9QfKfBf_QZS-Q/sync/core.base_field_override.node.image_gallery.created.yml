@@ -1,0 +1,20 @@
+uuid: d282d621-9266-447a-894b-8054151cb537
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.image_gallery
+_core:
+  default_config_hash: 0WU18PZBAJzGogJegIGpa2SbpA7CTcc4bcHg_e7siLA
+id: node.image_gallery.created
+field_name: created
+entity_type: node
+bundle: image_gallery
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

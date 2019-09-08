@@ -1,0 +1,8 @@
+uuid: 3d6bd0ae-74bd-4cf0-a880-b5b140af35de
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Наименование товара(для всех)'
+vid: naimenovanie_tovara_dlya_vsekh_
+description: 'термины для сквозной связи всех материалов сайта Товаров, статей и т. д.'
+weight: -8

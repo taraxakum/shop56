@@ -1,0 +1,31 @@
+uuid: 6c720bb1-b757-4e91-b060-da24c4487d64
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:google_map:77403b0b-1097-49a1-97f9-726f818f26f1'
+  module:
+    - block_content
+    - system
+  theme:
+    - shopZ
+id: shopZ_urbanharvestmap
+theme: shopZ
+region: page_sidebar
+weight: -14
+provider: null
+plugin: 'block_content:77403b0b-1097-49a1-97f9-726f818f26f1'
+settings:
+  id: 'block_content:77403b0b-1097-49a1-97f9-726f818f26f1'
+  label: 'Urban Hipster HQ'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact-us
+    negate: false
+    context_mapping: {  }

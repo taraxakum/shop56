@@ -1,0 +1,22 @@
+uuid: 17df7b4e-a89e-44fa-8172-ed7a9b986d12
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.image_gallery
+  module:
+    - path
+_core:
+  default_config_hash: Z7jiV46ULS4WmSMHM6plGaObG_DjGgXLUlVAW-Hjn8s
+id: node.image_gallery.path
+field_name: path
+entity_type: node
+bundle: image_gallery
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

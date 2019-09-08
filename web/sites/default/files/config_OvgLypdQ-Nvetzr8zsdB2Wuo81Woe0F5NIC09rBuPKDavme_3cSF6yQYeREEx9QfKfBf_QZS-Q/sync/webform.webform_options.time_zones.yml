@@ -1,0 +1,14 @@
+uuid: 455f3dd6-f281-40c8-a203-0677ae90aafe
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: Ap2EEqbgaqr_pGMX7MY8ZI2ynPPA2snMIUFuuwdy-tc
+id: time_zones
+label: 'Time zones'
+category: 'Date and time'
+likert: false
+options: ''

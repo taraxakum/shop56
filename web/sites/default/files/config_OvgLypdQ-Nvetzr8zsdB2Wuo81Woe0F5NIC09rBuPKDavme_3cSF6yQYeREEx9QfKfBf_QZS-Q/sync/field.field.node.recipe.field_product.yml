@@ -1,0 +1,28 @@
+uuid: bf514c91-77e0-480f-9f63-f2f0f97b4c35
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.clothing
+    - field.storage.node.field_product
+    - node.type.recipe
+id: node.recipe.field_product
+field_name: field_product
+entity_type: node
+bundle: recipe
+label: Product
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      clothing: clothing
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

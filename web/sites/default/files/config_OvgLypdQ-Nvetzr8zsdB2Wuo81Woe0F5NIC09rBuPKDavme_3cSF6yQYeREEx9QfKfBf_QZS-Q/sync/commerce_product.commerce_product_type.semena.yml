@@ -1,0 +1,17 @@
+uuid: f3d4f52c-9a13-4c03-9a94-8b079e3e838e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_pos
+third_party_settings:
+  commerce_pos:
+    show_in_pos: true
+id: semena
+label: Семена
+description: ''
+variationType: semena
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

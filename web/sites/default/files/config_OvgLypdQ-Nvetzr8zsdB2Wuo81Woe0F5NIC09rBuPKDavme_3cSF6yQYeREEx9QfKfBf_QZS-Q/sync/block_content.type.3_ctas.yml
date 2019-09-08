@@ -1,0 +1,8 @@
+uuid: d463e16d-e7f4-4aa6-8260-7694a5f24c14
+langcode: en
+status: true
+dependencies: {  }
+id: 3_ctas
+label: '3 CTAs'
+revision: 0
+description: 'Display a block of 3 CTAs side-by-side.'

@@ -1,0 +1,22 @@
+uuid: f48b0d66-7c4c-4af9-ab86-5b3375dac661
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - orange_starter
+_core:
+  default_config_hash: CTIY2QKNY6K5GzJq219LaeMmcGnxKumV-rciI6RlqO0
+id: tabs
+theme: orange_starter
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

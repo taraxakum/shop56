@@ -1,0 +1,28 @@
+uuid: d0403686-26a6-481b-9830-67a395780464
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_special_categories
+    - taxonomy.vocabulary.special
+id: commerce_product.default.field_special_categories
+field_name: field_special_categories
+entity_type: commerce_product
+bundle: default
+label: 'Special Categories'
+description: 'Optionally add this product to special categories.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      special: special
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

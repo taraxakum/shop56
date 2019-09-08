@@ -1,0 +1,23 @@
+uuid: c7ceb1b2-0777-43fa-83da-fcca788d4a76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_boolean
+    - paragraphs.paragraphs_type.3_ctas
+id: paragraph.3_ctas.field_boolean
+field_name: field_boolean
+entity_type: paragraph
+bundle: 3_ctas
+label: 'Raw link output'
+description: 'Optionally output the raw URL. This is useful when linking to a Solr link path (i.e. Main menu store links).'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

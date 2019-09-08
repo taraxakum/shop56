@@ -1,0 +1,30 @@
+uuid: 8ffffe37-749d-4a1e-bca4-251bbbb1c1d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - menu_block
+  theme:
+    - shopZ
+_core:
+  default_config_hash: 7Lmw8ZwGiU9v97g3Ogn4AutrYs7YOVSQ0Bd1VulfJTs
+id: shopZ_footer_navigation
+theme: shopZ
+region: footer_nav
+weight: -4
+provider: null
+plugin: 'menu_block:footer'
+settings:
+  id: 'menu_block:footer'
+  label: 'Footer Navigation'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand: 0
+  parent: 'footer:'
+  suggestion: footer
+  label_type: block
+visibility: {  }

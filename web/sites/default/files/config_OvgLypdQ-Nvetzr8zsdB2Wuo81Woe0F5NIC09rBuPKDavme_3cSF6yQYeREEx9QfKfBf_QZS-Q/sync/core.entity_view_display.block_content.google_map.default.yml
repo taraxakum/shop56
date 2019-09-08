@@ -1,0 +1,44 @@
+uuid: bdd60f91-006e-4670-8932-4294acf52656
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.google_map
+    - field.field.block_content.google_map.body
+    - field.field.block_content.google_map.field_map_address
+  module:
+    - simple_gmap
+    - text
+id: block_content.google_map.default
+targetEntityType: block_content
+bundle: google_map
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_map_address:
+    weight: 0
+    label: hidden
+    settings:
+      include_map: true
+      apikey: ''
+      iframe_width: 100
+      iframe_height: 500
+      static_scale: 1
+      link_text: 'View larger map'
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_static_map: false
+      include_link: false
+      include_text: false
+    third_party_settings: {  }
+    type: simple_gmap
+    region: content
+hidden:
+  langcode: true

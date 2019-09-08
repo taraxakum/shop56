@@ -1,0 +1,13 @@
+uuid: cab56e99-0571-49be-8c2f-54f624a804f1
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: T1ibaP6u4hBK0Khi4qalzQar6F1I5TMVPhbjE557pB0
+id: node_save_action
+label: 'Save content'
+type: node
+plugin: 'entity:save_action:node'
+configuration: {  }

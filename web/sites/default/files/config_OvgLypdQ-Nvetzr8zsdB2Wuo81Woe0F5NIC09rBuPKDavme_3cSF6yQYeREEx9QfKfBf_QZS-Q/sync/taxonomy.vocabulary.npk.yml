@@ -1,0 +1,8 @@
+uuid: 57d3ffeb-72f0-4a83-a5ba-6d688ebdbc1a
+langcode: ru
+status: true
+dependencies: {  }
+name: 'NPK (удобрения)'
+vid: npk
+description: 'формула NPK'
+weight: 15

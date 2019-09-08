@@ -1,0 +1,7 @@
+uuid: 58de7285-a878-4d32-8d75-326360345875
+langcode: en
+status: true
+dependencies: {  }
+id: glass_color
+label: 'Glass Color'
+elementType: commerce_product_rendered_attribute

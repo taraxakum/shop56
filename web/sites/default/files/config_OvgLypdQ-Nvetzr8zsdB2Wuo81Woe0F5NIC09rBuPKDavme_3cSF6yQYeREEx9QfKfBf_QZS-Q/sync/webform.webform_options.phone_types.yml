@@ -1,0 +1,14 @@
+uuid: bd6c72c6-478f-4a50-8000-83421215f6c1
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: Ra0OlktYpR7IM2RJ2PVKS1SIAtjxwouLuniH_zzktU0
+id: phone_types
+label: 'Phone type'
+category: Demographic
+likert: false
+options: "Home: Home\nOffice: Office\nCell: Cell\n"

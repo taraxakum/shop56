@@ -1,0 +1,8 @@
+uuid: 7e114ccd-540a-4005-a421-03e0ced470f4
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Цвет листвы (для цветов)'
+vid: listva_dlya_semyan_
+description: 'цвет листвы для декоративнолиственных'
+weight: 6

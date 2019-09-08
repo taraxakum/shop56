@@ -1,0 +1,8 @@
+uuid: ebdbd16e-08d5-4e23-a381-6373d6bc7254
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Продолжительность жизни (для семян цветов)'
+vid: prodolzhitelnost_zhizni_dlya_sem
+description: 'Многолетник или однолетник'
+weight: 9

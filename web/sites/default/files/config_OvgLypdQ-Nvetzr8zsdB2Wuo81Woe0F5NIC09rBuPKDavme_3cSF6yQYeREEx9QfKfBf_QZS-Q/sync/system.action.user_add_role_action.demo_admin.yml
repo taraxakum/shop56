@@ -1,0 +1,14 @@
+uuid: 7d618aae-6e3d-4abc-a03b-a4215eab3057
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.demo_admin
+  module:
+    - user
+id: user_add_role_action.demo_admin
+label: 'Add the Demo Admin role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: demo_admin

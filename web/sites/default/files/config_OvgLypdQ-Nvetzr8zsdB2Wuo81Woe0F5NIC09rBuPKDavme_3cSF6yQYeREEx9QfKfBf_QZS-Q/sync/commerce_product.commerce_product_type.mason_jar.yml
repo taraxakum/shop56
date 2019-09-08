@@ -1,0 +1,10 @@
+uuid: 4909da8f-4ed6-44c2-bf98-583e18fe0ff1
+langcode: en
+status: true
+dependencies: {  }
+id: mason_jar
+label: 'Mason Jar'
+description: 'For a custom mason jar drinking glass product.'
+variationType: mason_jar
+injectVariationFields: true
+traits: {  }

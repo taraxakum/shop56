@@ -1,0 +1,25 @@
+uuid: a27f55c6-b7bf-4ea3-a934-d2d62f347e83
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:b4773de3-4d13-45c4-8615-6af67b99a3eb'
+  module:
+    - block_content
+  theme:
+    - shopZ
+id: shopZ_featurecontentblocks
+theme: shopZ
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:b4773de3-4d13-45c4-8615-6af67b99a3eb'
+settings:
+  id: 'block_content:b4773de3-4d13-45c4-8615-6af67b99a3eb'
+  label: 'Content Blocks'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

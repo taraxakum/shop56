@@ -1,0 +1,10 @@
+uuid: 9ee58e6e-5162-473f-9d3a-5a2d5ba7e960
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: O6eFh1wgi-8EfMLOtn2dckJlYwSBFZcTLGydPh-FSFg
+id: header
+label: 'Header Navigation'
+description: 'The header navigation.'
+locked: false

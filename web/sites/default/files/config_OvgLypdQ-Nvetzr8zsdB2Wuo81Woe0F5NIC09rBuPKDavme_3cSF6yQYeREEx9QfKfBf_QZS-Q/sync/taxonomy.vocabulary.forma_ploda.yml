@@ -1,0 +1,8 @@
+uuid: d0e4b658-40ca-4af4-92c9-824f2bf0de85
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Форма плода (для семян овощей и севка)'
+vid: forma_ploda
+description: 'форма плода плоская грушевидная и т.д'
+weight: 10

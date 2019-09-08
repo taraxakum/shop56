@@ -1,0 +1,13 @@
+uuid: 44abaab2-00c8-4c86-b5cd-d584f99cdf46
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.blog_post
+_core:
+  default_config_hash: w_IKCbeibex_2drW8DcnlUs0XUYzVhcr_MCxykbu3Ww
+id: node.blog_post
+target_entity_type_id: node
+target_bundle: blog_post
+default_langcode: site_default
+language_alterable: false

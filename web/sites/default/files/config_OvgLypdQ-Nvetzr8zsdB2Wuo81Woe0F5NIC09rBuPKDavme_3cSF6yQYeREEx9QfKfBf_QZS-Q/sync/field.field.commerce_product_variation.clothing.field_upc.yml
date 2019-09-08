@@ -1,0 +1,21 @@
+uuid: e8bb0d13-8736-49df-a360-208cdfed4d15
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.clothing
+    - field.storage.commerce_product_variation.field_upc
+  module:
+    - text
+id: commerce_product_variation.clothing.field_upc
+field_name: field_upc
+entity_type: commerce_product_variation
+bundle: clothing
+label: UPC
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

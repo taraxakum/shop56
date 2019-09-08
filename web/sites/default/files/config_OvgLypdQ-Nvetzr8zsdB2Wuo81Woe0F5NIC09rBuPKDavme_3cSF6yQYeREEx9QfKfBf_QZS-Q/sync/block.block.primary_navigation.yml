@@ -1,0 +1,29 @@
+uuid: 93f4b53a-b2c4-44e7-9df1-8043d3d2b641
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - orange_starter
+_core:
+  default_config_hash: IKMtew4VRrbrg08fiGxdJZOY_pOCgMU_HRwXh4xjbfE
+id: primary_navigation
+theme: orange_starter
+region: primary_nav
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Primary Navigation'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand: 1
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

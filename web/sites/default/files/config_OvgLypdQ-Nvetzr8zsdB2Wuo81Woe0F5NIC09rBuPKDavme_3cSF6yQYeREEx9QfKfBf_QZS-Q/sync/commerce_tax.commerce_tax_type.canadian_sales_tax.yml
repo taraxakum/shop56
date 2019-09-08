@@ -1,0 +1,9 @@
+uuid: 613812c8-f047-4397-bc13-9f06c1dcc185
+langcode: en
+status: true
+dependencies: {  }
+id: canadian_sales_tax
+label: 'Canadian Sales Tax'
+plugin: canadian_sales_tax
+configuration:
+  display_inclusive: false

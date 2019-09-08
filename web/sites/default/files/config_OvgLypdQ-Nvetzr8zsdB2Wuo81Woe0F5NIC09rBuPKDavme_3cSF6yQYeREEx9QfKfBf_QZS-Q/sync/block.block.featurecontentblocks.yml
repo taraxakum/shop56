@@ -1,0 +1,25 @@
+uuid: 6d3a8722-4da2-47b1-ba34-b0c8c2f5a435
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:b4773de3-4d13-45c4-8615-6af67b99a3eb'
+  module:
+    - block_content
+  theme:
+    - commerce_2_demo
+id: featurecontentblocks
+theme: commerce_2_demo
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:b4773de3-4d13-45c4-8615-6af67b99a3eb'
+settings:
+  id: 'block_content:b4773de3-4d13-45c4-8615-6af67b99a3eb'
+  label: 'Content Blocks'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

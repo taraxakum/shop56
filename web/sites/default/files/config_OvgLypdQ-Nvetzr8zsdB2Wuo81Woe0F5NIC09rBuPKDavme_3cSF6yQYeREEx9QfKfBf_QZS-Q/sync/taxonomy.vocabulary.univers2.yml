@@ -1,0 +1,8 @@
+uuid: 4215f911-18e2-4bf7-8dde-190ee755af75
+langcode: ru
+status: true
+dependencies: {  }
+name: универс2
+vid: univers2
+description: 'дополнительный словарь для универсального типа товаров'
+weight: 0

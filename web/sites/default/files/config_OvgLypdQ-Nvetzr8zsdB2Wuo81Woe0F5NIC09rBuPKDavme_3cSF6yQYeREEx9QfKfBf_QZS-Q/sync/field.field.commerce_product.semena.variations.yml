@@ -1,0 +1,24 @@
+uuid: f9284fbb-ec63-4b2e-a77e-e0f1d8049b9c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.semena
+    - commerce_product.commerce_product_variation_type.semena
+    - field.storage.commerce_product.variations
+id: commerce_product.semena.variations
+field_name: variations
+entity_type: commerce_product
+bundle: semena
+label: Variations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      - semena
+field_type: entity_reference

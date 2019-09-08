@@ -1,0 +1,7 @@
+header: "<p><img alt=\"logo.png\" data-entity-type=\"\" data-entity-uuid=\"\" height=\"57\" src=\"https://commerce.acromedia.com/sites/default/files/logo.png\" width=\"222\" /></p>\r\n\r\n<p>Urban Hipster<br />\r\n2303 Leckie Road<br />\r\nKelowna, BC, Canada<br />\r\nV1Y 6Y5<br />\r\n<strong>Toll Free</strong><strong>:</strong> 1.877.763.8844<br />\r\n&nbsp;</p>\r\n"
+footer: "<p><br />\r\n<strong>Thanks for shopping at Urban Hipster!</strong><br />\r\n<br />\r\nReturn Policy...<br />\r\nExchange Policy...<br />\r\n<br />\r\nVisit our website for huge sales and more cool stuff!<br />\r\n<strong>Website:</strong> commerce.acromedia.com</p>\r\n"
+header_format: html
+footer_format: html
+_core:
+  default_config_hash: gpEUhQFJHLfjYv03rI9_3gPQmOV6jQtkX9992UWHnpg
+langcode: ru

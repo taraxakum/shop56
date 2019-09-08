@@ -1,0 +1,8 @@
+channel:
+  description: ''
+items:
+  limit: 10
+  view_mode: rss
+langcode: ru
+_core:
+  default_config_hash: xoqKfPD9fyzVk0x6YOfd-WWFBjascESOX3F94Q58uSU

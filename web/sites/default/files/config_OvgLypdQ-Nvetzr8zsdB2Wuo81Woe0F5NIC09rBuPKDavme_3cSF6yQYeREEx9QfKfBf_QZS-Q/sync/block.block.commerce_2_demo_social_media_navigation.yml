@@ -1,0 +1,30 @@
+uuid: 2d8d8da6-3682-4b3f-a163-715976410aef
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-media
+  module:
+    - menu_block
+  theme:
+    - commerce_2_demo
+_core:
+  default_config_hash: k0hSrJBT11kmiZlxLv3PY97JrrTGPJFAEZZoH61JMA4
+id: commerce_2_demo_social_media_navigation
+theme: commerce_2_demo
+region: social_nav
+weight: 0
+provider: null
+plugin: 'menu_block:social-media'
+settings:
+  id: 'menu_block:social-media'
+  label: 'Social Media Navigation'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand: 0
+  parent: 'social-media:'
+  suggestion: social_media
+  label_type: block
+visibility: {  }

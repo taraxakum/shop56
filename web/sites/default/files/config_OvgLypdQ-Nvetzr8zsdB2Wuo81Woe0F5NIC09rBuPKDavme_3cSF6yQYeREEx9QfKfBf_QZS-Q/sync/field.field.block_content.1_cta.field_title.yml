@@ -1,0 +1,19 @@
+uuid: fcfa6d10-646b-4ff2-b5a3-5d8e684e8fea
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.1_cta
+    - field.storage.block_content.field_title
+id: block_content.1_cta.field_title
+field_name: field_title
+entity_type: block_content
+bundle: 1_cta
+label: Title
+description: 'Add a short title to display over the image.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

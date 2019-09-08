@@ -1,0 +1,25 @@
+uuid: fc424ef0-3537-4531-8ae2-a040f67b6195
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:8073ecf2-5b6e-49d7-b0af-8744335d6858'
+  module:
+    - block_content
+  theme:
+    - commerce_2_demo
+id: featureordersummary
+theme: commerce_2_demo
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:8073ecf2-5b6e-49d7-b0af-8744335d6858'
+settings:
+  id: 'block_content:8073ecf2-5b6e-49d7-b0af-8744335d6858'
+  label: 'Order Summary'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

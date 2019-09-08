@@ -1,0 +1,26 @@
+uuid: 671a4433-fbdd-49e1-bce5-8703b5c41acf
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.semena
+    - field.storage.commerce_product.field_sroki
+  module:
+    - harvest_calendar
+id: commerce_product.semena.field_sroki
+field_name: field_sroki
+entity_type: commerce_product
+bundle: semena
+label: Сроки
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  fields:
+    table-row: ''
+  block: system_powered_by_block
+field_type: harvest_calendar_container

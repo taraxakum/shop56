@@ -1,0 +1,20 @@
+uuid: 813515df-f950-44ac-9ae4-3a6d129c7bab
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - text
+id: commerce_product.field_kod_v
+field_name: field_kod_v
+entity_type: commerce_product
+type: text
+settings:
+  max_length: 30
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

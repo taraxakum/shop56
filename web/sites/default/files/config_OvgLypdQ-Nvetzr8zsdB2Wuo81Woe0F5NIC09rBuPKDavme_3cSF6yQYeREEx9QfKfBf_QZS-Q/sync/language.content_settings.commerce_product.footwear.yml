@@ -1,0 +1,11 @@
+uuid: 4a43582d-431c-4f9c-aa9f-946b3263154c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.footwear
+id: commerce_product.footwear
+target_entity_type_id: commerce_product
+target_bundle: footwear
+default_langcode: site_default
+language_alterable: false

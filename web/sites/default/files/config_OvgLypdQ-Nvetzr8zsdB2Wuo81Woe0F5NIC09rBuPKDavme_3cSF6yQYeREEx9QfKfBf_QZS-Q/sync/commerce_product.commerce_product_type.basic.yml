@@ -1,0 +1,10 @@
+uuid: 0cce4406-72c9-4dac-a975-3b1d74210ead
+langcode: en
+status: true
+dependencies: {  }
+id: basic
+label: Basic
+description: 'For basic products that <em>do not</em> require any selectable options.'
+variationType: basic
+injectVariationFields: true
+traits: {  }

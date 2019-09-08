@@ -1,0 +1,4 @@
+label: 'Статус публикации'
+settings:
+  on_label: Вкл
+  off_label: Выкл

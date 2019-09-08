@@ -1,0 +1,34 @@
+uuid: 5b11f45d-e5d1-41b6-803e-dc9f9a1ed8af
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header
+  module:
+    - menu_block
+    - system
+  theme:
+    - commerce_2_demo
+id: headernavigation
+theme: commerce_2_demo
+region: below_content
+weight: -22
+provider: null
+plugin: 'menu_block:header'
+settings:
+  id: 'menu_block:header'
+  label: 'Customer Service'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 1
+  expand: 0
+  parent: 'header:menu_link_content:f585c24c-5847-4380-9051-50615211b9eb'
+  suggestion: customer_service__content_block
+  label_type: block
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,13 @@
+uuid: 384ce91a-83bc-4e67-94b4-38c8ffffe025
+langcode: ru
+status: true
+dependencies:
+  module:
+    - pathauto
+_core:
+  default_config_hash: 2KLcrRznen-6u2hsNyJze98uSoZ-2ymjUQxynix641s
+id: pathauto_update_alias_node
+label: 'Update URL alias'
+type: node
+plugin: pathauto_update_alias
+configuration: {  }

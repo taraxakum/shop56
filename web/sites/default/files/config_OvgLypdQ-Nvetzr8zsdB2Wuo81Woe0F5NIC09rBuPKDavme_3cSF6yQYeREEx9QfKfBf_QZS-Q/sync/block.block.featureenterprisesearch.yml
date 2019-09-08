@@ -1,0 +1,25 @@
+uuid: d73970bf-c1b5-4ecc-acd0-35906ef1f348
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_beacon:ca1f912d-c41b-485f-8e39-a0505b046bde'
+  module:
+    - block_content
+  theme:
+    - commerce_2_demo
+id: featureenterprisesearch
+theme: commerce_2_demo
+region: feature_beacon
+weight: 0
+provider: null
+plugin: 'block_content:ca1f912d-c41b-485f-8e39-a0505b046bde'
+settings:
+  id: 'block_content:ca1f912d-c41b-485f-8e39-a0505b046bde'
+  label: 'Enterprise Search'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

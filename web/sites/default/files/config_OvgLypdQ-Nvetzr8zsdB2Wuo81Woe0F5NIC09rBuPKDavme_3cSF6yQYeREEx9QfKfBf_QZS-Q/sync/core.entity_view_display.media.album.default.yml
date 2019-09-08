@@ -1,0 +1,33 @@
+uuid: 84a11ae7-3dbf-4604-bd11-456259a13dca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.album.field_media_audio_file
+    - field.field.media.album.field_media_audio_file_1
+    - media.type.album
+  module:
+    - file
+id: media.album.default
+targetEntityType: media
+bundle: album
+mode: default
+content:
+  field_media_audio_file:
+    type: file_audio
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_audio_file_1: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

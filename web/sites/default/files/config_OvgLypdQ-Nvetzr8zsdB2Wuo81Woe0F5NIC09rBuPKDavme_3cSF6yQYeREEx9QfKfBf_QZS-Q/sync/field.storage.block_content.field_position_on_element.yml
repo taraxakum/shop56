@@ -1,0 +1,48 @@
+uuid: ae86f1ff-c439-491e-a385-ac2febf9bafd
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_position_on_element
+field_name: field_position_on_element
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: top-left
+      label: 'Top left'
+    -
+      value: top-center
+      label: 'Top center'
+    -
+      value: top-right
+      label: 'Top right'
+    -
+      value: center-left
+      label: 'Center left'
+    -
+      value: center
+      label: Center
+    -
+      value: center-right
+      label: 'Center right'
+    -
+      value: bottom-left
+      label: 'Bottom left'
+    -
+      value: bottom-center
+      label: 'Bottom center'
+    -
+      value: bottom-right
+      label: 'Bottom right'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

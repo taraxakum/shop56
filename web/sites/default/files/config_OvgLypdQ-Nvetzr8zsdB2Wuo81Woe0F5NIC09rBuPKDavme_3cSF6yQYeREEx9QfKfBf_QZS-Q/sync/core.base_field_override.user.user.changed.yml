@@ -1,0 +1,20 @@
+uuid: 35cf5b24-f6d6-4b86-86e5-a6695844ec20
+langcode: ru
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: igQadiBRqUly0wdagWIdLbtWG5Feo56eB1ZdP3qIr8g
+id: user.user.changed
+field_name: changed
+entity_type: user
+bundle: user
+label: Changed
+description: 'The time that the user was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

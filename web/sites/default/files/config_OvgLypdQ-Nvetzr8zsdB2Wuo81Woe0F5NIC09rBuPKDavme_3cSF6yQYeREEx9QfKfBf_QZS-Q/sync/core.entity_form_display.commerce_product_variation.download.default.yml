@@ -1,0 +1,105 @@
+uuid: 1d4e55f2-8414-4da1-82f9-68fdf8c90e93
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.download
+    - field.field.commerce_product_variation.download.field_album
+    - field.field.commerce_product_variation.download.field_file
+    - field.field.commerce_product_variation.download.field_image
+    - image.style.thumbnail
+  module:
+    - commerce_price
+    - field_group
+    - file
+    - image
+    - imce
+third_party_settings:
+  field_group:
+    group_files:
+      children:
+        - field_album
+        - field_file
+      parent_name: ''
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Upload a file directly and/or select an album.'
+        required_fields: true
+      label: Files
+      region: content
+id: commerce_product_variation.download.default
+targetEntityType: commerce_product_variation
+bundle: download
+mode: default
+content:
+  field_album:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_file:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: false
+    type: image_image
+    region: content
+  langcode:
+    type: language_select
+    weight: 6
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  list_price:
+    type: commerce_price_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

@@ -1,0 +1,68 @@
+uuid: e5ab47cd-cac5-420c-a7e8-91599366de3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - core.entity_view_mode.commerce_product.teaser
+    - field.field.commerce_product.default.body
+    - field.field.commerce_product.default.field_brand
+    - field.field.commerce_product.default.field_catalog_image
+    - field.field.commerce_product.default.field_categories
+    - field.field.commerce_product.default.field_image
+    - field.field.commerce_product.default.field_product_reviews
+    - field.field.commerce_product.default.field_recommended_products
+    - field.field.commerce_product.default.field_short_description
+    - field.field.commerce_product.default.field_special_categories
+    - field.field.commerce_product.default.field_specifications
+    - field.field.commerce_product.default.stores
+    - field.field.commerce_product.default.variations
+    - image.style.product_thumb
+  module:
+    - commerce_product
+    - image
+_core:
+  default_config_hash: gT03TFcuSod4d9uPQNs_gqK1F1QZ0Ray5CBYW0BNLnk
+id: commerce_product.default.teaser
+targetEntityType: commerce_product
+bundle: default
+mode: teaser
+content:
+  field_brand:
+    weight: 2
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_catalog_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: product_thumb
+      image_link: ''
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  field_categories: true
+  field_image: true
+  field_product_reviews: true
+  field_recommended_products: true
+  field_short_description: true
+  field_special_categories: true
+  field_specifications: true
+  langcode: true
+  stores: true
+  uid: true

@@ -1,0 +1,20 @@
+uuid: d1d9cb93-6c6e-4232-aea6-6d3001af5ce8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.image_gallery
+_core:
+  default_config_hash: vetqKTplZGjn1pFUSPJt7UZ3qD9PSvHuBO6oXsJEjQo
+id: node.image_gallery.changed
+field_name: changed
+entity_type: node
+bundle: image_gallery
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,21 @@
+uuid: d94c503f-9dbe-40c6-9ca3-d2997299bcb7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.semena
+    - field.storage.commerce_product.field_meta_tags
+  module:
+    - metatag
+id: commerce_product.semena.field_meta_tags
+field_name: field_meta_tags
+entity_type: commerce_product
+bundle: semena
+label: 'Мета теги'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

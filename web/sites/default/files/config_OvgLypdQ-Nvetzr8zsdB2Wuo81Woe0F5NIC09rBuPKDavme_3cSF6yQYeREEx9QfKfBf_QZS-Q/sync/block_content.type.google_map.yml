@@ -1,0 +1,8 @@
+uuid: ac944ee5-7364-4729-a314-de184e45804f
+langcode: en
+status: true
+dependencies: {  }
+id: google_map
+label: 'Google Map'
+revision: 0
+description: 'Add a Google Map into a block.'

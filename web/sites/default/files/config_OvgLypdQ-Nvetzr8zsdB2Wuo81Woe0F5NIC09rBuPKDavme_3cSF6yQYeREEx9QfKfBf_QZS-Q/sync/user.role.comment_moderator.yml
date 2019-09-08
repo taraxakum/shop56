@@ -1,0 +1,17 @@
+uuid: 41aad801-ff64-4c20-b730-0383c95b7478
+langcode: en
+status: true
+dependencies: {  }
+id: comment_moderator
+label: 'Comment moderator'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer comments'
+  - 'administer nodes'
+  - 'change own username'
+  - 'edit own comments'
+  - 'view the administration theme'

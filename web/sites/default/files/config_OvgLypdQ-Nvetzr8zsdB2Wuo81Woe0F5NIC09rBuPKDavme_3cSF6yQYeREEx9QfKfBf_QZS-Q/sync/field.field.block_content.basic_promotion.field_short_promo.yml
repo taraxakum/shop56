@@ -1,0 +1,19 @@
+uuid: 3c918215-1437-4e54-8027-5381675bd84a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic_promotion
+    - field.storage.block_content.field_short_promo
+id: block_content.basic_promotion.field_short_promo
+field_name: field_short_promo
+entity_type: block_content
+bundle: basic_promotion
+label: 'Short Promo'
+description: 'Enter a very short promo message.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

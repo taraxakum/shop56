@@ -1,0 +1,26 @@
+uuid: f33f293b-5732-4580-b896-525190598afc
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+    - system
+  theme:
+    - shopZ
+id: shopZ_checkoutprogress
+theme: shopZ
+region: content
+weight: -23
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: 'Checkout progress'
+  provider: commerce_checkout
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/checkout/*'
+    negate: false
+    context_mapping: {  }

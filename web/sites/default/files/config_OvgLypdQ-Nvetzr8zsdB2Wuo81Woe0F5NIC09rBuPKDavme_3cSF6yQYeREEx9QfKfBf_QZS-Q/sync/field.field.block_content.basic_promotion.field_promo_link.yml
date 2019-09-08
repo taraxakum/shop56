@@ -1,0 +1,23 @@
+uuid: 5ea58986-b4c1-491f-9689-b83c1f1823f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic_promotion
+    - field.storage.block_content.field_promo_link
+  module:
+    - link
+id: block_content.basic_promotion.field_promo_link
+field_name: field_promo_link
+entity_type: block_content
+bundle: basic_promotion
+label: 'Promo Link'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

@@ -1,0 +1,25 @@
+uuid: f82abb72-9fc2-4b51-bd0a-d279ab8a0c10
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:custom_text:bfd22fde-4960-4fe8-8719-328c8137e723'
+  module:
+    - block_content
+  theme:
+    - shopZ
+id: shopZ_companyaddress
+theme: shopZ
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:bfd22fde-4960-4fe8-8719-328c8137e723'
+settings:
+  id: 'block_content:bfd22fde-4960-4fe8-8719-328c8137e723'
+  label: 'Company Address'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

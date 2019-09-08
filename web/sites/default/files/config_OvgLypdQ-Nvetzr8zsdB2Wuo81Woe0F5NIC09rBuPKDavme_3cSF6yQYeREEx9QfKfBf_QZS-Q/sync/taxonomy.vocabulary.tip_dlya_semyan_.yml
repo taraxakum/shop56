@@ -1,0 +1,8 @@
+uuid: 5dc22699-eb72-4e0d-8d33-6c57b5819f71
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Тип (для семян овощей)'
+vid: tip_dlya_semyan_
+description: 'для чего предназначены и как использовать теплицы или открытый грунт, для квашенья или свежего потребления и т. д.'
+weight: -2

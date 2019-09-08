@@ -1,0 +1,21 @@
+uuid: 32922ed1-97d0-4e84-852e-78dd9d9df797
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.mason_jar
+    - field.storage.commerce_product.field_specifications
+  module:
+    - text
+id: commerce_product.mason_jar.field_specifications
+field_name: field_specifications
+entity_type: commerce_product
+bundle: mason_jar
+label: Specifications
+description: 'Optionally add additional product specifications.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

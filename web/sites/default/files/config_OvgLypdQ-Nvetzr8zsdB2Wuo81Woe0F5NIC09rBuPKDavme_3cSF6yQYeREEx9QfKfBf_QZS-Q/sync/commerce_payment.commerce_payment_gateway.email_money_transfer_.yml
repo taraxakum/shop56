@@ -1,0 +1,28 @@
+uuid: 8a54f7a3-21e8-49f6-a166-e32dacb19337
+langcode: en
+status: true
+dependencies: {  }
+id: email_money_transfer_
+label: 'Email Money Transfer'
+weight: -9
+plugin: manual
+configuration:
+  instructions:
+    value: "<p><strong>Thank you for your order! </strong></p>\r\n\r\n<p>Please send payment to&nbsp;<strong>payment@urbanhipster.com</strong></p>\r\n\r\n<p>Your order will be shipped once payment has arrived and cleared. We will keep you updated at each step!</p>\r\n\r\n<p>If you have any questions or would like to change your order, please <a href=\"/contact-us\">contact us</a> and have your order number handy.</p>\r\n"
+    format: html
+  display_label: 'Email Money Transfer (further instruction after order has completed)'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+conditions:
+  -
+    plugin: order_store
+    configuration:
+      stores:
+        - c57f3066-437c-4ffa-ae35-76c52b4ad181
+  -
+    plugin: order_type
+    configuration:
+      bundles:
+        - default
+conditionOperator: AND

@@ -1,0 +1,11 @@
+uuid: 717857da-bb64-4115-a76d-1d07b631b0f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.feature_beacon
+id: block_content.feature_beacon
+target_entity_type_id: block_content
+target_bundle: feature_beacon
+default_langcode: site_default
+language_alterable: false

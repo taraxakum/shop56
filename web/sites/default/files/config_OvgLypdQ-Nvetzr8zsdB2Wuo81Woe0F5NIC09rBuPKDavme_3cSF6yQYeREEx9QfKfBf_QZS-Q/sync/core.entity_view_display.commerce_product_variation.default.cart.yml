@@ -1,0 +1,42 @@
+uuid: 9e5f590c-a55c-4599-b953-8953cb328f3e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - core.entity_view_mode.commerce_product_variation.cart
+    - field.field.commerce_product_variation.default.field_image
+    - field.field.commerce_product_variation.default.field_upc
+    - field.field.commerce_product_variation.default.weight
+    - image.style.thumbnail
+  enforced:
+    module:
+      - commerce_cart
+      - commerce_product
+  module:
+    - image
+_core:
+  default_config_hash: EVn6BiYwtiYYiS-9vG5bvZDkkX9hQq1SgIqeQ_iPC-I
+id: commerce_product_variation.default.cart
+targetEntityType: commerce_product_variation
+bundle: default
+mode: cart
+content:
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+hidden:
+  field_upc: true
+  langcode: true
+  list_price: true
+  price: true
+  product_id: true
+  sku: true
+  title: true
+  weight: true

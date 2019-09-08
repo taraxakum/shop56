@@ -1,0 +1,27 @@
+uuid: f518309f-0ba0-4549-997a-ca7d0909c304
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - shopZ
+_core:
+  default_config_hash: 57kSxHwEgK9P6YZ1aqg3lt5yvwr3JY37tEwV2BvPs1c
+id: shopZ_pagetitle
+theme: shopZ
+region: content
+weight: -25
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/product/*\r\n/products\r\n/products*\r\n/user/*\r\n!/user/*/*\r\n!/user/login\r\n!/user/register\r\n!/user/password"
+    negate: true
+    context_mapping: {  }

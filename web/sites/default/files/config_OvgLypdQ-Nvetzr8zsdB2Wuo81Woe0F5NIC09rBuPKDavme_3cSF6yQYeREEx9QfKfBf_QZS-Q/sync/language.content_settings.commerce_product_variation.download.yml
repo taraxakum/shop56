@@ -1,0 +1,11 @@
+uuid: dac2b5ed-d6ca-4a23-8390-b8d757d3ed7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.download
+id: commerce_product_variation.download
+target_entity_type_id: commerce_product_variation
+target_bundle: download
+default_langcode: site_default
+language_alterable: false

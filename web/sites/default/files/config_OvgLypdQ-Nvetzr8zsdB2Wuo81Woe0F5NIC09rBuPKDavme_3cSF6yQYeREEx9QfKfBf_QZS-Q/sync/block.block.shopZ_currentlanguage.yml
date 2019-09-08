@@ -1,0 +1,20 @@
+uuid: aa61137e-4f87-4fdb-b0d5-e2e55696f8c7
+langcode: en
+status: false
+dependencies:
+  module:
+    - language
+  theme:
+    - shopZ
+id: shopZ_currentlanguage
+theme: shopZ
+region: language_select
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Current language'
+  provider: language
+  label_display: '0'
+visibility: {  }

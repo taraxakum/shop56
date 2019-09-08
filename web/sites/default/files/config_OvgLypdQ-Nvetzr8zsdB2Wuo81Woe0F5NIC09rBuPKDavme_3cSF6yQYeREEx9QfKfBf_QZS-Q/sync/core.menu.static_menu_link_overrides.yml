@@ -1,0 +1,106 @@
+definitions:
+  contact__site_page:
+    weight: -50
+    menu_name: footer
+    parent: ''
+    enabled: false
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__store__3':
+    weight: -47
+    menu_name: main
+    parent: ''
+    enabled: true
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__store__8':
+    weight: -42
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__store__9':
+    weight: -41
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__store__4':
+    weight: -46
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__store__2':
+    weight: -48
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__store__6':
+    weight: -45
+    menu_name: main
+    parent: ''
+    enabled: true
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__store__5':
+    weight: -46
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__store__7':
+    weight: -43
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__store__1':
+    weight: -49
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__store__25':
+    weight: -44
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  user__page:
+    weight: -49
+    menu_name: account
+    parent: ''
+    enabled: true
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__special__24':
+    weight: -48
+    menu_name: special
+    parent: ''
+    enabled: true
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__special__22':
+    weight: -50
+    menu_name: special
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__special__23':
+    weight: -49
+    menu_name: special
+    parent: ''
+    expanded: false
+    enabled: true
+  user__logout:
+    weight: -48
+    menu_name: account
+    parent: ''
+    expanded: false
+    enabled: true
+  acro_live_css__admin:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_config_development
+    expanded: false
+    weight: 100
+_core:
+  default_config_hash: R0LLTYLvBqb9xXwy51mMbBwBG-MNp5ur0GQOafkb58M
+langcode: ru

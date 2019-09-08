@@ -1,0 +1,11 @@
+uuid: 9e45774c-42f1-4582-b239-3e378d51c51a
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.product_reviews
+id: comment.product_reviews
+target_entity_type_id: comment
+target_bundle: product_reviews
+default_langcode: site_default
+language_alterable: false

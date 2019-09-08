@@ -1,0 +1,8 @@
+uuid: 89eb31db-f5b6-4b02-8628-75d32c790fe4
+langcode: ru
+status: true
+dependencies: {  }
+name: 'страна селекции (для семян овощей и цветов)'
+vid: strana_selekcii_dlya_semyan_
+description: 'Страны селекции Россия, Нидерланды и т.д.'
+weight: 3

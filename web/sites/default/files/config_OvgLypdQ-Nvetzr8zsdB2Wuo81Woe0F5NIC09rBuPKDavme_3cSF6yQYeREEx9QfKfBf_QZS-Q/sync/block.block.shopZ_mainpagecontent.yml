@@ -1,0 +1,27 @@
+uuid: bf119953-ee34-44a5-ad24-2a18ec7a3663
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - shopZ
+_core:
+  default_config_hash: lixY04ZS-kQ1i8EVEERrxh2LleO9Fs3WRMObcfYQP54
+id: shopZ_mainpagecontent
+theme: shopZ
+region: content
+weight: -22
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

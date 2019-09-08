@@ -1,0 +1,20 @@
+uuid: 08f4569d-25c8-447b-8e2c-b0102eda680f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - harvest_calendar
+id: commerce_product.field_sroki
+field_name: field_sroki
+entity_type: commerce_product
+type: harvest_calendar_container
+settings:
+  value: true
+module: harvest_calendar
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

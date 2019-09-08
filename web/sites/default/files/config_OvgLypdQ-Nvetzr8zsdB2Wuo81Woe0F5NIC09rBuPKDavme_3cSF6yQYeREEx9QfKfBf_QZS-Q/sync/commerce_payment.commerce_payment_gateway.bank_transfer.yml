@@ -1,0 +1,28 @@
+uuid: ce6a017e-49c3-4c2c-bbfc-cc7c8b529ee7
+langcode: en
+status: true
+dependencies: {  }
+id: bank_transfer
+label: 'Bank Transfer'
+weight: -8
+plugin: manual
+configuration:
+  instructions:
+    value: "<p><strong>Thank you for your order! </strong></p>\r\n\r\n<p><strong>Please make payment to: </strong><br />\r\nAccount owner: Urban Hipster<br />\r\nAccount number: 1111222233334444</p>\r\n\r\n<p>Your order will be shipped once payment has arrived and cleared. We will keep you updated at each step!</p>\r\n\r\n<p>If you have any questions or would like to change your order, please <a href=\"/contact-us\">contact us</a> and have your order number handy.</p>\r\n"
+    format: html
+  display_label: 'Bank Transfer (further instruction after order has completed)'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+conditions:
+  -
+    plugin: order_store
+    configuration:
+      stores:
+        - c57f3066-437c-4ffa-ae35-76c52b4ad181
+  -
+    plugin: order_type
+    configuration:
+      bundles:
+        - default
+conditionOperator: AND

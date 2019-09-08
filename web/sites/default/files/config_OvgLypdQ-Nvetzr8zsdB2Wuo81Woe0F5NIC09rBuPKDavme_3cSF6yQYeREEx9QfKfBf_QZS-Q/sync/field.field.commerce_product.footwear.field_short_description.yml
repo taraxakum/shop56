@@ -1,0 +1,19 @@
+uuid: a8128c36-c151-4844-a1eb-4f4d938a0011
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.footwear
+    - field.storage.commerce_product.field_short_description
+id: commerce_product.footwear.field_short_description
+field_name: field_short_description
+entity_type: commerce_product
+bundle: footwear
+label: 'Short Description'
+description: 'Optionally enter a short description to appear under the product title.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

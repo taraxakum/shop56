@@ -1,0 +1,19 @@
+uuid: f49574d4-1a05-4393-a3ab-59f5b6a07f4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.feature_beacon
+    - field.storage.block_content.field_page_element
+id: block_content.feature_beacon.field_page_element
+field_name: field_page_element
+entity_type: block_content
+bundle: feature_beacon
+label: 'Page element(s)'
+description: "Enter a selector for the element or elements you wish to attach the beacon marker. Use any CSS or jQuery style of selector. You may enter multiple selectors separated with a comma.<br>\r\n<b>Selector example:</b> .class-name, #id-name, div[name=\"property\"], ul.class-name li:last-of-type"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

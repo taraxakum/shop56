@@ -1,0 +1,219 @@
+uuid: 3eec4883-bf0c-450f-bada-6b2d1d6d4f88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.variations
+    - field.storage.commerce_product.field_categories
+    - field.storage.commerce_product.field_brand
+    - field.storage.commerce_product.field_special_categories
+    - field.storage.commerce_product.field_artist
+    - field.storage.commerce_product.field_genre
+    - search_api.server.solr_5
+  module:
+    - commerce_product
+    - taxonomy
+    - search_api
+id: products
+name: Products
+description: ''
+read_only: false
+field_settings:
+  product_id:
+    label: ID
+    datasource_id: 'entity:commerce_product'
+    property_path: product_id
+    type: integer
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: text
+    boost: !!float 5
+  type:
+    label: 'Product type'
+    datasource_id: 'entity:commerce_product'
+    property_path: type
+    type: string
+  number:
+    label: 'Variations » Product variation » Price » Number'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:number'
+    type: decimal
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+      module:
+        - commerce_product
+  status:
+    label: Published
+    datasource_id: 'entity:commerce_product'
+    property_path: status
+    type: boolean
+  sku:
+    label: 'Variations » Product variation » SKU'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:sku'
+    type: text
+    boost: !!float 3
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+      module:
+        - commerce_product
+  field_categories_1:
+    label: 'Categories for Facet'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_categories
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_categories
+  field_brand_1:
+    label: 'Brand for Facet'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_brand
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_brand
+  field_special_categories_1:
+    label: 'Special Categories for Facet'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_special_categories
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_special_categories
+  name:
+    label: 'Brand » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_brand:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_brand
+      module:
+        - taxonomy
+  name_1:
+    label: 'Categories » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_categories:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_categories
+      module:
+        - taxonomy
+  name_2:
+    label: 'Special Categories » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_special_categories:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_special_categories
+      module:
+        - taxonomy
+  created:
+    label: Created
+    datasource_id: 'entity:commerce_product'
+    property_path: created
+    type: date
+  field_artist:
+    label: 'Artist for Facet'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_artist
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_artist
+  field_genre_audio:
+    label: 'Genre for Facet'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_genre
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_genre
+  name_3:
+    label: 'Artist » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_artist:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_artist
+      module:
+        - taxonomy
+  name_4:
+    label: 'Genre » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_genre:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_genre
+      module:
+        - taxonomy
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  ignorecase:
+    fields:
+      - title
+      - type
+      - sku
+      - field_categories_1
+      - field_brand_1
+      - field_special_categories_1
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: false
+  transliteration:
+    fields: {  }
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: false
+  highlight:
+    highlight: always
+    highlight_partial: false
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  add_url: {  }
+  stemmer:
+    fields: {  }
+    exceptions:
+      texan: texa
+      mexican: mexic
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+    all_fields: false
+  rendered_item: {  }
+  aggregated_field: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: solr_5

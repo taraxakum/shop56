@@ -1,0 +1,113 @@
+uuid: 7e8e76d6-b159-4880-93c3-75bc87e9e584
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.feature_beacon
+    - field.field.block_content.feature_beacon.body
+    - field.field.block_content.feature_beacon.field_display_label
+    - field.field.block_content.feature_beacon.field_modal_size
+    - field.field.block_content.feature_beacon.field_page_element
+    - field.field.block_content.feature_beacon.field_position_on_element
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_beacon:
+      children:
+        - group_bea
+        - group_beacon_content
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+      label: Beacon
+      region: content
+    group_bea:
+      children:
+        - field_display_label
+        - field_page_element
+        - field_position_on_element
+      parent_name: group_beacon
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: 'Beacon marker'
+      region: content
+    group_beacon_content:
+      children:
+        - field_modal_size
+        - body
+      parent_name: group_beacon
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Beacon content'
+      region: content
+id: block_content.feature_beacon.default
+targetEntityType: block_content
+bundle: feature_beacon
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 5
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_display_label:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_modal_size:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_page_element:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_position_on_element:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  moderation_state: true
