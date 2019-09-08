@@ -75,9 +75,9 @@
  *
  * @code
  * $databases['default']['default'] = array (
- *   'database' => 'databasename',
- *   'username' => 'sqlusername',
- *   'password' => 'sqlpassword',
+ *   'database' => 'shopsred55',
+ *   'username' => 'shopsred55',
+ *   'password' => 'shopsred55',
  *   'host' => 'localhost',
  *   'port' => '3306',
  *   'driver' => 'mysql',
@@ -87,7 +87,16 @@
  * @endcode
  */
  $databases = array();
-
+$databases['default']['default'] = array (
+   'database' => 'shopsakataby',
+    'username' => 'shopsakataby',
+   'password' => 'F3D4fUOtMyLl',
+   'host' => 'localhost',
+   'port' => '3306',
+   'driver' => 'mysql',
+   'prefix' => '',
+   'collation' => 'utf8mb4_general_ci',
+ );
 /**
  * Customizing database settings.
  *
@@ -249,7 +258,8 @@
  *   );
  * @endcode
  */
-$config_directories = array();
+global $content_directories;
+$content_directories['sync'] = $app_root.'/../content/sync';
 
 /**
  * Settings:
